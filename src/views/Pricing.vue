@@ -234,7 +234,7 @@
             </svg>
 
             <a class="table-pricing__button table-pricing__button-bewe" href="">
-              readable
+              Adquiérelo
             </a>
           </div>
           <div
@@ -281,7 +281,7 @@
               class="table-pricing__button table-pricing__button-bewe-one"
               href=""
             >
-              readable
+              Adquiérelo
             </a>
           </div>
 
@@ -334,7 +334,7 @@
               href=""
               class="table-pricing__button table-pricing__button-bewe-one-plus"
             >
-              readable
+              Adquiérelo
             </a>
           </div>
         </div>
@@ -2109,12 +2109,15 @@ figure{
 .svg-info{
   width: 20px;
   cursor: pointer;
+  fill: #C5C1C1;
 }
 
 
 
 .svg-price{
-  width: 30px;
+  width: 25px;
+  stroke: #7660A5;
+  stroke-width: 2px;
 }
  
 .border-x{
@@ -2165,7 +2168,8 @@ figure{
     padding: 5px 10px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
+    border-radius: 5px;
 }
  
 .table-pricing__button-bewe{
@@ -2273,15 +2277,25 @@ figure{
 
 
 .table-pricing__body-messague{
-  max-width: 100px;
+  max-width: 180px;
+  min-height: 50px;
   background-color: #ffffff;
+  border-radius: 5px;
   text-align: center;
   /* border: .1px solid #000000; */
-  box-shadow: 1px 1px 2px #000000;
-  font-size: 10px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgb(190, 190, 190);
+-moz-box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
+box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
+  font-size: 12px;
   margin: 16px;
   opacity: 0;
   transition: .5 all ease-in-out;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #808080;
 }
 
 .svg-info:hover + .table-pricing__body-messague {
