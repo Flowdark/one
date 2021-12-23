@@ -10,6 +10,9 @@
 </template>
 
 <style>
+img{
+  max-width: 100%;
+}
 .d-none{
   display: none;
 }
