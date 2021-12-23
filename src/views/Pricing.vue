@@ -2244,8 +2244,10 @@ figure{
 }
  
 .table-pricing__body-row-first-arounds > svg{
-    max-width: 20px;
+    max-width: 25px;
     margin: 0 10px 0 0;
+    fill: #7660A5;
+    stroke-width: 2px;
 }
  
 .table-pricing__body-row-show-children{
