@@ -88,6 +88,13 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Neon';
+  src: url("NEON.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #nav {
   padding: 30px;
   text-align: center;

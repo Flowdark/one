@@ -41,7 +41,7 @@ $main-color: #F7D2B3;
     /* background: linear-gradient(180deg, $white, $orange-color); */
     display: flex;
     align-items: center;
-    font-family: 'RNS Sanz';
+    font-family: 'RNSSanz';
 }
 
 .transition__container{
@@ -52,8 +52,9 @@ $main-color: #F7D2B3;
 .transition__container-title{
     text-align: left;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1.4;
+    color: black;
 }
 
 .transition__text{
@@ -147,7 +148,7 @@ $main-color: #F7D2B3;
     }
 
     .transition__container-title{
-        font-size: 60px;
+        font-size: 70px;
     }
 
     
@@ -166,6 +167,13 @@ $main-color: #F7D2B3;
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
+    }
+}
+
+@media(min-width: 1200px){
+    .transition{
+        width: 1200px;
+        margin: 0 auto;
     }
 }
 
