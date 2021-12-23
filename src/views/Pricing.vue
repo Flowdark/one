@@ -1348,6 +1348,7 @@ figure{
 .table-pricing__body-title{
     font-size: 28px;
     font-weight: 700;
+    text-align: left;
 }
  
 .table-pricing__body-row{

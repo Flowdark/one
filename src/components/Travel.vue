@@ -45,7 +45,6 @@ $primary-color: #FFD5B8;
 $purple-color: #725BA2 ;
 
 .travel{
-    background-color: $primary-color;
     min-height: 100vh;
     height: 100%;
     max-width: 100vw;
@@ -115,6 +114,14 @@ $purple-color: #725BA2 ;
 
     .travel__content-text-link{
         font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .travel__content{
+        max-width: 1400px;
     }
 
 }
