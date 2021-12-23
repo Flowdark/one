@@ -94,9 +94,7 @@ $purple-color: #725BA2 ;
         align-items: center;
     }
 
-    .travel__media-figure{
-        height: 300px;
-    }
+    
 
 
 }
