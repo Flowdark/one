@@ -39,7 +39,6 @@ $main-color: #F7D2B3;
 .transition{
     min-height: 100vh;
     /* background: linear-gradient(180deg, $white, $orange-color); */
-    background-color: $main-color;
     display: flex;
     align-items: center;
     font-family: 'RNS Sanz';
