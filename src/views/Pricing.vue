@@ -2059,6 +2059,7 @@ export default {
   margin-bottom: 20px;
   padding: 30px 80px 30px 50px;;
   position: relative;
+  font-weight: 500;
 }
 
 .pricing__faq__faqs__faq::before{
@@ -2072,19 +2073,20 @@ export default {
 
 .pricing__faq__faqs__faq__title {
   color: #141a10;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   text-align: left;
 }
 
 .pricing__faq__faqs__faq__text {
   text-align: left;
+  font-weight: 300;
 }
 
 .pricing__faq__faqs__faq__arrow {
   position: absolute;
   right: 50px;
-  top: 40%;
+  top: 35px;
 }
 
 .pricing__faq__faqs__faq__arrow svg {
