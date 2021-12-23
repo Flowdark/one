@@ -56,11 +56,16 @@ img{
     }
 
     .container__left__title{
+        color: #000;
         font-size: 35px;
+        font-family: 'RNSSanz-Bold';
     }
 
     .container__left__text{
+        color: #000;
         font-size: 20px;
+        font-family: 'RNSSanz-SemiBold';
+        line-height: 1.5;
     }
 
     .container__right{

@@ -81,9 +81,9 @@ html {
 }
 
 @font-face {
-  font-family: 'RNSSanz';
-  src: url("RNSSanz-Bold.ttf"),
-       url("RNSSanz-Bold.woff");
+  font-family: 'RNSSanz-ExtraBold';
+  src: url("RNSSanz-ExtraBold.ttf"),
+       url("RNSSanz-ExtraBold.woff");
   font-weight: 900;
   font-style: normal;
 }

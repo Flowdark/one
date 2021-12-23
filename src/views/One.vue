@@ -9,6 +9,7 @@
             <Bonus />
             <Travel />
         </div>
+        <Slice4 />
     </div>
 </template>
 
@@ -18,6 +19,7 @@ import Slice2 from '../components/Slice2.vue';
 import Slice3 from '../components/Slice3.vue';
 import Bonus from './../components/Bonus.vue';
 import Travel from './../components/Travel.vue';
+import Slice4 from './../components/Slice4.vue';
 
 export default {
     name: 'One',
@@ -27,6 +29,7 @@ export default {
         Slice3,
         Bonus,
         Travel,
+        Slice4,
 
     }
 }

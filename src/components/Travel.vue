@@ -12,7 +12,7 @@
 
             <div class="travel__content-text">
                 <h2 class="travel__content-text-title">
-                    ¿Estas listo para empezar un viaje de crecimiento?
+                    ¿Estás listo para empezar un viaje de crecimiento?
                 </h2>
 
                 <p class="travel__content-text-contenttext">
@@ -70,14 +70,17 @@ $purple-color: #725BA2 ;
 
 .travel__content-text-title{
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
+    font-family: 'RNSSanz-Bold', 'Poppins';
 }
 
 .travel__content-text-link{
     color: $purple-color;
     font-size: 20px;
     text-decoration: none;
+    font-family: 'RNSSanz-Bold', 'Poppins';
     font-weight: 700;
+    display: block;
 }
 
 .travel__content-text-contenttext{
@@ -98,6 +101,21 @@ $purple-color: #725BA2 ;
 
 }
 
+@media screen and (min-width: 992px) {
+
+    .travel__content-text-contenttext{
+        font-size: 20px;
+        color: black;
+        width: 80%;
+    }
+
+    .travel__content-text-link{
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+}
+
 @media screen and (min-width: 1200px) {
     
     .travel__content{
@@ -105,15 +123,9 @@ $purple-color: #725BA2 ;
     }
 
     .travel__content-text-title{
-        font-size: 40px;
-    }
-
-    .travel__content-text-contenttext{
-        font-size: 30px;
-    }
-
-    .travel__content-text-link{
-        font-size: 30px;
+        font-size: 35px;
+        color: black;
+        width: 80%;
     }
 
 }

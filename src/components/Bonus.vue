@@ -13,32 +13,28 @@
             <div class="bonus__content-text">
 
                 <h2 class="bonus_content-text-title" > 
-                    ¡Tendras Acceso a un espacio exclusivo para que no pare de aprender!
+                    ¡Tendrás acceso a un espacio exclusivo para que no pare de aprender!
                 </h2>
 
                 <div class="bonus__content-text-contenttext">
 
 
                     <div class="bonus__content-text-contentext-text">
-                        <svg class="bonus__content-text-contentext-text-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
-                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 bonus__content-text-contentext-text-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                         <p class="bonus__content-text-contentext-text-paragraph">
-                            Te ayudamos a crear un ecosistema integrado
-                            y de crecimiento continuo para tu negocio
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur ratione delectus adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
                         </p>
                     </div>
                    
 
                    <div class="bonus__content-text-contentext-text">
-                        <svg class="bonus__content-text-contentext-text-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
-                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 bonus__content-text-contentext-text-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                         <p class="bonus__content-text-contentext-text-paragraph">
-                            Te ayudamos a crear un ecosistema integrado
-                            y de crecimiento continuo para tu negocio
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur ratione delectus adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
                         </p>
                     </div>
 
@@ -73,7 +69,7 @@ h2{
 }
 
 .bonus__content{
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     height: 500px;
     display: flex;
@@ -89,14 +85,18 @@ h2{
 
 .bonus__content-banner-img{
     max-width: 100%;
-    max-height: 320px;
+    
 }
 
 
 
 .bonus_content-text-title{
     font-size: 35px;
-    font-weight: 900;
+    font-weight: 700;
+    font-family: 'RNSSanz-Bold', 'Poppins';
+    width: 70%;
+    color: #000000;
+    margin-bottom: 30px;
 }
 
 .bonus__content-text-contenttext{
@@ -104,18 +104,23 @@ h2{
 }
 
 .bonus__content-text-contentext-text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-
+    margin-bottom: 30px;
+    font-family: 'RNSSanz-SemiBold', 'Poppins';
+    color: black;
+    width: 70%;
 }
 
 .bonus__content-text-contentext-text-svg{
-    width: 40px;
+    width: 20px;
     margin-top: 5px;
+    stroke: #725BA2;
+    stroke-width: 2px;
 }
 
 .bonus__content-text-contentext-text-paragraph{
@@ -165,12 +170,16 @@ h2{
         height: 100vh;
     }
 
+    .bonus__content{
+        width: 1200px;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
     
     .bonus__content{
-        max-width: 1200px;
+        width: 1400px;
     }
 
 }
