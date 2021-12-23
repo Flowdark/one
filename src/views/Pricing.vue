@@ -1634,7 +1634,8 @@ export default {
         return{
             visibleSectionOneChild: false,
         }
-    }, methods: {
+    }, 
+    methods: {
  
         toogleSection(id){
             // const elementClick = document.getElementById(id);
