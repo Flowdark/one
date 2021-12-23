@@ -25,18 +25,68 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 #app {
   font-family: 'RNSSanz', 'Poppins';
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
 
+
+/* @font-face {
+  font-family: 'RNSSanz';
+  src: url("RNSSanz-Black.ttf"),
+       url("RNSSanz-Black.woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'RNSSanz';
+  src: url("RNSSanz-Light.ttf"),
+       url("RNSSanz-Light.woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'RNSSanz';
-  src: url("/src/assets/fonts/RNSSanz-Normal.ttf") format('trutype');
-  src: url("/src/assets/fonts/RNSSanz-Normal.woff") format('woff');
+  src: url("RNSSanz-Normal.ttf"),
+        url("RNSSanz-Normal.woff");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'RNSSanz';
+  src: url("RNSSanz-Medium.ttf"),
+       url("RNSSanz-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RNSSanz';
+  src: url("RNSSanz-SemiBold.ttf"),
+       url("RNSSanz-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RNSSanz';
+  src: url("RNSSanz-Bold.ttf"),
+       url("RNSSanz-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RNSSanz';
+  src: url("RNSSanz-Bold.ttf"),
+       url("RNSSanz-Bold.woff");
+  font-weight: 900;
+  font-style: normal;
+} */
 
 #nav {
   padding: 30px;

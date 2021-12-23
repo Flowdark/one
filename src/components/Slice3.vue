@@ -81,10 +81,12 @@ h1 {
 }
 
 section {
-  min-width: 100vw;
+  min-width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  margin: 0 5vw;
 }
 
 .element{
