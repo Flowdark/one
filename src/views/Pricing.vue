@@ -947,7 +947,7 @@
           </div>
 
           <div id="table-pricing__body-row-marketing-children" class="visible table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-orange">
+                    <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Asignacion de experto en marketing
@@ -1009,7 +1009,7 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-orange">
+                    <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Definicion de indicadores claves
@@ -1090,7 +1090,7 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-orange">
+                    <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Analitica digital
@@ -2333,6 +2333,8 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
       justify-content: flex-start;
       grid-column: 1 / 4;
       margin: 0 0 0 15%;
+      display: flex;
+      align-items: center;
     }
 }
 </style>
