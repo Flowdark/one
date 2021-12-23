@@ -26,31 +26,28 @@
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                        </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+
                     <p class="container__left__subtexts__subtext"> 
                         <span class="container__left__subtexts__subtext__check">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                        </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+
                     <p class="container__left__subtexts__subtext"> 
                         <span class="container__left__subtexts__subtext__check">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                        </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p class="container__left__subtexts__subtext"> 
-                        <span class="container__left__subtexts__subtext__check">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p class="container__left__subtexts__subtext"> 
-                        <span class="container__left__subtexts__subtext__check">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    
                 </div>
                 <div class="container__left__buttons">
                     <a href="#" class="container__left__button">Button</a>
@@ -80,9 +77,15 @@
         padding: 50px 0;
     }
 
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; */
+
     .container{
         display: flex;
         flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .container__left{}
@@ -100,14 +103,15 @@
         display: inline-block;
         font-size: 25px;
         margin-bottom: 15px;
-        padding: 5px 10px;
+        padding: 10px;
     }
 
     .container__left__text{
         color: #141A10;
         text-align: left;
-        font-size: 25px;
+        font-size: 23px;
         margin: 15px 0;
+        font-weight: 500;
     }
 
     .container__left__subtexts{
@@ -119,7 +123,7 @@
         display: flex;
         color: #171C12;
         margin-bottom: 15px;
-        font-size: 18px;
+        font-size: 20px;
         margin-left: 20px;
     }
 
@@ -135,29 +139,30 @@
         stroke: #725BA2;
     }
 
-    .container__left__buttons{
-        display: flex;
-    }
+    
 
     .container__left__button{
         border: 2px solid #725BA2;
-        border-radius: 8px;
+        border-radius: 20px;
         color: #725BA2;
         display: inline-block;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         margin: 20px 0;
-        padding: 5px 15px;
+        padding: 2px 25px;
         text-decoration: none;
     }
 
     @media(min-width: 768px){
         .container{
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            align-items: center;
         }
 
         .container__left{
-            flex-basis: 50%;
+            /* flex-basis: 50%; */
         }
 
         .container__right{
@@ -165,7 +170,7 @@
         }
     }
 
-    @media(min-width: 1200px){
+    @media(min-width: 1400px){
         .container{
             max-width: 1200px;
             margin: 0 auto;
