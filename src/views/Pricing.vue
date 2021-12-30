@@ -391,7 +391,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -461,7 +461,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -532,7 +532,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -602,7 +602,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -673,7 +673,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -744,7 +744,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -816,7 +816,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -886,7 +886,7 @@
 
           <div
             id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
             <div class="table-pricing__body-row-first">
   
@@ -1160,7 +1160,7 @@
           <div 
             @click="toogleSection('table-pricing__body-row-web')" 
             id="table-pricing__body-row-web" 
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
                 
                 <div class="table-pricing__body-row-first">
@@ -1228,7 +1228,7 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-orange">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-blue">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Diseño de pagina web
@@ -1328,7 +1328,7 @@
           </div>
 
           <div id="table-pricing__body-row-app-children" class="visible table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-orange">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-blue">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Creacion de App para la Play store
@@ -1387,7 +1387,7 @@
           <div 
             @click="toogleSection('table-pricing__body-row-comunity')" 
             id="table-pricing__body-row-comunity" 
-            class="table-pricing__body-row table-pricing__body-row-orange"
+            class="table-pricing__body-row table-pricing__body-row-blue"
           >
                 
                 <div class="table-pricing__body-row-first">
@@ -1455,7 +1455,7 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-orange">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-blue">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Espacio único de conocimiento.
@@ -1483,6 +1483,12 @@
                     </div>
 
           </div>
+
+          <p class="table-pricing__body-text-footer">
+              
+              No respondemos mensajes de tus redes sociales. Nuestros especialistas te guiaran
+              para que lo hagas tu mismo de forma sencilla.
+          </p>
 
         </div>
       </section>
@@ -1743,7 +1749,7 @@ export default {
 
 .pricing__prices__price--middle::before {
   content: "";
-  background-color: #ff9a5d;
+  background-color: #70E0EF;
   height: 20px;
   width: 120px;
   border-top-left-radius: 10px;
@@ -1797,7 +1803,7 @@ export default {
 }
 
 .pricing__prices__price--orange {
-  border: 2px solid #ff9a5d;
+  border: 2px solid #70E0EF;
 }
 
 .pricing__prices__price__details,
@@ -1845,7 +1851,7 @@ export default {
 }
 
 .pricing__prices__price__details__month__off::before {
-  background-color: #ff9a5d;
+  background-color: #70E0EF;
   content: "";
   display: block;
   height: 30px;
@@ -1907,11 +1913,11 @@ export default {
 }
 
 .pricing__prices__price__features__feature__bubble--blue {
-  background-color: #22a5b2;
+  /* background-color: #22a5b2; */
 }
 
 .pricing__prices__price__features__feature__bubble--orange {
-  background-color: #ff9a5d;
+  background-color: #70E0EF;
 }
 
 /* 768 */
@@ -2091,7 +2097,7 @@ export default {
 
 /* Preguntas Frecuentes */
 .pricing__faq--container {
-  background-color: #fbe8d9;
+  background-color: #CCF8FF;
   padding: 30px 15px;
 }
 
@@ -2114,7 +2120,6 @@ export default {
   padding: 20px 80px 20px 50px;;
   position: relative;
   font-weight: 500;
-  display: flex;
 }
 
 .pricing__faq__faqs__faq::before{
@@ -2155,7 +2160,7 @@ export default {
 
 
 .pricing__faq__faqs__faq__arrow svg {
-  stroke: #725ba2;
+  stroke: #CCF8FF;
   stroke-width: 4px;
   width: 25px;
   cursor: pointer;
@@ -2241,19 +2246,19 @@ figure{
 }
  
 .table-pricing__button-bewe{
-    border: 1px solid #0097a6;
-    color: #0097a6;
+    border: 1px solid #4DE6FE;
+    color: #4DE6FE;
 }
  
 .table-pricing__button-bewe-one{
-    background-color: #FF9A5D;
+    background-color: #4DE6FE;
     border: 1px solid #ffffff;
     color: #ffffff;
 }
  
 .table-pricing__button-bewe-one-plus{
-    border: 1px solid #FF9A5D;
-    color: #FF9A5D;
+    border: 1px solid #4DE6FE;
+    color: #4DE6FE;
 }
  
 .table-pricing__header-container-bewe-one{
@@ -2308,8 +2313,8 @@ figure{
     border-left: 1px solid #FF9A5D;
 }
  
-.table-pricing__body-row-orange{
-    background-color: #FFF1E8;
+.table-pricing__body-row-blue{
+    background-color: #4DE6FE;
 }
  
 .table-pricing__body-row-first-arounds > svg{
@@ -2375,12 +2380,19 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
 .svg-info:hover + .table-pricing__body-messague {
     opacity:1;
 }
- 
+
+.table-pricing__body-text-footer{
+  font-family:'RNSSanz-Normal';
+  text-align:left;
+}
+
 .visible{
     height: 0 !important;
     opacity: 0;
     pointer-events: none;
 }
+
+
  
 @media screen and (min-width: 768px){
  
