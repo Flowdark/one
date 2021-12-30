@@ -42,7 +42,7 @@ $white: #ffffff ; */
     display: flex;
     align-items: center;
     color: #000000;
-    font-family: 'Poppins';
+    font-family: 'Poppins' !important;
 }
  
 .transition__container{
@@ -55,15 +55,18 @@ $white: #ffffff ; */
     font-size: 50px;
     font-weight: 600;
     line-height: 1.4;
+    font-family: 'VisbyCF-ExtraBold';
 }
  
 .transition__text{
+    font-family: 'RNSSanz-Medium' !important;
     font-size: 30px;
 }
  
 .transition__footer-text{
     font-size: 33px;
     font-weight: 700;
+    font-family: 'RNSSanz-Bold' !important;
 }
  
 .transition__explore{

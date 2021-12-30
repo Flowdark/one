@@ -26,7 +26,7 @@
 
     .container__image__title{
         text-align: center;
-        font-family: 'RNSSanz-Bold', 'Poppins';
+        font-family: 'VisbyCF-Bold' !important;
         font-weight: 700;
         color: black;
         font-size: 30px;

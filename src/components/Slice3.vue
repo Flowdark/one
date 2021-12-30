@@ -130,17 +130,18 @@ section {
     width: 100px;
     position: relative;
     z-index: 100;
+    font-family: 'VisbyCF-Bold' !important;
 }
 .element__left__title{
     font-size: 34px;
-    font-family: 'RNSSanz-Bold';
+    font-family: 'VisbyCF-Bold' !important;
     width: 70%;
     color: black;
 }
 .element__left__text{
     font-size: 20px;
     line-height: 1.8;
-    font-family: 'RNSSanz-SemiBold';
+    font-family: 'RNSSanz-Medium' !important;
     width: 80%;
     color: black;
 }
