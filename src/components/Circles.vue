@@ -239,7 +239,7 @@ h2{
 .bonus_content-text-title{
     font-size: 35px;
     font-weight: 700;
-    font-family: 'RNSSanz-Bold', 'Poppins';
+    font-family: 'RNSSanz-Bold', 'Poppins' !important;
     width: 70%;
     color: #000000;
     margin-bottom: 30px;
@@ -257,7 +257,7 @@ h2{
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin-bottom: 30px;
-    font-family: 'RNSSanz-SemiBold', 'Poppins';
+    font-family: 'RNSSanz-SemiBold', 'Poppins' !important;
     color: black;
     width: 70%;
 }

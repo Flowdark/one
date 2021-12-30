@@ -4,22 +4,30 @@
             <div class="container__left">
                 <div class="container__left__titles">
                     <div class="container__left__titles__container">
-                        <h2 class="container__left__title__title">Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h2 class="container__left__title__title">
+                            Un servicio unico y especializado
+                        </h2>
                     </div>
                     <div class="container__left__titles__container">
-                        <h2 class="container__left__title__title">Lorem ipsum dolor sit amet.</h2>
+                        <h2 class="container__left__title__title">
+                            de marketing enfocado en el exito.
+                        </h2>
                     </div>
                     <div class="container__left__titles__container">
-                        <h2 class="container__left__title__title">Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h2 class="container__left__title__title">
+                            y la expansion de tu negocio + lo
+                        </h2>
                     </div>
                     <div class="container__left__titles__container">
-                        <h2 class="container__left__title__title">Lorem ipsum dolor sit amet consectetur amet.</h2>
-                    </div>
-                    <div class="container__left__titles__container">
-                        <h2 class="container__left__title__title">Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h2 class="container__left__title__title">
+                            Ultimo en tecnologia
+                        </h2>
                     </div>
                 </div>
-                <p class="container__left__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit accusantium eaque maxime assumenda explicabo.</p>
+                <p class="container__left__text"> 
+                     Consigue resultados constantes con un Equipo de especialistas
+                     y una propuesta de crecimiento unica en el mercado.
+                </p>
                 <div class="container__left__subtexts">
                     <p class="container__left__subtexts__subtext"> 
                         <span class="container__left__subtexts__subtext__check">
@@ -104,6 +112,7 @@
         font-weight: 600;
         margin-bottom: 10px;
         padding: 5px 10px;
+        font-family:'VisbyCF-Bold' !important;
     }
 
     .container__left__text{
@@ -112,6 +121,7 @@
         font-size: 18px;
         margin: 20px 0;
         font-weight: 500;
+        font-family: 'RNSSanz-Medium' !important;
     }
 
     .container__left__subtexts{
@@ -125,6 +135,7 @@
         margin-bottom: 15px;
         font-size: 16px;
         margin-left: 20px;
+        font-family: 'RNSSanz-Normal' !important;
     }
 
     .container__left__subtexts__subtext__check{

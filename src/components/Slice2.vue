@@ -58,13 +58,13 @@ img{
     .container__left__title{
         color: #000;
         font-size: 35px;
-        font-family: 'RNSSanz-Bold';
+        font-family: 'VisbyCF-Bold' !important;
     }
 
     .container__left__text{
         color: #000;
         font-size: 20px;
-        font-family: 'RNSSanz-SemiBold';
+        font-family: 'RNSSanz-SemiBold' !important;
         line-height: 1.5;
     }
 

@@ -42,70 +42,70 @@ html {
 
 @font-face {
   font-family: 'VisbyCF-Thin';
-  src: url("VisbyCF-Thin.oft");
+  src: url("VisbyCF-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-ThinOblique';
-  src: url("VisbyCF-ThinOblique.oft");
+  src: url("VisbyCF-ThinOblique.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-Regular';
-  src: url("VisbyCF-Regular.oft");
+  src: url("VisbyCF-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-RegularOblique';
-  src: url("VisbyCF-RegularOblique.oft");
+  src: url("VisbyCF-RegularOblique.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-DemiBoldOblique';
-  src: url("VisbyCF-DemiBoldOblique.oft");
+  src: url("VisbyCF-DemiBoldOblique.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-DemiBoldOblique';
-  src: url("VisbyCF-DemiBoldOblique.oft");
+  src: url("VisbyCF-DemiBoldOblique.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-DemiBold';
-  src: url("VisbyCF-DemiBold.oft");
+  src: url("VisbyCF-DemiBold.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-Bold';
-  src: url("VisbyCF-Bold.oft");
+  src: url("VisbyCF-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-ExtraBold';
-  src: url("VisbyCF-ExtraBold.oft");
+  src: url("VisbyCF-ExtraBold.otf");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VisbyCF-ExtraBoldOblique';
-  src: url("VisbyCF-ExtraBoldOblique.oft");
+  src: url("VisbyCF-ExtraBoldOblique.otf");
   font-weight: 900;
   font-style: normal;
 }

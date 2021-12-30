@@ -94,7 +94,7 @@
                                 class="sixdates__container-card-price" 
                                 
                             >
-                            91%
+                            91 <span class="porcentaje">%</span>
                             </p>
 
                         </article>
@@ -112,7 +112,7 @@
                                 class="sixdates__container-card-price" 
                                 
                             >
-                            12%<span class="sixdates__container-card-price-text"> y </span>21%
+                            12 <span class="porcentaje">%</span> <span class="sixdates__container-card-price-text"> y </span>21<span class="porcentaje">%</span>
                             </p>
                         </article>
 
@@ -129,7 +129,7 @@
                                 class="sixdates__container-card-price" 
                             
                             >
-                            43%
+                            43<span class="porcentaje">%</span>
                             </p>
                         </article>
 
@@ -146,7 +146,7 @@
                                 class="sixdates__container-card-price" 
                             
                             >
-                            16%
+                            16<span class="porcentaje">%</span>
                             </p>
                         </article>
                     </div>
@@ -283,6 +283,7 @@ svg{
     text-align: center;
     margin-bottom: 4rem;
     color: #000000;
+    font-family: 'VisbyCF-Bold' !important;
 }
 
 .sixdates__container{
@@ -323,6 +324,7 @@ svg{
     font-size:14px;
     font-weight: 500;
     color: #000000;
+    font-family: 'RNSSanz-Medium' !important;
 }
 
 .sixdate__container-card-line{
@@ -338,6 +340,11 @@ svg{
     font-weight: 600;
     color: #000000;
     margin: 0;
+    font-family: 'VisbyCF-ExtraBold' !important;
+}
+
+.porcentaje{
+    font-family: 'VisbyCF-DemiBold' !important;
 }
 
 .sixdates__container-card-price-text{

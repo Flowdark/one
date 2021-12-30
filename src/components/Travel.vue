@@ -71,14 +71,14 @@ $purple-color: #725BA2 ;
 .travel__content-text-title{
     font-size: 30px;
     font-weight: 700;
-    font-family: 'RNSSanz-Bold', 'Poppins';
+    font-family: 'VisbyCF-Bold', 'Poppins' !important;
 }
 
 .travel__content-text-link{
     color: $purple-color;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'RNSSanz-Bold', 'Poppins';
+    font-family: 'RNSSanz-Medium', 'Poppins' !important;
     font-weight: 700;
     display: block;
 }

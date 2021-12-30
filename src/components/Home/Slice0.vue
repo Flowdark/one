@@ -78,7 +78,7 @@ export default {
         left: 45%;
         bottom: 0;
         right: 0;
-        font-family: 'Neon', 'Poppins';
+        font-family: 'Neon', 'Poppins' !important;
     }
 
     .container__full__title{
@@ -86,6 +86,7 @@ export default {
         text-align: center;
         color: rgba(233,144,98,1);
         font-weight: 600;
+        font-family: 'VisbyCF-Bold' !important;
     }
 
     h3{

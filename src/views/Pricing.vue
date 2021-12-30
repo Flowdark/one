@@ -4,6 +4,7 @@
     <p class="pricing__description">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil
       fugit suscipit necessitatibus ipsum inventore?
+      <span class="pricing__description-bold"> hola yuju</span>
     </p>
     <div class="pricing__prices">
       <div class="pricing__prices__price pricing__prices__price--blue">
@@ -12,7 +13,10 @@
           <div class="pricing__prices__price__details__price">
             <span class="pricing__prices__price__details__price__currency"
               >$</span
-            >50
+            >
+            <span class="pricing__prices__price__details__price__text">
+            50
+            </span>
             <div class="pricing__prices__price__details__month">
               <span class="pricing__prices__price__details__month__off">
                 300
@@ -67,7 +71,10 @@
           <div class="pricing__prices__price__details__price">
             <span class="pricing__prices__price__details__price__currency"
               >$</span
-            >50
+            >
+              <span class="pricing__prices__price__details__price__text">
+                50
+              </span>
             <div class="pricing__prices__price__details__month">
               <span class="pricing__prices__price__details__month__off">
                 300
@@ -122,7 +129,11 @@
           <div class="pricing__prices__price__details__price">
             <span class="pricing__prices__price__details__price__currency"
               >$</span
-            >50
+            >
+              <span class="pricing__prices__price__details__price__text">
+                50
+              </span>
+
             <div class="pricing__prices__price__details__month">
               <span class="pricing__prices__price__details__month__off">
                 300
@@ -1483,8 +1494,36 @@
         <div class="pricing__faq__faqs">
           <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
-              Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-              quis nulla accusamus natus dolore?
+
+              <div class="text">
+                <p class="pricing__faq__faqs__faq__title-text">
+                  ¿Por que  eleguir bewe one para  mi negocio?
+                </p>
+
+                <p class="pricing__faq__faqs__faq__title-text-body">
+                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
+                   quis nulla accusamus natus dolore?
+                </p>
+
+              </div>
+
+              <span class="pricing__faq__faqs__faq__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="{2}"
+                    d="M9 5l7 7-7 7"
+                  />
+              </svg>
+             </span>
+
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
@@ -1492,27 +1531,39 @@
               ipsum debitis alias. Dolore laudantium eos ipsa assumenda
               consequatur corporis ducimus enim iste omnis.
             </p>
-            <span class="pricing__faq__faqs__faq__arrow">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="{2}"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
           </div>
           <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
-              Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-              quis nulla accusamus natus dolore?
+
+              <div class="text">
+                <p class="pricing__faq__faqs__faq__title-text">
+                  ¿Por que  eleguir bewe one para  mi negocio?
+                </p>
+
+                <p class="pricing__faq__faqs__faq__title-text-body">
+                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
+                   quis nulla accusamus natus dolore?
+                </p>
+
+              </div>
+
+              <span class="pricing__faq__faqs__faq__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="{2}"
+                    d="M9 5l7 7-7 7"
+                  />
+              </svg>
+             </span>
+
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
@@ -1520,27 +1571,40 @@
               ipsum debitis alias. Dolore laudantium eos ipsa assumenda
               consequatur corporis ducimus enim iste omnis.
             </p>
-            <span class="pricing__faq__faqs__faq__arrow">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="{2}"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
           </div>
+
           <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
-              Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-              quis nulla accusamus natus dolore?
+
+              <div class="text">
+                <p class="pricing__faq__faqs__faq__title-text">
+                  ¿Por que  eleguir bewe one para  mi negocio?
+                </p>
+
+                <p class="pricing__faq__faqs__faq__title-text-body">
+                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
+                   quis nulla accusamus natus dolore?
+                </p>
+
+              </div>
+
+              <span class="pricing__faq__faqs__faq__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="{2}"
+                    d="M9 5l7 7-7 7"
+                  />
+              </svg>
+             </span>
+
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
@@ -1548,27 +1612,40 @@
               ipsum debitis alias. Dolore laudantium eos ipsa assumenda
               consequatur corporis ducimus enim iste omnis.
             </p>
-            <span class="pricing__faq__faqs__faq__arrow">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="{2}"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
           </div>
+
           <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
-              Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-              quis nulla accusamus natus dolore?
+
+              <div class="text">
+                <p class="pricing__faq__faqs__faq__title-text">
+                  ¿Por que  eleguir bewe one para  mi negocio?
+                </p>
+
+                <p class="pricing__faq__faqs__faq__title-text-body">
+                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
+                   quis nulla accusamus natus dolore?
+                </p>
+
+              </div>
+
+              <span class="pricing__faq__faqs__faq__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="{2}"
+                    d="M9 5l7 7-7 7"
+                  />
+              </svg>
+             </span>
+
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
@@ -1576,50 +1653,6 @@
               ipsum debitis alias. Dolore laudantium eos ipsa assumenda
               consequatur corporis ducimus enim iste omnis.
             </p>
-            <span class="pricing__faq__faqs__faq__arrow">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="{2}"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
-          </div>
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
-            <div class="pricing__faq__faqs__faq__title">
-              Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-              quis nulla accusamus natus dolore?
-            </div>
-            <p class="pricing__faq__faqs__faq__text d-none">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              temporibus itaque beatae obcaecati amet asperiores exercitationem
-              ipsum debitis alias. Dolore laudantium eos ipsa assumenda
-              consequatur corporis ducimus enim iste omnis.
-            </p>
-            <span class="pricing__faq__faqs__faq__arrow">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="{2}"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
           </div>
         </div>
       </div>
@@ -1634,7 +1667,8 @@ export default {
         return{
             visibleSectionOneChild: false,
         }
-    }, methods: {
+    }, 
+    methods: {
  
         toogleSection(id){
             // const elementClick = document.getElementById(id);
@@ -1669,11 +1703,18 @@ export default {
   font-size: 25px;
   margin: 0;
   padding: 0;
+  font-family: 'VisbyCF-Bold';
+
 }
 
 .pricing__description {
   color: gray;
   font-size: 16px;
+  font-family:'RNSSanz-Normal';
+}
+
+.pricing__description-bold{
+  font-family: 'RNSSanz-Bold' ;
 }
 
 .pricing__prices {
@@ -1710,6 +1751,10 @@ export default {
   top: -20px;
   left: 10px;
   position: absolute;
+}
+
+.pricing__faq__faqs__faq__title-text-body{
+  font-family: 'RNSSanz-Medium';
 }
 
 .pricing__prices__price--middle::after {
@@ -1786,6 +1831,10 @@ export default {
   font-size: 16px;
 }
 
+.pricing__prices__price__details__price__text{
+  font-family: 'VisbyCF-Bold' ;
+}
+
 .pricing__prices__price__details__month {
   display: flex;
   flex-direction: column;
@@ -1810,6 +1859,7 @@ export default {
 .pricing__prices__price__details__year {
   color: gray;
   font-size: 14px;
+  font-family:'RNSSanz-Normal' !important;
 }
 
 .pricing__prices__price__description {
@@ -1819,6 +1869,7 @@ export default {
   margin: 0 auto !important;
   padding: 15px 0;
   width: 85%;
+  font-family: 'RNSSanz-Normal' !important ;
 }
 
 .pricing__prices__price__features {
@@ -1834,6 +1885,7 @@ export default {
   margin-bottom: 15px;
   padding: 0;
   text-align: left;
+  font-family:'RNSSanz-Medium';
 }
 
 .pricing__prices__price__features__feature {
@@ -1842,6 +1894,7 @@ export default {
   margin-bottom: 20px;
   padding: 0;
   text-align: left;
+  font-family:'RNSSanz-Normal';
 }
 
 .pricing__prices__price__features__feature__bubble {
@@ -2047,6 +2100,7 @@ export default {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 30px;
+  font-family: 'VisbyCF-Bold';
 }
 
 .pricing__faq__faqs {
@@ -2057,9 +2111,10 @@ export default {
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 20px;
-  padding: 30px 80px 30px 50px;;
+  padding: 20px 80px 20px 50px;;
   position: relative;
   font-weight: 500;
+  display: flex;
 }
 
 .pricing__faq__faqs__faq::before{
@@ -2076,6 +2131,14 @@ export default {
   font-size: 18px;
   font-weight: 500;
   text-align: left;
+  display: flex;
+  align-items: center;
+
+}
+
+.pricing__faq__faqs__faq__title-text{
+  font-size: 25px;
+  font-family: 'RNSSanz-SemiBold';
 }
 
 .pricing__faq__faqs__faq__text {
@@ -2086,13 +2149,16 @@ export default {
 .pricing__faq__faqs__faq__arrow {
   position: absolute;
   right: 50px;
-  top: 35px;
+  cursor: pointer;
 }
+
+
 
 .pricing__faq__faqs__faq__arrow svg {
   stroke: #725ba2;
   stroke-width: 4px;
   width: 25px;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
@@ -2135,6 +2201,7 @@ figure{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    font-family: 'VisbyCF-Bold';
 }
  
 .table-pricing__header{
@@ -2170,6 +2237,7 @@ figure{
     font-size: 16px;
     font-weight: 400;
     border-radius: 5px;
+    font-family: 'RNSSanz-SemiBold';
 }
  
 .table-pricing__button-bewe{
@@ -2203,6 +2271,7 @@ figure{
     font-size: 28px;
     font-weight: 700;
     text-align: left;
+    font-family: 'VisbyCF-Bold';
 }
  
 .table-pricing__body-row{
@@ -2270,11 +2339,13 @@ figure{
 .table-pricing__body-row-first-text{
     font-weight: 700; 
     margin:16px;   
+    font-family: 'VisbyCF-Bold' !important;
 }
 
 .table-pricing__body-row-show-first-text{
   font-weight: 500;
   margin: 16px;
+  font-family: 'VisbyCF-DemiBold';
 }
 
 
@@ -2298,6 +2369,7 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
   align-items: center;
   font-weight: 500;
   color: #808080;
+  font-family: 'RNSSanz-Light';
 }
 
 .svg-info:hover + .table-pricing__body-messague {

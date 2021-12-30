@@ -93,10 +93,10 @@ h2{
 .bonus_content-text-title{
     font-size: 35px;
     font-weight: 700;
-    font-family: 'RNSSanz-Bold', 'Poppins';
     width: 70%;
     color: #000000;
     margin-bottom: 30px;
+    font-family: 'VisbyCF-Bold' !important;
 }
 
 .bonus__content-text-contenttext{
@@ -111,7 +111,7 @@ h2{
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin-bottom: 30px;
-    font-family: 'RNSSanz-SemiBold', 'Poppins';
+    font-family: 'RNSSanz-Medium' !important;
     color: black;
     width: 70%;
 }
