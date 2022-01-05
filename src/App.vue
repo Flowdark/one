@@ -19,6 +19,9 @@ img{
 html {
   box-sizing: border-box;
 }
+body{
+  margin: 0;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -29,6 +32,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  margin: 0;
 }
 
 

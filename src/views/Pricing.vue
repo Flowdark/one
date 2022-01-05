@@ -1,189 +1,280 @@
 <template>
+<!-- table-pricing__body-row-marketing -->
   <div class="pricing">
-    <h1 class="pricing__title">Precios</h1>
+    <h1 class="pricing__title">Planes Adaptados para el crecimiento de tu negocio</h1>
     <p class="pricing__description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil
-      fugit suscipit necessitatibus ipsum inventore?
-      <span class="pricing__description-bold"> hola yuju</span>
+      Eligue la suscripcion que mejor se adapte a tus necesidades.
+      Adquiere nuestro servicio con 
+      <span class="pricing__description-bold"> un contrato anual y paga en cuotas mesuales</span>
     </p>
     <div class="pricing__prices">
       <div class="pricing__prices__price pricing__prices__price--blue">
         <div class="pricing__prices__price__details">
-          <h2 class="pricing__prices__price__details__title">Starter</h2>
+          <h2 class="pricing__prices__price__details__title">
+            <svg id="Grupo_32" data-name="Grupo 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.395" height="30.634" viewBox="0 0 110.395 30.634">
+              <defs>
+                <clipPath id="clip-path">
+                  <rect id="Rectángulo_8" data-name="Rectángulo 8" width="110.395" height="30.634" fill="none"/>
+                </clipPath>
+              </defs>
+              <g id="Grupo_3" data-name="Grupo 3" clip-path="url(#clip-path)">
+                <path id="Trazado_6" data-name="Trazado 6" d="M0,2.408A2.318,2.318,0,0,1,.708.709,2.318,2.318,0,0,1,2.407,0a2.317,2.317,0,0,1,1.7.708,2.318,2.318,0,0,1,.708,1.7V9.347a11.291,11.291,0,0,1,6.962-2.266,11.35,11.35,0,0,1,8.331,3.446,11.349,11.349,0,0,1,3.446,8.331,11.349,11.349,0,0,1-3.446,8.331,11.348,11.348,0,0,1-8.331,3.446,11.347,11.347,0,0,1-8.331-3.446A11.356,11.356,0,0,1,0,18.976ZM6.821,23.814a6.754,6.754,0,0,0,4.956,2.053,6.733,6.733,0,0,0,4.944-2.042,6.734,6.734,0,0,0,2.042-4.944,6.774,6.774,0,0,0-2.042-4.956,6.714,6.714,0,0,0-4.944-2.053,6.753,6.753,0,0,0-4.956,2.053,6.7,6.7,0,0,0-2.006,4.107v.9a3.916,3.916,0,0,1-.024.425,6.581,6.581,0,0,0,2.03,4.461" transform="translate(0 -0.001)" fill="#0097a6"/>
+                <path id="Trazado_7" data-name="Trazado 7" d="M138.34,39.749a7.093,7.093,0,0,0-7.812,1.451,7.005,7.005,0,0,0,9.889,9.924l.047-.047a2.278,2.278,0,0,1,1.675-.685,2.338,2.338,0,0,1,1.7.7,2.277,2.277,0,0,1,.708,1.688,2.315,2.315,0,0,1-.708,1.7l-.047.047a11.777,11.777,0,0,1-20.085-8.355,11.782,11.782,0,0,1,20.085-8.355l-.024.023a.021.021,0,0,0,.024.024,2.281,2.281,0,0,1,.684,1.676,2.252,2.252,0,0,1-.684,1.652l-6.75,6.7a2.357,2.357,0,0,1-1.7.685,2.34,2.34,0,0,1-2.407-2.407,2.357,2.357,0,0,1,.684-1.7Z" transform="translate(-98.24 -27.312)" fill="#0097a6"/>
+                <path id="Trazado_8" data-name="Trazado 8" d="M449.634,39.749a7.093,7.093,0,0,0-7.812,1.451,7.005,7.005,0,0,0,9.889,9.924l.047-.047a2.278,2.278,0,0,1,1.675-.685,2.338,2.338,0,0,1,1.7.7,2.278,2.278,0,0,1,.708,1.688,2.316,2.316,0,0,1-.708,1.7l-.047.047A11.777,11.777,0,0,1,435,46.169a11.782,11.782,0,0,1,20.085-8.355l-.024.023a.021.021,0,0,0,.024.024,2.281,2.281,0,0,1,.684,1.676,2.252,2.252,0,0,1-.684,1.652l-6.75,6.7a2.358,2.358,0,0,1-1.7.685,2.34,2.34,0,0,1-2.408-2.407,2.357,2.357,0,0,1,.684-1.7Z" transform="translate(-345.446 -27.312)" fill="#002239"/>
+                <path id="Trazado_9" data-name="Trazado 9" d="M251.456,34.162a2.279,2.279,0,0,1,1.676.685,2.2,2.2,0,0,1,.378.5h.023l7.363,14.75,7.364-14.75.023.023a2.539,2.539,0,0,1,.4-.519,2.35,2.35,0,0,1,3.328.012,2.289,2.289,0,0,1,.685,1.664,2.2,2.2,0,0,1-.448,1.369l-9.134,18.338a2.043,2.043,0,0,1-.543.826,2.241,2.241,0,0,1-1.676.708,2.215,2.215,0,0,1-1.652-.708,2.082,2.082,0,0,1-.543-.8l-7.246-14.515-7.222,14.491a2.044,2.044,0,0,1-.543.826,2.242,2.242,0,0,1-1.676.708,2.213,2.213,0,0,1-1.652-.708,2.075,2.075,0,0,1-.543-.8L230.64,37.867a2.24,2.24,0,0,1-.425-1.345,2.37,2.37,0,0,1,4.036-1.676,2.189,2.189,0,0,1,.377.5h.024l7.363,14.75,7.364-14.75.023.023a2.54,2.54,0,0,1,.4-.519,2.25,2.25,0,0,1,1.652-.685" transform="translate(-182.82 -27.129)" fill="#002239"/>
+              </g>
+            </svg>
+          </h2>
           <div class="pricing__prices__price__details__price">
             <span class="pricing__prices__price__details__price__currency"
               >$</span
             >
             <span class="pricing__prices__price__details__price__text">
-            50
+            29
             </span>
             <div class="pricing__prices__price__details__month">
-              <span class="pricing__prices__price__details__month__off">
-                300
-              </span>
               <span class="pricing__prices__price__details__month__price">
-                USD/año
+                USD/mes
               </span>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year">Per year</span>
+          <span class="pricing__prices__price__details__year">Precio insuperable de lanzamiento</span>
         </div>
         <p class="pricing__prices__price__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          aliquid ipsa quae, ratione doloremque aliquam?
+          Funcionalidades esenciales para que digitalices tu negocio y empieces a conseguir 
+          resultados desde ya.
         </p>
         <div class="pricing__prices__price__features">
           <h3 class="pricing__prices__price__features__title">
-            Lorem ipsum dolor sit.
+            Lo que incluye tu plan
           </h3>
 
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Incluye 2 agendas
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Más de 30.000 envíos de correos mensuales
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Fichas de clientes
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Recordatorios automaticos
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+            ></span>
+            Pagos online
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+            ></span>
+            Control de inventario.
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+            ></span>
+            Miora (app para reservas)
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+            ></span>
+            Sistema de reconocimiento facial.
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+            ></span>
+            Informes personalizados
           </p>
         </div>
       </div>
+
+      <!--segundo div-->
       <div
-        class="pricing__prices__price pricing__prices__price--orange pricing__prices__price--middle pricing__prices__price--middle2"
+        class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--middle pricing__prices__price--middle2"
       >
         <div class="pricing__prices__price__details">
-          <h2 class="pricing__prices__price__details__title">Starter</h2>
+          <h2 class="pricing__prices__price__details__title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="78.972" height="26.634" viewBox="0 0 78.972 26.634">
+              <g id="Grupo_2471" data-name="Grupo 2471" transform="translate(-895.5 -56.094)">
+                <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+              </g>
+            </svg>
+          </h2>
           <div class="pricing__prices__price__details__price">
             <span class="pricing__prices__price__details__price__currency"
               >$</span
             >
               <span class="pricing__prices__price__details__price__text">
-                50
+                150
               </span>
             <div class="pricing__prices__price__details__month">
               <span class="pricing__prices__price__details__month__off">
                 300
               </span>
               <span class="pricing__prices__price__details__month__price">
-                USD/año
+                USD/mes
               </span>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year">Per year</span>
+          <span class="pricing__prices__price__details__year"> Precio insuperable de lanzamiento </span>
         </div>
         <p class="pricing__prices__price__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          aliquid ipsa quae, ratione doloremque aliquam?
+          Todas las funcionalidades de nuestro software + Acompañamiento digital en marketing.
         </p>
         <div class="pricing__prices__price__features">
           <h3 class="pricing__prices__price__features__title">
-            Lorem ipsum dolor sit.
+            Lo que incluye tu plan:
           </h3>
 
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Todas las funcionalidades de Essential.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Incluye 2 agendas.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Acompañamiento personalizado de especialista en marketing.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Acceso a contenidos y cursos exclusivos de marketing.
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+            ></span>
+            Creacion de tu propia pagina web e ecommerce.
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+            ></span>
+            Miora (app de reservas).
           </p>
         </div>
       </div>
+      <!-- tercer div -->
       <div
-        class="pricing__prices__price pricing__prices__price--orange pricing__prices__price--third"
+        class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--third"
       >
         <div class="pricing__prices__price__details">
-          <h2 class="pricing__prices__price__details__title">Starter</h2>
+          <h2 class="pricing__prices__price__details__title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="108.168" height="26.634" viewBox="0 0 108.168 26.634">
+              <g id="Grupo_35" data-name="Grupo 35" transform="translate(-65.647 -15.648)">
+                <path id="Trazado_1597" data-name="Trazado 1597" d="M968.021,131.108h-3.377a3.369,3.369,0,0,1-2.5-1.033,3.536,3.536,0,0,1,0-4.962,3.367,3.367,0,0,1,2.5-1.034h3.377V120.7a3.41,3.41,0,0,1,1.016-2.481,3.523,3.523,0,0,1,6.012,2.481v3.377h3.377a3.514,3.514,0,0,1,0,7.029H975.05v3.377a3.514,3.514,0,1,1-7.029,0Z" transform="translate(-808.626 -98.594)" fill="#002239" stroke="#03d3f3" stroke-width="1"/>
+                <g id="Grupo_2472" data-name="Grupo 2472" transform="translate(-829.853 -40.446)">
+                  <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                </g>
+              </g>
+            </svg>
+          </h2>
           <div class="pricing__prices__price__details__price">
             <span class="pricing__prices__price__details__price__currency"
               >$</span
             >
               <span class="pricing__prices__price__details__price__text">
-                50
+                250
               </span>
 
             <div class="pricing__prices__price__details__month">
               <span class="pricing__prices__price__details__month__off">
-                300
+                500
               </span>
               <span class="pricing__prices__price__details__month__price">
-                USD/año
+                USD/mes
               </span>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year">Per year</span>
+          <span class="pricing__prices__price__details__year">Precio insuperable de lanzamiento</span>
         </div>
         <p class="pricing__prices__price__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          aliquid ipsa quae, ratione doloremque aliquam?
+          Todas las funcionalidades de nuestro softwae + acompañamiento digital en marketing y accesso 
+          ilimitado de agendas.
+
+          <strong class="pricing__prices__price__description-strong"> Ideal para grandes empresas y cadenas </strong>
         </p>
         <div class="pricing__prices__price__features">
           <h3 class="pricing__prices__price__features__title">
-            Lorem ipsum dolor sit.
+            Lo que incluye tu plan:
           </h3>
 
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Todas las funcionalidades de Essential.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Agendas ilimitadas.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Acompañamiento personalizado de especialistas en marketing.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Lorem ipsum dolor sit amet.
+            Accesso a contenidos y cursos exclusivos de marketing.
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+            ></span>
+            Tu propia app personalizada para android
+          </p>
+          <p class="pricing__prices__price__features__feature">
+            <span
+              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+            ></span>
+            Tu propia app personalizada para iOS.
           </p>
         </div>
       </div>
     </div>
     <div class="pricing__plans">
       <section class="table-pricing">
-        <h1 class="table-pricing__title">Comparar Planes</h1>
+        <h1 class="table-pricing__title">¿No sabes cual plan elegir?</h1>
 
         <div class="table-pricing__header">
           <div
@@ -251,42 +342,15 @@
           <div
             class="table-pricing__header-container table-pricing__header-container-bewe-one"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="79.231"
-              height="25.704"
-              viewBox="0 0 79.231 25.704"
-            >
-              <g
-                id="Grupo_33"
-                data-name="Grupo 33"
-                transform="translate(-66.147 -16.148)"
-              >
-                <g id="Grupo_34" data-name="Grupo 34">
-                  <path
-                    id="Trazado_12"
-                    data-name="Trazado 12"
-                    d="M438.78,105.846a12.846,12.846,0,1,1-9.074-3.753,12.363,12.363,0,0,1,9.074,3.753m-9.074,1.439a7.591,7.591,0,1,0,5.385,2.223,7.378,7.378,0,0,0-5.385-2.223"
-                    transform="translate(-350.733 -85.894)"
-                    fill="#ff9a5d"
-                  />
-                  <path
-                    id="Trazado_13"
-                    data-name="Trazado 13"
-                    d="M608.111,101.769a13.2,13.2,0,0,1,8.919,3.8,12.369,12.369,0,0,1,3.753,8.945v9.922a3.065,3.065,0,0,1-.771,2.262,2.607,2.607,0,0,1-3.7,0,2.991,2.991,0,0,1-.771-2.211V114.57a4.168,4.168,0,0,1,.026-.463,7.168,7.168,0,0,0-2.211-4.858,7.356,7.356,0,0,0-5.4-2.236h-.1a7.355,7.355,0,0,0-5.4,2.236,7.167,7.167,0,0,0-2.211,4.858,4.259,4.259,0,0,1,.026.463v9.922a2.991,2.991,0,0,1-.771,2.211,2.606,2.606,0,0,1-3.7,0,3.065,3.065,0,0,1-.771-2.262v-9.922a12.368,12.368,0,0,1,3.753-8.945,13.2,13.2,0,0,1,8.919-3.8Z"
-                    transform="translate(-500.613 -85.621)"
-                    fill="#ff9a5d"
-                  />
-                  <path
-                    id="Trazado_14"
-                    data-name="Trazado 14"
-                    d="M789.112,107.928a7.725,7.725,0,0,0-8.508,1.581,7.629,7.629,0,0,0,10.77,10.809l.051-.051a2.483,2.483,0,0,1,1.825-.745,2.546,2.546,0,0,1,1.851.758,2.482,2.482,0,0,1,.771,1.838,2.524,2.524,0,0,1-.771,1.851l-.051.051a12.826,12.826,0,1,1,0-18.2l-.026.026a.023.023,0,0,0,.026.026,2.483,2.483,0,0,1,.745,1.825,2.452,2.452,0,0,1-.745,1.8l-7.352,7.3a2.567,2.567,0,0,1-1.851.745,2.549,2.549,0,0,1-2.622-2.622,2.568,2.568,0,0,1,.746-1.851Z"
-                    transform="translate(-650.494 -85.894)"
-                    fill="#ff9a5d"
-                  />
-                </g>
+            <svg xmlns="http://www.w3.org/2000/svg" width="78.972" height="26.634" viewBox="0 0 78.972 26.634">
+              <g id="Grupo_2471" data-name="Grupo 2471" transform="translate(-895.5 -56.094)">
+                <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
               </g>
             </svg>
+
 
             <a
               class="table-pricing__button table-pricing__button-bewe-one"
@@ -299,45 +363,15 @@
           <div
             class="table-pricing__header-container table-pricing__header-container-bewe-one-plus"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="107.168"
-              height="25.704"
-              viewBox="0 0 107.168 25.704"
-            >
-              <g
-                id="Grupo_35"
-                data-name="Grupo 35"
-                transform="translate(-66.147 -16.148)"
-              >
-                <path
-                  id="Trazado_1594"
-                  data-name="Trazado 1594"
-                  d="M438.78,105.846a12.846,12.846,0,1,1-9.074-3.753,12.363,12.363,0,0,1,9.074,3.753m-9.074,1.439a7.591,7.591,0,1,0,5.385,2.223,7.378,7.378,0,0,0-5.385-2.223"
-                  transform="translate(-350.733 -85.894)"
-                  fill="#ff9a5d"
-                />
-                <path
-                  id="Trazado_1595"
-                  data-name="Trazado 1595"
-                  d="M608.11,101.769a13.2,13.2,0,0,1,8.92,3.8,12.37,12.37,0,0,1,3.753,8.945v9.922a3.065,3.065,0,0,1-.771,2.262,2.607,2.607,0,0,1-3.7,0,2.991,2.991,0,0,1-.771-2.211V114.57a4.139,4.139,0,0,1,.026-.463,7.168,7.168,0,0,0-2.211-4.858,7.356,7.356,0,0,0-5.4-2.236h-.1a7.356,7.356,0,0,0-5.4,2.236,7.167,7.167,0,0,0-2.211,4.858,4.259,4.259,0,0,1,.026.463v9.922a2.991,2.991,0,0,1-.771,2.211,2.607,2.607,0,0,1-3.7,0,3.066,3.066,0,0,1-.771-2.262v-9.922a12.368,12.368,0,0,1,3.753-8.945,13.2,13.2,0,0,1,8.919-3.8Z"
-                  transform="translate(-500.613 -85.621)"
-                  fill="#ff9a5d"
-                />
-                <path
-                  id="Trazado_1596"
-                  data-name="Trazado 1596"
-                  d="M789.112,107.928a7.725,7.725,0,0,0-8.508,1.581,7.629,7.629,0,0,0,10.77,10.809l.051-.051a2.483,2.483,0,0,1,1.825-.745,2.546,2.546,0,0,1,1.851.758,2.482,2.482,0,0,1,.771,1.838,2.524,2.524,0,0,1-.771,1.851l-.051.051a12.826,12.826,0,1,1,0-18.2l-.026.026a.023.023,0,0,0,.026.026,2.483,2.483,0,0,1,.745,1.825,2.452,2.452,0,0,1-.745,1.8l-7.352,7.3a2.567,2.567,0,0,1-1.851.745,2.549,2.549,0,0,1-2.622-2.622,2.568,2.568,0,0,1,.745-1.851Z"
-                  transform="translate(-650.494 -85.894)"
-                  fill="#ff9a5d"
-                />
-                <path
-                  id="Trazado_1597"
-                  data-name="Trazado 1597"
-                  d="M968.021,131.108h-3.377a3.369,3.369,0,0,1-2.5-1.033,3.536,3.536,0,0,1,0-4.962,3.367,3.367,0,0,1,2.5-1.034h3.377V120.7a3.41,3.41,0,0,1,1.016-2.481,3.523,3.523,0,0,1,6.012,2.481v3.377h3.377a3.514,3.514,0,0,1,0,7.029H975.05v3.377a3.514,3.514,0,1,1-7.029,0Z"
-                  transform="translate(-808.626 -98.594)"
-                  fill="#ff9a5d"
-                />
+            <svg xmlns="http://www.w3.org/2000/svg" width="108.168" height="26.634" viewBox="0 0 108.168 26.634">
+              <g id="Grupo_35" data-name="Grupo 35" transform="translate(-65.647 -15.648)">
+                <path id="Trazado_1597" data-name="Trazado 1597" d="M968.021,131.108h-3.377a3.369,3.369,0,0,1-2.5-1.033,3.536,3.536,0,0,1,0-4.962,3.367,3.367,0,0,1,2.5-1.034h3.377V120.7a3.41,3.41,0,0,1,1.016-2.481,3.523,3.523,0,0,1,6.012,2.481v3.377h3.377a3.514,3.514,0,0,1,0,7.029H975.05v3.377a3.514,3.514,0,1,1-7.029,0Z" transform="translate(-808.626 -98.594)" fill="#002239" stroke="#03d3f3" stroke-width="1"/>
+                <g id="Grupo_2472" data-name="Grupo 2472" transform="translate(-829.853 -40.446)">
+                  <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                </g>
               </g>
             </svg>
 
@@ -352,581 +386,25 @@
 
         <div class="table-pricing__body">
           <h2 class="table-pricing__body-title">
-            Recopile y envie datos a cualquier lugar
+            Compáralos y elige el que mejor se adapte a tus necesidades
           </h2>
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Agendamiento Online de citas</p>
 
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                maneja tus reservas en la nube
-              </div>
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
+          <div class="table-pricing__tecnology">
+            <div class="table-pricing__tecnology-cicle"></div>
+            <p class="table-pricing__tecnology-text">Tecnologia</p>
           </div>
 
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Control de inventario</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                manten bajo control tu stack de productos
-              </div>
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Reservas en facebook</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Facilita la experiencia de agendamiento
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Mapa de la clase</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Visualiza facilmente las reseñas y espacios de tus clases
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Fichas de clientes</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                la informacion de tus clientes siempre estara actualizada.
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Correos y notificaciones automatizadas</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Envia promocion e informacion relevante de forma automatica
-              </div>
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Sueldos y comisiones</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                calcula facilmente los sueldos y automatiza el pago de comisioness.
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Suscripciones</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Ofrece una experiencia de pago confiable, inmediata y sin complicaciones
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Tareas Automaticas</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Automatiza tareas repetitivas y programa acciones que se Activan de forma automatica.
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Dashboard</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Simplifica el analisis de datos y visualiza los resultados mas importantes.
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Informes personalizados</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Genera diferentes tipos de informes personalizados en cuestion de minutos
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Bewe pay</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Un sistema de pagos para cobrar a tus clientes a través de las pasarelas integradas
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Bewe pass</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Sistema de reconocimiento facial que te permite registrar 
-                la entrada y salida de clientes
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Bewe Checkout</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Acepta pagos en linea desde whatsapp, Facebook, Email y pagina web
-              </div>
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Datos seguros y en la nube </p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Tus datos estaran siempre seguros.
-              </div>
-
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div
-            id="table-pricing__body-row-one"
-            class="table-pricing__body-row table-pricing__body-row-blue"
-          >
-            <div class="table-pricing__body-row-first">
-  
-              <p class="table-pricing__body-row-first-text">Asistencia por chat</p>
-
-              <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-
-              <div class="table-pricing__body-messague">
-                Un equipo de soporte disponible para ayudarte.
-              </div>
-            </div>
-
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div class="table-pricing__body-row-pricing-price">
-              <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
+          <!-- /// aqui voy a pegarlo -->
 
           <div 
-            @click="toogleSection('table-pricing__body-row-marketing')" 
-            id="table-pricing__body-row-marketing" 
-            class="table-pricing__body-row"
+            @click="toogleSection('table-pricing__body-row-gestiona')" 
+            id="table-pricing__body-row-gestiona" 
+            class="table-pricing__body-row table-pricing__body-row-green"
           >
                 
                 <div class="table-pricing__body-row-first">
                     <div class="table-pricing__body-row-first-arounds">
-                        <svg  v-if="!visibleSectionOneChild" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0V0z" fill="none"/>
                             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
                         </svg>
@@ -938,7 +416,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Acompañamiento Personalizado de marketing</p>
+                    <p class="table-pricing__body-row-first-text">Gestiona mejor</p>
 
                 </div>
 
@@ -957,11 +435,11 @@
                 </div>
           </div>
 
-          <div id="table-pricing__body-row-marketing-children" class="visible table-pricing__body-row-show">
+          <div id="table-pricing__body-row-gestiona-children" class=" table-pricing__body-row-show">
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Asignacion de experto en marketing
+                                Agendamiento online de citas
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -969,7 +447,914 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              especialista que estará orientandote en tu estrategia de mareting.
+                              Gestiona tus reservas en la Nube.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                cobros y caja
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Conoce cómo va la facturacion de tu negocio.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                            <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Tareas Automaticas
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                            <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Control de inventario
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Manten bajo control tu strock de productos
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Sueldos y comisiones
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Calcula fácilmente los sueldos y automatiza el pago de comisiones.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Mapa de la clase
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Visualiza fácilmente las reservas y espacios de tus clases.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Bewe pay
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Un sistema de pagos para cobrar a tus clientes a través 
+                              de las pasarelas integradas.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Bewe pass
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Sistema de reconocimiento facial que te permita registrar
+                              la entrada y salida de clientes.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+                    <div class="table-pricing__body-row-show-children ">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Bewe Checkout
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Acepta pagos en linea desde Whatsapp, Facebook, Email y página web.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+          </div>
+
+          <!-- segundoooo -->
+
+          <div 
+            @click="toogleSection('table-pricing__body-row-analiza')" 
+            id="table-pricing__body-row-analiza" 
+            class="table-pricing__body-row"
+          >
+                
+                <div class="table-pricing__body-row-first">
+                    <div class="table-pricing__body-row-first-arounds">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                        </svg>
+
+                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
+                        </svg>
+            
+                    </div>
+
+                    <p class="table-pricing__body-row-first-text">Analiza los datos</p>
+
+                </div>
+
+                <div class="table-pricing__body-row-pricing-price">
+                  
+                </div>
+                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div class="table-pricing__body-row-pricing-price">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+          </div>
+
+          <div id="table-pricing__body-row-analiza-children" class=" table-pricing__body-row-show">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Dashboard
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Simplifica el análisis de datos y visualiza los resultados mas importantes
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children ">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Informes personalizados
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Genera diferentes tipos de informes personalizados en cuestion de minutos
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+          </div>
+
+
+          <!--tercero -->
+
+          <div 
+            @click="toogleSection('table-pricing__body-row-fidelizacion')" 
+            id="table-pricing__body-row-fidelizacion" 
+            class="table-pricing__body-row table-pricing__body-row-green"
+          >
+                
+                <div class="table-pricing__body-row-first">
+                    <div class="table-pricing__body-row-first-arounds">
+                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                        </svg>
+
+                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
+                        </svg>
+            
+                    </div>
+
+                    <p class="table-pricing__body-row-first-text">Fidelizacion de clientes </p>
+
+                </div>
+
+                <div class="table-pricing__body-row-pricing-price">
+                  
+                </div>
+                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div class="table-pricing__body-row-pricing-price">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+          </div>
+
+          <div id="table-pricing__body-row-fidelizacion-children" class=" table-pricing__body-row-show">
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Fichas de clientes
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              La informacion de tus clientes siempre actualizada.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Suscripciones
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Ofrece una experiencia de pago confiable, inmediata y sin complicaciones
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                SMS
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Automatiza SMS con recordatorios de citas o novedades  importantes.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Notificaciones push
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Configura notificaciones con mensajes relevantes para tus clientes.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Correos y plantillas
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Envia correos más atractivos con plantillas personalizadas.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+          </div>
+
+          <!-- cuarto -->
+          
+          <div 
+            @click="toogleSection('table-pricing__body-row-experiencias')" 
+            id="table-pricing__body-row-experiencias" 
+            class="table-pricing__body-row"
+          >
+                
+                <div class="table-pricing__body-row-first">
+                    <div class="table-pricing__body-row-first-arounds">
+                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                        </svg>
+
+                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
+                        </svg>
+            
+                    </div>
+
+                    <p class="table-pricing__body-row-first-text">Experiencias online </p>
+
+                </div>
+
+                <div class="table-pricing__body-row-pricing-price">
+                  
+                </div>
+                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div class="table-pricing__body-row-pricing-price">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+          </div>
+
+          <div id="table-pricing__body-row-experiencias-children" class=" table-pricing__body-row-show">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Reservas en facebook
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Facilita la experiencia de agendamiento por este canal.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Widget de reservas
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Deja que tus clientes reserven sus citas 
+                              desde la pagina web.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Clases online
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Mantén tu comunidad conectada y monetiza  tus entrenamientos online.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Cursos online
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Graba, almacena y sube el contenido facilmente.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Bewe TV
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Da accesso a tus contenidos educativos a través de la compra online.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+          </div>
+
+
+          <!-- second cicle -->
+
+          <div class="table-pricing__tecnology">
+            <div class="table-pricing__tecnology-cicle table-pricing__one-cicle"></div>
+            <p class="table-pricing__tecnology-text">One</p>
+          </div>
+
+
+          <!-- oneeee first div -->
+
+          <div 
+            @click="toogleSection('table-pricing__body-row-acompañamiento')" 
+            id="table-pricing__body-row-acompañamiento" 
+            class="table-pricing__body-row table-pricing__body-row-aqua"
+          >
+                
+                <div class="table-pricing__body-row-first">
+                    <div class="table-pricing__body-row-first-arounds">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                        </svg>
+
+                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
+                        </svg>
+            
+                    </div>
+
+                    <p class="table-pricing__body-row-first-text">Acompañamiento personalizado de marketing</p>
+
+                </div>
+
+                <div class="table-pricing__body-row-pricing-price">
+                  
+                </div>
+                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div class="table-pricing__body-row-pricing-price">
+                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+          </div>
+
+          <div id="table-pricing__body-row-acompañamiento-children" class=" table-pricing__body-row-show">
+                    <div class="table-pricing__body-row-show-children">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Asignacion de tu propio especialista en marketing.
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Experto que estará orientandote en tu estrategia de marketing.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                consultoria
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Definicion de objectivos, buyer persona y próximos pasos.
                             </div>
 
                         </div>
@@ -992,7 +1377,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Sesion de consultoria
+                                Definicion de indicadores claves.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1000,7 +1385,38 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              especialista que estará orientandote en tu estrategia de mareting.
+                              Te ayudaremos en el seguimiento de tus resultados.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Configuracion de tu negocio en Google My Business.
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Para que generes más interacciones con tus clientes locales.
                             </div>
 
                         </div>
@@ -1023,12 +1439,48 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Definicion de indicadores claves
+                                Creacion y/o optimizacion de tus redes sociales.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Instagram, Facebook y una tercera red opcional, dependiendo
+                              de tu negocio.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Optimizaremos tu Whatsapp Business.
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Crearemos tu identidad y plantillas de respuesta automaticas personalizadas.
+                            </div>
 
                         </div>
 
@@ -1050,12 +1502,47 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                optimizacion de los canales de adquisicion online
+                                Creacion del plan de contenidos y calendariode publicaciones en redes sociales
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Para que tengas una estrategia potente todo el año.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Instalacion de Google Analytics.
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Para que puedas medir todo lo que pasa en tu sitio web.
+                            </div>
 
                         </div>
 
@@ -1077,12 +1564,17 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creacion de un plan de contenidos y calendario de publicaciones
+                                Instalacion de Facebook pixel.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Para que hagas publicidad en Facebook y conozcas más 
+                              a tu publico objectivo.
+                            </div>
 
                         </div>
 
@@ -1101,15 +1593,19 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Analitica digital
+                                Creacion de dashboard personalizado de rendimiento con indicadores clave.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              para que entiendas tus datos muy facil y tomes decisiones
+                            </div>
 
                         </div>
 
@@ -1128,7 +1624,7 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children">
+                    <div class="table-pricing__body-row-show-children ">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
                                 Email marketing
@@ -1138,6 +1634,11 @@
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
 
+                            <div class="table-pricing__body-messague">
+                              Creación de envios automaticos para amntener 
+                              conectados a tus clientes.
+                            </div>
+
                         </div>
 
                         <div class="table-pricing__body-row-pricing-price">
@@ -1155,17 +1656,51 @@
                         </div>
                     </div>
 
-            </div>
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Creación de plantillas personalizadas.
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Para que hagas envios por correo con la identidad de tu marca.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+
+          </div>
+
+          <!-- oneee second div-->
 
           <div 
-            @click="toogleSection('table-pricing__body-row-web')" 
-            id="table-pricing__body-row-web" 
-            class="table-pricing__body-row table-pricing__body-row-blue"
+            @click="toogleSection('table-pricing__body-row-website')" 
+            id="table-pricing__body-row-website" 
+            class="table-pricing__body-row"
           >
                 
                 <div class="table-pricing__body-row-first">
                     <div class="table-pricing__body-row-first-arounds">
-                        <svg  v-if="!visibleSectionOneChild" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0V0z" fill="none"/>
                             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
                         </svg>
@@ -1177,11 +1712,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Creacion de pagina web</p>
-
-                    <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
+                    <p class="table-pricing__body-row-first-text"> Creación de página web </p>
 
                 </div>
 
@@ -1200,43 +1731,20 @@
                 </div>
           </div>
 
-          <div id="table-pricing__body-row-web-children" class="visible table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children">
+          <div id="table-pricing__body-row-website-children" class=" table-pricing__body-row-show">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Maquetacion de pagina web
+                                Maquetación de página web
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
 
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-blue">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                Diseño de pagina web
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
+                            <div class="table-pricing__body-messague">
+                              Creacion de tu web sin que tengas que saber de programacion.
+                            </div>
 
                         </div>
 
@@ -1258,12 +1766,47 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Analitica digital
+                                Diseño y desarrollo de tu propioa pagina web e-commerce.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Ajustada a tu identidad de marca.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Integracion con los widgets de Bewe.
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Tus clientes podran reservar desde tu website.
+                            </div>
 
                         </div>
 
@@ -1284,15 +1827,17 @@
 
           </div>
 
+          <!-- oneee three div -->
+
           <div 
             @click="toogleSection('table-pricing__body-row-app')" 
-            id="table-pricing__body-row-app" 
-            class="table-pricing__body-row"
+            id="table-pricing__body-app" 
+            class="table-pricing__body-row table-pricing__body-row-aqua"
           >
                 
                 <div class="table-pricing__body-row-first">
                     <div class="table-pricing__body-row-first-arounds">
-                        <svg  v-if="!visibleSectionOneChild" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0V0z" fill="none"/>
                             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
                         </svg>
@@ -1306,10 +1851,6 @@
 
                     <p class="table-pricing__body-row-first-text">Desarrollo de app personalizada</p>
 
-                    <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-
                 </div>
 
                 <div class="table-pricing__body-row-pricing-price">
@@ -1327,43 +1868,20 @@
                 </div>
           </div>
 
-          <div id="table-pricing__body-row-app-children" class="visible table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-blue">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                Creacion de App para la Play store
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
+          <div id="table-pricing__body-row-app-children" class=" table-pricing__body-row-show">
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Diseño de App para ios
+                                Creacion de tu propia app personalizada para la Play Store
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Con colores e identidad corporativa.
+                            </div>
 
                         </div>
 
@@ -1382,17 +1900,51 @@
                         </div>
                     </div>
 
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
+                        <div class="table-pricing__body-row-show-children-first">
+                            <p class="table-pricing__body-row-show-first-text">
+                                Creacion de tu propia app personalizada para iOS
+                            </p>
+
+                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Con tus colores e identidad corporativa.
+                            </div>
+
+                        </div>
+
+                        <div class="table-pricing__body-row-pricing-price">
+                          
+                        </div>
+                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="table-pricing__body-row-pricing-price">
+                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                    </div>
+
+
           </div>
 
+          <!-- oneeee four div -->
+
           <div 
-            @click="toogleSection('table-pricing__body-row-comunity')" 
-            id="table-pricing__body-row-comunity" 
-            class="table-pricing__body-row table-pricing__body-row-blue"
+            @click="toogleSection('table-pricing__body-row-sector')" 
+            id="table-pricing__body-row-sector" 
+            class="table-pricing__body-row"
           >
                 
                 <div class="table-pricing__body-row-first">
                     <div class="table-pricing__body-row-first-arounds">
-                        <svg  v-if="!visibleSectionOneChild" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                             <path d="M0 0h24v24H0V0z" fill="none"/>
                             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
                         </svg>
@@ -1404,11 +1956,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Comunidad exclusiva para tu sector</p>
-
-                    <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
+                    <p class="table-pricing__body-row-first-text"> Comunidad exclusiva para tu sector </p>
 
                 </div>
 
@@ -1427,16 +1975,20 @@
                 </div>
           </div>
 
-          <div id="table-pricing__body-row-comunity-children" class="visible table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children">
+          <div id="table-pricing__body-row-sector-children" class=" table-pricing__body-row-show">
+                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Cursos exclusivos de marketing digital
+                                Cursos exclusivos de marketing digital.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Creacion de tu web sin que tengas que saber de programacion.
+                            </div>
 
                         </div>
 
@@ -1455,15 +2007,19 @@
                         </div>
                     </div>
 
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-blue">
+                    <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Espacio único de conocimiento.
+                                Espacio unico de conocimiento
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              Ajustada a tu identidad de marca.
+                            </div>
 
                         </div>
 
@@ -1485,6 +2041,8 @@
           </div>
 
           <p class="table-pricing__body-text-footer">
+
+              
               
               No respondemos mensajes de tus redes sociales. Nuestros especialistas te guiaran
               para que lo hagas tu mismo de forma sencilla.
@@ -1506,11 +2064,6 @@
                   ¿Por que  eleguir bewe one para  mi negocio?
                 </p>
 
-                <p class="pricing__faq__faqs__faq__title-text-body">
-                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-                   quis nulla accusamus natus dolore?
-                </p>
-
               </div>
 
               <span class="pricing__faq__faqs__faq__arrow">
@@ -1532,10 +2085,9 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              temporibus itaque beatae obcaecati amet asperiores exercitationem
-              ipsum debitis alias. Dolore laudantium eos ipsa assumenda
-              consequatur corporis ducimus enim iste omnis.
+              No necesitas saber nade de marketing digital. Tenemos un equipo de especialistas 
+              que estan preparados para guiarte y enseñarte cada uno de los pasos de este viaje 
+              de crecimiento.
             </p>
           </div>
           <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
@@ -1543,12 +2095,7 @@
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Por que  eleguir bewe one para  mi negocio?
-                </p>
-
-                <p class="pricing__faq__faqs__faq__title-text-body">
-                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-                   quis nulla accusamus natus dolore?
+                  ¿Necesito saber algo de marketing digital?
                 </p>
 
               </div>
@@ -1572,10 +2119,8 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              temporibus itaque beatae obcaecati amet asperiores exercitationem
-              ipsum debitis alias. Dolore laudantium eos ipsa assumenda
-              consequatur corporis ducimus enim iste omnis.
+              No necesitas saber nada de marketing digital. Tenemos un equipo de especialistas que estan
+              preparados para guiarte y enseñarte cada uno de los pasos en este viaje de crecimiento.
             </p>
           </div>
 
@@ -1584,13 +2129,10 @@
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Por que  eleguir bewe one para  mi negocio?
+                  ¿Cuanto tiempo dura mi plan con Bewe ONE?.
                 </p>
 
-                <p class="pricing__faq__faqs__faq__title-text-body">
-                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-                   quis nulla accusamus natus dolore?
-                </p>
+      
 
               </div>
 
@@ -1613,10 +2155,9 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              temporibus itaque beatae obcaecati amet asperiores exercitationem
-              ipsum debitis alias. Dolore laudantium eos ipsa assumenda
-              consequatur corporis ducimus enim iste omnis.
+              Tu plan con Bewe ONE tendra una duracion de 12 meses.
+              estaras pensando que es mucho tiempo, pero lo que no sabes
+              es que te garantizamos resultados a corto, mediano y largo plazo. ¡Animate!
             </p>
           </div>
 
@@ -1625,12 +2166,7 @@
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Por que  eleguir bewe one para  mi negocio?
-                </p>
-
-                <p class="pricing__faq__faqs__faq__title-text-body">
-                  Aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, modi
-                   quis nulla accusamus natus dolore?
+                  ¿Tengo asesoramiento personalizado en marketing?
                 </p>
 
               </div>
@@ -1654,10 +2190,79 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              temporibus itaque beatae obcaecati amet asperiores exercitationem
-              ipsum debitis alias. Dolore laudantium eos ipsa assumenda
-              consequatur corporis ducimus enim iste omnis.
+              Asignaremos un especialista en marketing para ti. podras preguntarle lo que necesites
+              y estara disponible para orientarte en cada paso que demos.
+            </p>
+          </div>
+
+          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+            <div class="pricing__faq__faqs__faq__title">
+
+              <div class="text">
+                <p class="pricing__faq__faqs__faq__title-text">
+                  ¿el equipo de Bewe ONE responderá los mensajes que lleguen 
+                  a mis redes sociales?.
+                </p>
+
+              </div>
+
+              <span class="pricing__faq__faqs__faq__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="{2}"
+                    d="M9 5l7 7-7 7"
+                  />
+              </svg>
+             </span>
+
+            </div>
+            <p class="pricing__faq__faqs__faq__text d-none">
+              Te ayudaremos con tu estrategia de contenidos en redes sociales pero no daremos 
+              respuesta a los mensajes que lleguen a tus publicaciones y bandeja de entrada. 
+              Te asesoraremos para que centralices todo en la plataforma Creator Studio y asi te sea
+              más facil responder todos los mensajes que recibes.
+            </p>
+          </div>
+
+          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+            <div class="pricing__faq__faqs__faq__title">
+
+              <div class="text">
+                <p class="pricing__faq__faqs__faq__title-text">
+                  ¿si ya tengo el software de Bewe, ¿puedo adquirir el plan de marketing?
+                </p>
+
+              </div>
+
+              <span class="pricing__faq__faqs__faq__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="{2}"
+                    d="M9 5l7 7-7 7"
+                  />
+              </svg>
+             </span>
+
+            </div>
+            <p class="pricing__faq__faqs__faq__text d-none">
+              Asignaremos un especialista en marketing para ti. Podrás preguntarle lo que necesites
+              y estará disponible para orientarte en cada paso que demos.
             </p>
           </div>
         </div>
@@ -1671,24 +2276,26 @@ export default {
     name: 'TablePricing',
     data(){
         return{
-            visibleSectionOneChild: false,
+            // visibleSectionOneChild: false,
         }
     }, 
     methods: {
  
         toogleSection(id){
+            console.log('click');
             // const elementClick = document.getElementById(id);
             const elementShow = document.getElementById(`${id}-children`);
+            const elementChilds = document.querySelectorAll(`#${id}-children > .table-pricing__body-row-show-children `);
             const elementsArounds = document.querySelectorAll(`#${id} div div svg`);
  
             elementsArounds.forEach( e => e.classList?.toggle('d-none')); 
             elementShow.classList?.toggle('visible');
- 
+            elementChilds.forEach( e => e.classList.toggle('visible') );
         },
 
         openFAQ(e){
             const element = e.target;
-            element.children[1].classList.toggle("d-none");
+            element.children[1].classList.toggle('d-none');
         }
     }
  
@@ -1721,6 +2328,7 @@ export default {
 
 .pricing__description-bold{
   font-family: 'RNSSanz-Bold' ;
+  color: #000000;
 }
 
 .pricing__prices {
@@ -1728,6 +2336,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .pricing__prices__price {
@@ -1739,7 +2349,19 @@ export default {
 }
 
 .pricing__prices__price--blue {
-  border: 2px solid #22a5b2;
+  border: 2px solid #000000;
+}
+
+.pricing__prices__price--blue::before{
+  content: "";
+  background-image: url('./../assets/Hoja2.png');
+  background-size: 100%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  z-index:10;
 }
 
 .pricing__prices__price--middle {
@@ -1759,51 +2381,57 @@ export default {
   position: absolute;
 }
 
+
 .pricing__faq__faqs__faq__title-text-body{
   font-family: 'RNSSanz-Medium';
 }
 
 .pricing__prices__price--middle::after {
   content: "";
-  background-image: url(https://i.imgur.com/jLCT5DV.png);
-  background-size: 60%;
-  top: -42px;
-  right: -50px;
-  width: 150px;
-  height: 60px;
+  background-image: url(/img/pajaros1.6b2ce94e.png);
+  background-size: 100%;
+  top: -80px;
+  right: -40px;
+  width: 200px;
+  height: 120px;
   display: block;
   background-repeat: no-repeat;
   position: absolute;
+  transform: scale(.5);
 }
 
 .pricing__prices__price--third::before {
   content: "";
-  background-image: url(https://i.imgur.com/PRdFb2l.png);
-  background-size: 60%;
-  bottom: 0px;
-  right: -136px;
+  background-image: url('./../assets/pastoyflor.png');
+  background-size: 100%;
+  bottom: -55px;
+  right: -50px;
   width: 200px;
-  height: 105px;
+  height: 200px;
   display: block;
   background-repeat: no-repeat;
   position: absolute;
+  transform: scale(.5);
 }
 
 .pricing__prices__price--third::after {
   content: "";
-  background-image: url(https://i.imgur.com/0yBeHPr.png);
-  background-size: 60%;
-  top: -37px;
-  right: -75px;
-  width: 200px;
-  height: 60px;
+  background-image: url(/img/pajaros2.ffb489f4.png);
+  background-size: 100%;
+  top: -120px;
+  right: -30px;
+  width: 160px;
+  height: 180px;
   display: block;
   background-repeat: no-repeat;
   position: absolute;
+  transform: scale(.5);
 }
 
-.pricing__prices__price--orange {
+.pricing__prices__price--blue-aqua {
+  height: 900px !important;
   border: 2px solid #70E0EF;
+  margin: 50px;
 }
 
 .pricing__prices__price__details,
@@ -1812,9 +2440,13 @@ export default {
   /* padding: 15px; */
 }
 
+.pricing__prices__price__description-strong{
+  color:#000000;
+}
+
 .pricing__prices__price__details__title {
   color: #141a10;
-  margin: 0;
+  margin: 16px 0;
   padding: 0;
   font-weight: 400;
   font-size: 28px;
@@ -1827,7 +2459,7 @@ export default {
   font-weight: 700;
   font-size: 28px;
   justify-content: center;
-  margin: 0;
+  margin: 16px;
   padding: 0;
 }
 
@@ -1864,14 +2496,14 @@ export default {
 
 .pricing__prices__price__details__year {
   color: gray;
-  font-size: 14px;
+  font-size: 16px;
   font-family:'RNSSanz-Normal' !important;
 }
 
 .pricing__prices__price__description {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 auto !important;
   padding: 15px 0;
   width: 85%;
@@ -1885,7 +2517,7 @@ export default {
 }
 
 .pricing__prices__price__features__title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0;
   margin-bottom: 15px;
@@ -1930,9 +2562,32 @@ export default {
     font-size: 35px;
   }
 
+  .pricing__prices__price--blue{
+    height: 900px !important;
+  }
+  
+
+  .pricing__prices__price--blue::before{
+    right: -50px;
+  }
+
+  .pricing__prices__price--middle::after {
+    content: "";
+    background-image: url(/img/pajaros1.6b2ce94e.png);
+    background-size: 100%;
+    top: -105px;
+    right: -80px;
+    width: 250px;
+    height: 180px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: scale(.5);
+}
+
   .pricing__description {
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 
   .pricing__prices {
@@ -1942,6 +2597,13 @@ export default {
     justify-content: center;
 
     flex-basis: calc(100% / 3 - 20px);
+  }
+  .pricing__prices__price--middle{
+    height: 950px !important;
+  }
+
+  .pricing__prices__price--third{
+    height: 900px !important;
   }
 
   .pricing__prices__price {
@@ -1962,6 +2624,22 @@ export default {
 
   .pricing__prices__price__details__price__currency {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    /* pricing__prices__price--third */
+
+  .pricing__prices__price--blue{
+    height: 750px !important;
+  }
+
+  .pricing__prices__price--middle{
+    height: 800px !important;
+  }
+
+  .pricing__prices__price--third{
+    height: 750px !important;
   }
 }
 
@@ -2034,6 +2712,8 @@ export default {
   border: 2px solid #ff9a5d;
   color: #ff9a5d;
 }
+
+
 
 .pricing__plans__table__body {
 }
@@ -2191,11 +2871,11 @@ figure{
   stroke-width: 2px;
 }
  
-.border-x{
+/* .border-x{
     border-left: 1px solid #FF9A5D;
     border-right: 1px solid #FF9A5D;
 }
- 
+  */
 .table-pricing{
     width: 100%;
     
@@ -2210,10 +2890,14 @@ figure{
 }
  
 .table-pricing__header{
+  background-color: #ffffff;
     max-width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    position: sticky;
+    padding: 16px;
+    top: 0;
  
 }
  
@@ -2244,7 +2928,32 @@ figure{
     border-radius: 5px;
     font-family: 'RNSSanz-SemiBold';
 }
+
+.table-pricing__tecnology{
+  display: flex;
+  margin: 0 ;
+  align-items: center;
+  /* 00EB73 */
+}
  
+.table-pricing__tecnology-cicle{
+  background-color:#00EB73;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.table-pricing__one-cicle{
+  background-color: #00E9FF ;
+}
+
+.table-pricing__tecnology-text{
+  font-size: 25px;
+  font-weight: bold;
+  color:#000000;
+  margin-left: 20px;
+}
+
 .table-pricing__button-bewe{
     border: 1px solid #4DE6FE;
     color: #4DE6FE;
@@ -2253,7 +2962,7 @@ figure{
 .table-pricing__button-bewe-one{
     background-color: #4DE6FE;
     border: 1px solid #ffffff;
-    color: #ffffff;
+    color: #000000;
 }
  
 .table-pricing__button-bewe-one-plus{
@@ -2277,6 +2986,7 @@ figure{
     font-weight: 700;
     text-align: left;
     font-family: 'VisbyCF-Bold';
+    max-width: 50%;
 }
  
 .table-pricing__body-row{
@@ -2304,17 +3014,22 @@ figure{
  
 .table-pricing__body-row-show-children-first{
     display: flex;
+    align-items: center;
     grid-column: 1 / -1;
     color: #000000;
 }
  
 .table-pricing__body-row-medium{
-    border-right: 1px solid #FF9A5D;
-    border-left: 1px solid #FF9A5D;
+    /* border-right: 1px solid #FF9A5D;
+    border-left: 1px solid #FF9A5D; */
 }
  
-.table-pricing__body-row-blue{
-    background-color: #4DE6FE;
+.table-pricing__body-row-green{
+    background-color: #B2F9D5;
+}
+
+.table-pricing__body-row-aqua{
+  background-color: #CCF8FF;
 }
  
 .table-pricing__body-row-first-arounds > svg{
@@ -2323,6 +3038,11 @@ figure{
     fill: #7660A5;
     stroke-width: 2px;
 }
+
+.table-pricing__body-row-show{
+  height: 0;
+  opacity: 0;
+}
  
 .table-pricing__body-row-show-children{
     display: grid;
@@ -2330,7 +3050,10 @@ figure{
     grid-column: 1 / 3;
     text-align: center;
     transition: 1s all ease-in-out;
+    cursor: pointer;
     pointer-events: none;
+    height: 0 ;
+    opacity:0;
 }
  
  
@@ -2386,11 +3109,6 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
   text-align:left;
 }
 
-.visible{
-    height: 0 !important;
-    opacity: 0;
-    pointer-events: none;
-}
 
 
  
@@ -2418,9 +3136,14 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
     .table-pricing__body-row-show-children-first{
       justify-content: flex-start;
       grid-column: 1 / 4;
-      margin: 0 0 0 15%;
+      margin: 0 0 0 10%;
       display: flex;
-      align-items: center;
     }
+}
+
+.visible{
+    height: auto !important;
+    opacity: 1 !important;
+    pointer-events: auto;
 }
 </style>
