@@ -1,11 +1,13 @@
 <template>
 <!-- table-pricing__body-row-marketing -->
   <div class="pricing">
-    <h1 class="pricing__title">Planes Adaptados para el crecimiento de tu negocio</h1>
+    <h1 class="pricing__title"> {{ $t('Planes adaptados para el crecimiento de tu negocio') }} </h1>
     <p class="pricing__description">
-      Eligue la suscripcion que mejor se adapte a tus necesidades.
-      Adquiere nuestro servicio con 
-      <span class="pricing__description-bold"> un contrato anual y paga en cuotas mesuales</span>
+      {{
+        $t('Elige la suscripción que mejor se adapte a tus necesidades. Adquiere nuestro servicio con')
+      }}
+      
+      <span class="pricing__description-bold">{{ $t('un contrato anual y paga en cuotas mensuales') }}.</span>
     </p>
     <div class="pricing__prices">
       <div class="pricing__prices__price pricing__prices__price--blue">
@@ -30,78 +32,80 @@
               >$</span
             >
             <span class="pricing__prices__price__details__price__text">
-            29
+            <p class="pricing__prices__price__details__price__text-twenty-nine">{{ $t('29') }} </p>
+            <p class="pricing__prices__price__details__price__text-essential">  {{ $t('Essential') }}. </p>
             </span>
             <div class="pricing__prices__price__details__month">
               <span class="pricing__prices__price__details__month__price">
-                USD/mes
+                {{ $t('USD/mes') }} 
               </span>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year">Precio insuperable de lanzamiento</span>
+          <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }} </span>
         </div>
         <p class="pricing__prices__price__description">
-          Funcionalidades esenciales para que digitalices tu negocio y empieces a conseguir 
-          resultados desde ya.
+          {{
+            $t('Funcionalidades esenciales para que digitalices tu negocio y empieces a conseguir resultados desde ya')
+          }}.
         </p>
         <div class="pricing__prices__price__features">
           <h3 class="pricing__prices__price__features__title">
-            Lo que incluye tu plan
+            {{ $t('Lo que incluye tu plan') }}:
           </h3>
 
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Incluye 2 agendas
+            {{ $t('Incluye 2 agendas') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Más de 30.000 envíos de correos mensuales
+            {{ $t('Más de 30.000 envíos de correos mensuales') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Fichas de clientes
+           {{ 'Fichas de clientes' }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Recordatorios automaticos
+            {{ $t('Recordatorios automáticos') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Pagos online
+            {{ $t('Pagos online') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Control de inventario.
+            {{ $t('Control de inventario') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Miora (app para reservas)
+            {{ $t('Miora (app para reservas)') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Sistema de reconocimiento facial.
+            {{ $t('Sistema de reconocimiento facial') }}
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
             ></span>
-            Informes personalizados
+            {{ $t('Informes personalizados') }}
           </p>
         </div>
       </div>
@@ -133,55 +137,55 @@
                 300
               </span>
               <span class="pricing__prices__price__details__month__price">
-                USD/mes
+                {{ $t('USD/mes') }}
               </span>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year"> Precio insuperable de lanzamiento </span>
+          <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }} </span>
         </div>
         <p class="pricing__prices__price__description">
-          Todas las funcionalidades de nuestro software + Acompañamiento digital en marketing.
+          {{ $t('Todas las funcionalidades de nuestro software + Acompañamiento digital en marketing') }}.
         </p>
         <div class="pricing__prices__price__features">
           <h3 class="pricing__prices__price__features__title">
-            Lo que incluye tu plan:
+            {{ $t('Lo que incluye tu plan') }}:
           </h3>
 
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Todas las funcionalidades de Essential.
+            {{ $t('Todas las funcionalidades de Essential') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Incluye 2 agendas.
+            {{ $t('Incluye 2 agendas') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Acompañamiento personalizado de especialista en marketing.
+            {{ $t('Acompañamiento personalizado de especialista en marketing') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Acceso a contenidos y cursos exclusivos de marketing.
+            {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Creacion de tu propia pagina web e ecommerce.
+            {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Miora (app de reservas).
+            {{ $t('Miora (app para reservas)') }}.
           </p>
         </div>
       </div>
@@ -216,65 +220,63 @@
                 500
               </span>
               <span class="pricing__prices__price__details__month__price">
-                USD/mes
+                {{ $t('USD/mes') }}
               </span>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year">Precio insuperable de lanzamiento</span>
+          <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }}. </span>
         </div>
         <p class="pricing__prices__price__description">
-          Todas las funcionalidades de nuestro softwae + acompañamiento digital en marketing y accesso 
-          ilimitado de agendas.
-
-          <strong class="pricing__prices__price__description-strong"> Ideal para grandes empresas y cadenas </strong>
+          {{ $t(`Todas las funcionalidades de nuestro software + acompañamiento digital en marketing y acceso ilimitado de agendas`) }}
+          <strong class="pricing__prices__price__description-strong"> {{ $t('Ideal para grandes empresas y cadenas') }} </strong>
         </p>
         <div class="pricing__prices__price__features">
           <h3 class="pricing__prices__price__features__title">
-            Lo que incluye tu plan:
+            {{ $t('Lo que incluye tu plan') }}:
           </h3>
 
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Todas las funcionalidades de Essential.
+            {{ $t('Todas las funcionalidades de Essential') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Agendas ilimitadas.
+            {{ $t('Agendas ilimitadas') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Acompañamiento personalizado de especialistas en marketing.
+            {{ $t('Acompañamiento personalizado de especialista en marketing') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Accesso a contenidos y cursos exclusivos de marketing.
+           {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Tu propia app personalizada para android
+            {{ $t('Tu propia App personalizada para Android') }}.
           </p>
           <p class="pricing__prices__price__features__feature">
             <span
               class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
             ></span>
-            Tu propia app personalizada para iOS.
+            {{ $t('Tu propia App personalizada para iOS') }}.
           </p>
         </div>
       </div>
     </div>
     <div class="pricing__plans">
       <section class="table-pricing">
-        <h1 class="table-pricing__title">¿No sabes cual plan elegir?</h1>
+        <h1 class="table-pricing__title"> {{ $t('¿No sabes cuál plan elegir?') }} </h1>
 
         <div class="table-pricing__header">
           <div
@@ -336,7 +338,7 @@
             </svg>
 
             <a class="table-pricing__button table-pricing__button-bewe" href="">
-              Adquiérelo
+              {{ $t('Adquiérelo') }}
             </a>
           </div>
           <div
@@ -356,7 +358,7 @@
               class="table-pricing__button table-pricing__button-bewe-one"
               href=""
             >
-              Adquiérelo
+              {{ $t('Adquiérelo') }}
             </a>
           </div>
 
@@ -379,19 +381,19 @@
               href=""
               class="table-pricing__button table-pricing__button-bewe-one-plus"
             >
-              Adquiérelo
+              {{ $t('Adquiérelo') }}
             </a>
           </div>
         </div>
 
         <div class="table-pricing__body">
           <h2 class="table-pricing__body-title">
-            Compáralos y elige el que mejor se adapte a tus necesidades
+           {{ $t('Compáralos y elige el que mejor se adapte a tus necesidades') }}
           </h2>
 
           <div class="table-pricing__tecnology">
             <div class="table-pricing__tecnology-cicle"></div>
-            <p class="table-pricing__tecnology-text">Tecnologia</p>
+            <p class="table-pricing__tecnology-text">{{ $t('Tecnología') }}</p>
           </div>
 
           <!-- /// aqui voy a pegarlo -->
@@ -416,7 +418,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Gestiona mejor</p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Gestiona mejor') }} </p>
 
                 </div>
 
@@ -439,7 +441,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Agendamiento online de citas
+                                {{ $t('Agendamiento online de citas') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -447,7 +449,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Gestiona tus reservas en la Nube.
+                              {{ $t('Gestiona tus reservas en la Nube') }}.
                             </div>
 
                         </div>
@@ -472,7 +474,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                cobros y caja
+                                {{ $t('Cobros y caja') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -480,7 +482,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Conoce cómo va la facturacion de tu negocio.
+                              {{ $t('Conoce cómo va la facturación de tu negocio') }}.
                             </div>
 
                         </div>
@@ -505,12 +507,17 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Tareas Automaticas
+                               {{ $t('Tareas automáticas') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                             </svg>
+
+                            <div class="table-pricing__body-messague">
+                              {{ $t('Automatiza tareas repetitivas y programa acciones que se activan de forma instantánea') }}.
+                            </div>
+
 
                         </div>
 
@@ -534,7 +541,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Control de inventario
+                               {{ $t('Control de inventario') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -542,7 +549,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Manten bajo control tu strock de productos
+                              {{ $t('Mantén bajo control tu stock de productos') }}.
                             </div>
 
                         </div>
@@ -567,7 +574,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Sueldos y comisiones
+                                {{ $t('Sueldos y comisiones') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -575,7 +582,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Calcula fácilmente los sueldos y automatiza el pago de comisiones.
+                              {{ $t('Calcula fácilmente los sueldos y automatiza el pago de comisiones') }}.
                             </div>
 
                         </div>
@@ -600,7 +607,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Mapa de la clase
+                                {{ $t('Mapa de la clase') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -608,7 +615,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Visualiza fácilmente las reservas y espacios de tus clases.
+                              {{ $t('Visualiza fácilmente las reservas y espacios de tus clases') }}.
                             </div>
 
                         </div>
@@ -633,7 +640,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Bewe pay
+                                {{ $t('Bewe Pay') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -641,8 +648,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Un sistema de pagos para cobrar a tus clientes a través 
-                              de las pasarelas integradas.
+                              {{ $t('Un sistema de pagos para cobrar a tus clientes a través de las pasarelas integradas') }}.
                             </div>
 
                         </div>
@@ -667,7 +673,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Bewe pass
+                                {{ $t('Bewe Pass') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -675,8 +681,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Sistema de reconocimiento facial que te permita registrar
-                              la entrada y salida de clientes.
+                              {{ $t('Sistema de reconocimiento facial que te permite registrar la entrada y salida de clientes') }}
                             </div>
 
                         </div>
@@ -700,7 +705,7 @@
                     <div class="table-pricing__body-row-show-children ">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Bewe Checkout
+                                {{ $t('Bewe Checkout') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -708,7 +713,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Acepta pagos en linea desde Whatsapp, Facebook, Email y página web.
+                              {{ $t('Acepta pagos en línea desde Whatsapp, Facebook, Email y página web') }}.
                             </div>
 
                         </div>
@@ -754,7 +759,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Analiza los datos</p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Analiza los datos') }} </p>
 
                 </div>
 
@@ -777,7 +782,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Dashboard
+                                {{ $t('Dashboard') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -785,7 +790,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Simplifica el análisis de datos y visualiza los resultados mas importantes
+                              {{ $t('Simplifica el análisis de datos y visualiza los resultadosmás importantes') }}.
                             </div>
 
                         </div>
@@ -810,7 +815,7 @@
                     <div class="table-pricing__body-row-show-children ">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Informes personalizados
+                                {{ $t('Informes personalizados ') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -818,7 +823,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Genera diferentes tipos de informes personalizados en cuestion de minutos
+                              {{ $t('Genera diferentes tipos de informes personalizados en cuestión de minutos') }}
                             </div>
 
                         </div>
@@ -864,7 +869,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Fidelizacion de clientes </p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Fidelización de clientes') }} </p>
 
                 </div>
 
@@ -887,7 +892,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Fichas de clientes
+                                {{ $t('Fichas de clientes') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -895,7 +900,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              La informacion de tus clientes siempre actualizada.
+                              {{ $t('La información de tus clientes siempre actualizada') }}.
                             </div>
 
                         </div>
@@ -920,7 +925,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Suscripciones
+                                {{ $t('Suscripciones ') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -928,7 +933,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Ofrece una experiencia de pago confiable, inmediata y sin complicaciones
+                              {{ $t('Ofrece una experiencia de pago confiable, inmediata y sin complicaciones') }}
                             </div>
 
                         </div>
@@ -953,7 +958,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                SMS
+                                {{ $t('SMS') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -961,7 +966,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Automatiza SMS con recordatorios de citas o novedades  importantes.
+                              {{ $t('Automatiza SMS con recordatorios de citas o novedades importantes') }}.
                             </div>
 
                         </div>
@@ -986,7 +991,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Notificaciones push
+                                {{ $t('Notificaciones push') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -994,7 +999,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Configura notificaciones con mensajes relevantes para tus clientes.
+                              {{ $t('Configura notificaciones con mensajes relevantes para tus clientes') }}.
                             </div>
 
                         </div>
@@ -1019,7 +1024,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Correos y plantillas
+                                {{ $t('Correos y plantillas') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1027,7 +1032,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Envia correos más atractivos con plantillas personalizadas.
+                              {{ $t('Envía correos más atractivos con plantillas personalizada') }}.
                             </div>
 
                         </div>
@@ -1073,7 +1078,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Experiencias online </p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Experiencias online') }} </p>
 
                 </div>
 
@@ -1096,7 +1101,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Reservas en facebook
+                                {{ $t('Reservas desde Facebook') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1104,7 +1109,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Facilita la experiencia de agendamiento por este canal.
+                              {{ $t('Facilita la experiencia de agendamiento por este canal') }}.
                             </div>
 
                         </div>
@@ -1129,7 +1134,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Widget de reservas
+                                {{ $t('Widget de reservas') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1137,8 +1142,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Deja que tus clientes reserven sus citas 
-                              desde la pagina web.
+                              {{ $t('Deja que tus clientes reserven sus citas desde la página web') }}.
                             </div>
 
                         </div>
@@ -1163,7 +1167,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Clases online
+                                {{ $t('Clases online') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1171,7 +1175,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Mantén tu comunidad conectada y monetiza  tus entrenamientos online.
+                              {{ $t('(Mantén tu comunidad conectada y monetiza tus entrenamientos online') }}.
                             </div>
 
                         </div>
@@ -1196,7 +1200,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Cursos online
+                                {{ $t('Cursos online') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1204,7 +1208,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Graba, almacena y sube el contenido facilmente.
+                              {{ $t('Graba, almacena y sube el contenido fácilmente') }}.
                             </div>
 
                         </div>
@@ -1229,7 +1233,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Bewe TV
+                                {{ $t('Bewe TV') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1237,7 +1241,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Da accesso a tus contenidos educativos a través de la compra online.
+                              {{ $t('Da acceso a tus contenidos educativos a través de la compra online') }}.
                             </div>
 
                         </div>
@@ -1266,7 +1270,7 @@
 
           <div class="table-pricing__tecnology">
             <div class="table-pricing__tecnology-cicle table-pricing__one-cicle"></div>
-            <p class="table-pricing__tecnology-text">One</p>
+            <p class="table-pricing__tecnology-text"> {{ $t('ONE') }} </p>
           </div>
 
 
@@ -1292,7 +1296,9 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Acompañamiento personalizado de marketing</p>
+                    <p class="table-pricing__body-row-first-text">
+                      {{ $t('Acompañamiento personalizado de marketing') }}
+                    </p>
 
                 </div>
 
@@ -1315,7 +1321,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Asignacion de tu propio especialista en marketing.
+                              {{ $t('Asignación de tu pripio especialista en marketing') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1323,7 +1329,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Experto que estará orientandote en tu estrategia de marketing.
+                              {{ $t('Experto que estará orientándote en tu estrategia de marketing') }}.
                             </div>
 
                         </div>
@@ -1346,7 +1352,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                consultoria
+                                {{ $t('Consultoría') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1354,7 +1360,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Definicion de objectivos, buyer persona y próximos pasos.
+                              {{ $t('definición de objetivos, buyer persona y próximos pasos') }}.
                             </div>
 
                         </div>
@@ -1377,7 +1383,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Definicion de indicadores claves.
+                                {{ $t('Definición de indicadores claves') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1385,7 +1391,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Te ayudaremos en el seguimiento de tus resultados.
+                              {{ $t('Te ayudaremos en el seguimiento de tus resultados') }}.
                             </div>
 
                         </div>
@@ -1408,7 +1414,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Configuracion de tu negocio en Google My Business.
+                              {{ $t('Configución de tu negocio en Google My Business') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1416,7 +1422,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Para que generes más interacciones con tus clientes locales.
+                              {{ $t('Para que generes más interacciones con tus clientes locales') }}.
                             </div>
 
                         </div>
@@ -1439,7 +1445,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creacion y/o optimizacion de tus redes sociales.
+                                {{ $t('Creación y/o optimización de tus redes sociales ') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1447,8 +1453,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Instagram, Facebook y una tercera red opcional, dependiendo
-                              de tu negocio.
+                              {{ $t('Instagram, Facebook y una tercera red opcional, dependiendo de tu negocio') }}.
                             </div>
 
                         </div>
@@ -1471,7 +1476,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Optimizaremos tu Whatsapp Business.
+                                {{ $t('Optimizaremos tu Whatsapp Business') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1479,7 +1484,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Crearemos tu identidad y plantillas de respuesta automaticas personalizadas.
+                              {{ $t('Crearemos tu identidad y plantillas de respuesta automáticas personalizadas') }}.
                             </div>
 
                         </div>
@@ -1502,7 +1507,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creacion del plan de contenidos y calendariode publicaciones en redes sociales
+                                {{ $t('Creación del plan de contenidos y calendario de publicaciones en redes sociales') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1510,7 +1515,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Para que tengas una estrategia potente todo el año.
+                              {{ $t('Para que tengas una estrategia potente todo el año') }}.
                             </div>
 
                         </div>
@@ -1533,7 +1538,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Instalacion de Google Analytics.
+                                {{ $t('Instalación de Google Analytics') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1541,7 +1546,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Para que puedas medir todo lo que pasa en tu sitio web.
+                              {{ $t('Para que puedas medir todo lo que pasa en tu sitio web') }}.
                             </div>
 
                         </div>
@@ -1564,7 +1569,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Instalacion de Facebook pixel.
+                                {{ $t('Instalación de Facebook pixel') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1572,8 +1577,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Para que hagas publicidad en Facebook y conozcas más 
-                              a tu publico objectivo.
+                              {{ $t('Para que hagas publicidad en Facebook y conozcas más a tu público objetivo') }}.
                             </div>
 
                         </div>
@@ -1596,7 +1600,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creacion de dashboard personalizado de rendimiento con indicadores clave.
+                                {{ $t('Creación de dashboard personalizado de rendimiento con indicadores clave') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1604,7 +1608,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              para que entiendas tus datos muy facil y tomes decisiones
+                              {{ $t('Para que entiendas tus datos muy fácil y tomes decisiones') }}.
                             </div>
 
                         </div>
@@ -1627,7 +1631,7 @@
                     <div class="table-pricing__body-row-show-children ">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Email marketing
+                                {{ $t('Email marketing') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1635,8 +1639,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Creación de envios automaticos para amntener 
-                              conectados a tus clientes.
+                             {{ $t('Creación de envíos automáticos para mantener conectados a tus clientes') }}.
                             </div>
 
                         </div>
@@ -1659,7 +1662,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creación de plantillas personalizadas.
+                                {{ $t('Creación de plantillas personalizadas') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1667,7 +1670,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Para que hagas envios por correo con la identidad de tu marca.
+                              {{ $t('Para que hagas envíos por correo con la identidad de tu marca') }}.
                             </div>
 
                         </div>
@@ -1712,7 +1715,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text"> Creación de página web </p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Creación de página web') }} </p>
 
                 </div>
 
@@ -1735,7 +1738,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Maquetación de página web
+                                {{ $t('Maquetación de página web') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1743,7 +1746,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Creacion de tu web sin que tengas que saber de programacion.
+                             {{ $t('Creación de tu web sin que tengas que saber de programación') }}.
                             </div>
 
                         </div>
@@ -1766,7 +1769,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Diseño y desarrollo de tu propioa pagina web e-commerce.
+                                {{ $t('Diseño y desarrollo de tu propia página web o e-commerce') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1774,7 +1777,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Ajustada a tu identidad de marca.
+                              {{ $t('Ajustada a tu identidad de marca') }}.
                             </div>
 
                         </div>
@@ -1797,7 +1800,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Integracion con los widgets de Bewe.
+                                {{ $t('Integración con los widgets de Bewe') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1805,7 +1808,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Tus clientes podran reservar desde tu website.
+                              {{ $t('Tus clientes podrán reservar desde tu website') }}.
                             </div>
 
                         </div>
@@ -1849,7 +1852,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text">Desarrollo de app personalizada</p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Desarrollo de app personalizada') }} </p>
 
                 </div>
 
@@ -1872,7 +1875,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creacion de tu propia app personalizada para la Play Store
+                                {{ $t('Creación de tu propia app personalizada para Play Store') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1880,7 +1883,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Con colores e identidad corporativa.
+                              {{ $t('Con tus colores e identidad corporativa') }}.
                             </div>
 
                         </div>
@@ -1903,7 +1906,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Creacion de tu propia app personalizada para iOS
+                                {{ $t('Creación de tu propia app personalizada para iOS') }}
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1911,7 +1914,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Con tus colores e identidad corporativa.
+                              {{  $t('Con tus colores e identidad corporativa') }}
                             </div>
 
                         </div>
@@ -1956,7 +1959,7 @@
             
                     </div>
 
-                    <p class="table-pricing__body-row-first-text"> Comunidad exclusiva para tu sector </p>
+                    <p class="table-pricing__body-row-first-text"> {{ $t('Comunidad exclusiva para tu sector') }} </p>
 
                 </div>
 
@@ -1979,7 +1982,7 @@
                     <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Cursos exclusivos de marketing digital.
+                                {{ $t('Cursos exclusivos de marketing digital') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -1987,7 +1990,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Creacion de tu web sin que tengas que saber de programacion.
+                              {{ $t('Recursos actualizados para que no pares de aprender') }}.
                             </div>
 
                         </div>
@@ -2010,7 +2013,7 @@
                     <div class="table-pricing__body-row-show-children">
                         <div class="table-pricing__body-row-show-children-first">
                             <p class="table-pricing__body-row-show-first-text">
-                                Espacio unico de conocimiento
+                                {{ $t('Espacio único de conocimiento') }}.
                             </p>
 
                             <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -2018,7 +2021,7 @@
                             </svg>
 
                             <div class="table-pricing__body-messague">
-                              Ajustada a tu identidad de marca.
+                              {{ $t('Interactúa con colegas de tu sector en una plataforma tecnológica') }}.
                             </div>
 
                         </div>
@@ -2041,11 +2044,16 @@
           </div>
 
           <p class="table-pricing__body-text-footer">
+            <span class="table-pricing__body-text-footer-simbol"> * </span> 
 
-              
-              
-              No respondemos mensajes de tus redes sociales. Nuestros especialistas te guiaran
-              para que lo hagas tu mismo de forma sencilla.
+            <span class="table-pricing__body-text-footer-texto">
+               {{
+                 $t(`No respondemos mensajes de tus redes sociales.
+                  Nuestros especialistas te guiarán para que lo 
+                  hagas tú mismo de forma sencilla`
+                  )
+               }}.
+            </span>
           </p>
 
         </div>
@@ -2053,15 +2061,15 @@
     </div>
     <div class="pricing__faq--container">
       <div class="pricing__faq">
-        <h2 class="pricing__faq__title">Preguntas Frecuentes</h2>
+        <h2 class="pricing__faq__title"> {{ $t('Preguntas frecuentes') }} </h2>
 
         <div class="pricing__faq__faqs">
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+          <div @click="($event) => openFAQ( 'pricing__faq__faqs__faq_one' )" id="pricing__faq__faqs__faq_one" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Por que  eleguir bewe one para  mi negocio?
+                  {{ $t('¿Por qué elegir Bewe ONE para mi negocio?') }}
                 </p>
 
               </div>
@@ -2085,17 +2093,20 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              No necesitas saber nade de marketing digital. Tenemos un equipo de especialistas 
-              que estan preparados para guiarte y enseñarte cada uno de los pasos de este viaje 
-              de crecimiento.
+              {{
+                $t(`Porque podrás conseguir resultados desde el primer
+                 mes con una solución única en el mercado que fusiona
+                  lo mejor de la tecnología con la experiencia de especialistas en marketing.`
+                )
+              }}
             </p>
           </div>
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+          <div @click="($event) => openFAQ('pricing__faq__faqs__faq_two')" id="pricing__faq__faqs__faq_two" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Necesito saber algo de marketing digital?
+                  {{ $t('¿Necesito saber algo de marketing digital?') }}
                 </p>
 
               </div>
@@ -2119,17 +2130,21 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              No necesitas saber nada de marketing digital. Tenemos un equipo de especialistas que estan
-              preparados para guiarte y enseñarte cada uno de los pasos en este viaje de crecimiento.
+              {{ 
+                $t(`No necesitas saber nada de marketing digital. Tenemos un equipo de especialistas
+                 que están preparados para guiarte y enseñarte cada uno de los pasos en este viaje 
+                 de crecimiento.`
+                )
+              }}
             </p>
           </div>
 
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+          <div @click="($event) => openFAQ('pricing__faq__faqs__faq_three')"  id="pricing__faq__faqs__faq_three" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Cuanto tiempo dura mi plan con Bewe ONE?.
+                  {{ $t('¿Cuánto tiempo dura mi plan con Bewe ONE?') }}
                 </p>
 
       
@@ -2155,18 +2170,23 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Tu plan con Bewe ONE tendra una duracion de 12 meses.
-              estaras pensando que es mucho tiempo, pero lo que no sabes
-              es que te garantizamos resultados a corto, mediano y largo plazo. ¡Animate!
+              {{
+                $t(`
+                  Tu plan con Bewe ONE tendrá una duración de 12 meses.
+                  Estarás pensando que es mucho tiempo pero lo que no
+                  sabes es que te garantizamos resultados a corto,
+                   mediano y largo plazo. ¡Anímate!
+                `)
+              }}
             </p>
           </div>
 
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+          <div @click="($event) => openFAQ('pricing__faq__faqs__faq_four')" id="pricing__faq__faqs__faq_four"  class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿Tengo asesoramiento personalizado en marketing?
+                  {{ $t('¿Tengo asesoramiento personalizado en marketing?') }}
                 </p>
 
               </div>
@@ -2190,18 +2210,20 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Asignaremos un especialista en marketing para ti. podras preguntarle lo que necesites
-              y estara disponible para orientarte en cada paso que demos.
+              {{
+                $t(`Asignaremos un especialista en marketing para ti.
+                Podrás preguntarle lo que necesites y estará disponible
+                para orientarte en cada paso que demos.`)
+              }}
             </p>
           </div>
 
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+          <div @click="($event) => openFAQ('pricing__faq__faqs__faq_five')" id="pricing__faq__faqs__faq_five" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿el equipo de Bewe ONE responderá los mensajes que lleguen 
-                  a mis redes sociales?.
+                  {{ $t(`¿El equipo de Bewe ONE responderá los mensajes que lleguen a mis redes sociales?`) }}
                 </p>
 
               </div>
@@ -2225,19 +2247,22 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Te ayudaremos con tu estrategia de contenidos en redes sociales pero no daremos 
-              respuesta a los mensajes que lleguen a tus publicaciones y bandeja de entrada. 
-              Te asesoraremos para que centralices todo en la plataforma Creator Studio y asi te sea
-              más facil responder todos los mensajes que recibes.
+              {{
+                $t(`Te ayudaremos con tu estrategia de contenidos en redes sociales pero
+                 **no daremos respuesta a los mensajes que lleguen a tus publicaciones y bandeja de entrada**.
+                 Te asesoraremos para que centralices todo en
+                 la plataforma Creator Studio y así te sea más fácil responder todos los mensajes que recibes.`
+                )
+              }}
             </p>
           </div>
 
-          <div @click="($event) => openFAQ($event)" class="pricing__faq__faqs__faq">
+          <div @click="($event) => openFAQ('pricing__faq__faqs__faq_seven')" id="pricing__faq__faqs__faq_seven" class="pricing__faq__faqs__faq">
             <div class="pricing__faq__faqs__faq__title">
 
               <div class="text">
                 <p class="pricing__faq__faqs__faq__title-text">
-                  ¿si ya tengo el software de Bewe, ¿puedo adquirir el plan de marketing?
+                  {{ $t('Si ya tengo el software de Bewe, ¿puedo adquirir el plan de marketing?') }}
                 </p>
 
               </div>
@@ -2261,8 +2286,12 @@
 
             </div>
             <p class="pricing__faq__faqs__faq__text d-none">
-              Asignaremos un especialista en marketing para ti. Podrás preguntarle lo que necesites
-              y estará disponible para orientarte en cada paso que demos.
+              {{ $t(`Lo puedes hacer sin ningún problema. Queremos que nuestros 
+                    clientes tengan las mejores estrategias de marketing y
+                    crecimiento para sus negocios así que este producto ha sido diseñado
+                    específicamente para ustedes.`
+                  )                            
+              }}
             </p>
           </div>
         </div>
@@ -2272,6 +2301,10 @@
 </template>
 
 <script>
+
+import { t } from 'vue-i18n';
+
+
 export default {
     name: 'TablePricing',
     data(){
@@ -2293,8 +2326,9 @@ export default {
             elementChilds.forEach( e => e.classList.toggle('visible') );
         },
 
-        openFAQ(e){
-            const element = e.target;
+        openFAQ( id ){
+        
+            const element = document.getElementById(id);
             element.children[1].classList.toggle('d-none');
         }
     }
@@ -2321,7 +2355,7 @@ export default {
 }
 
 .pricing__description {
-  color: gray;
+  color: #707070;
   font-size: 16px;
   font-family:'RNSSanz-Normal';
 }
@@ -2349,7 +2383,7 @@ export default {
 }
 
 .pricing__prices__price--blue {
-  border: 2px solid #000000;
+  border: 3px solid #000000;
 }
 
 .pricing__prices__price--blue::before{
@@ -2360,7 +2394,7 @@ export default {
   width: 100px;
   position: absolute;
   top: 40%;
-  right: 0px;
+  right: -0px;
   z-index:10;
 }
 
@@ -2388,7 +2422,7 @@ export default {
 
 .pricing__prices__price--middle::after {
   content: "";
-  background-image: url(/img/pajaros1.6b2ce94e.png);
+  background-image: url('./../assets/pajaros1.png');
   background-size: 100%;
   top: -80px;
   right: -40px;
@@ -2405,7 +2439,7 @@ export default {
   background-image: url('./../assets/pastoyflor.png');
   background-size: 100%;
   bottom: -55px;
-  right: -50px;
+  right: -70px;
   width: 200px;
   height: 200px;
   display: block;
@@ -2416,7 +2450,7 @@ export default {
 
 .pricing__prices__price--third::after {
   content: "";
-  background-image: url(/img/pajaros2.ffb489f4.png);
+  background-image: url('./../assets/pajaros2.png');
   background-size: 100%;
   top: -120px;
   right: -30px;
@@ -2430,7 +2464,7 @@ export default {
 
 .pricing__prices__price--blue-aqua {
   height: 900px !important;
-  border: 2px solid #70E0EF;
+  border: 3px solid #70E0EF;
   margin: 50px;
 }
 
@@ -2441,6 +2475,8 @@ export default {
 }
 
 .pricing__prices__price__description-strong{
+  margin: 10px auto;
+  display: block;
   color:#000000;
 }
 
@@ -2471,6 +2507,18 @@ export default {
 
 .pricing__prices__price__details__price__text{
   font-family: 'VisbyCF-Bold' ;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.pricing__prices__price__details__price__text-twenty-nine{
+  margin: 0;
+}
+
+.pricing__prices__price__details__price__text-essential{
+  font-size: 16px;
+  margin: 0;
 }
 
 .pricing__prices__price__details__month {
@@ -2495,12 +2543,13 @@ export default {
 }
 
 .pricing__prices__price__details__year {
-  color: gray;
+  color: #707070;
   font-size: 16px;
   font-family:'RNSSanz-Normal' !important;
 }
 
 .pricing__prices__price__description {
+  color:#707070;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   font-size: 16px;
@@ -2517,6 +2566,7 @@ export default {
 }
 
 .pricing__prices__price__features__title {
+  color:#707070;
   font-size: 20px;
   font-weight: 500;
   margin: 0;
@@ -2527,6 +2577,7 @@ export default {
 }
 
 .pricing__prices__price__features__feature {
+  color:#707070;
   font-size: 13px;
   margin: 0;
   margin-bottom: 20px;
@@ -2565,6 +2616,10 @@ export default {
   .pricing__prices__price--blue{
     height: 900px !important;
   }
+
+  .pricing__prices{
+    max-width: 100% !important;
+  }
   
 
   .pricing__prices__price--blue::before{
@@ -2573,7 +2628,7 @@ export default {
 
   .pricing__prices__price--middle::after {
     content: "";
-    background-image: url(/img/pajaros1.6b2ce94e.png);
+    background-image: url('./../assets/pajaros1.png');
     background-size: 100%;
     top: -105px;
     right: -80px;
@@ -2586,8 +2641,11 @@ export default {
 }
 
   .pricing__description {
-    font-size: 18px;
-    margin-bottom: 150px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 60%;
+    margin: 20px auto 100px auto;
   }
 
   .pricing__prices {
@@ -2630,6 +2688,14 @@ export default {
 @media screen and (min-width: 992px) {
     /* pricing__prices__price--third */
 
+  .table-pricing__body-row-pricing-price svg{
+    transform: translateX(-10px);
+  }
+
+  .pricing__prices__price--middle::after{
+    transform: scale(.6);
+  }
+
   .pricing__prices__price--blue{
     height: 750px !important;
   }
@@ -2644,10 +2710,10 @@ export default {
 }
 
 /* 1200px */
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   .pricing__prices {
     margin: 0 auto;
-    width: 1000px;
+    width: 95%;
   }
 }
 
@@ -2898,6 +2964,7 @@ figure{
     position: sticky;
     padding: 16px;
     top: 0;
+    z-index: 10;
  
 }
  
@@ -2920,7 +2987,6 @@ figure{
  
 .table-pricing__button{
     background-color: var(--white);
-    max-width: 80%;
     padding: 5px 10px;
     text-decoration: none;
     font-size: 16px;
@@ -2971,8 +3037,6 @@ figure{
 }
  
 .table-pricing__header-container-bewe-one{
-    border-left: 1px solid #FF9A5D ;
-    border-right: 1px solid #FF9A5D;
  
 }
  
@@ -3008,8 +3072,10 @@ figure{
 }
 
 .table-pricing__body-row-pricing-price{
+  align-items: center;
   display: flex;
   justify-content: center;
+  padding: 16px;
 }
  
 .table-pricing__body-row-show-children-first{
@@ -3067,13 +3133,15 @@ figure{
 .table-pricing__body-row-first-text{
     font-weight: 700; 
     margin:16px;   
+    font-size: 20px;
     font-family: 'VisbyCF-Bold' !important;
 }
 
 .table-pricing__body-row-show-first-text{
-  font-weight: 500;
+  font-weight: 900;
   margin: 16px;
-  font-family: 'VisbyCF-DemiBold';
+  font-family: 'VisbyCF-Bold';
+  text-align: left;
 }
 
 
@@ -3107,8 +3175,20 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
 .table-pricing__body-text-footer{
   font-family:'RNSSanz-Normal';
   text-align:left;
+  display: flex;
+  align-items: flex-start;
 }
 
+.table-pricing__body-text-footer-simbol {
+  margin: 10px 16px 0 0;
+  font-size: 40px;
+  color: #4DE6FE;
+}
+
+.table-pricing__body-text-footer-texto{
+  font-size: 25px;
+  line-height: 2;
+}
 
 
  
