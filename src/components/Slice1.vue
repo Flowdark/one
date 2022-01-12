@@ -1,27 +1,28 @@
 <template>
-    <section class="transition">
-        <section class="transition__container">
-            <h2 class="transition__container-title">
-                Fusionamos tecnologia y marketing digital para ayudarte a
-                <span class="transition__container-animation" style="color: red">
-                    <p class="transition-container-title-transition transition-container-title-transition-one"> captar </p>
-                    <p class="transition-container-title-transition transition-container-title-transition-two"> distracted </p>
-                    <p class="transition-container-title-transition transition-container-title-transition-three"> distracted </p>
-                    <p class="transition-container-title-transition transition-container-title-transition-four"> distracted </p>
-                </span>
-                a tus clientes.
-            </h2>
- 
-            <p class="transition__text">
-                Un equipo dedicado al crecimiento digital de tu negocio sin los desaciertos
-                de una agencia.
-            </p>
- 
-            <p class="transition__footer-text">
-                No venimos con cuentos raros, ni trucos de magia
-            </p>
+    <div class="transition--background">
+        <section class="transition">
+            <section class="transition__container">
+                <h2 class="transition__container-title">
+                    Te ayudamos a 
+                    <span class="transition__container-animation" style="color: red">
+                        <p class="transition-container-title-transition transition-container-title-transition-one"> gestionar </p>
+                        <p class="transition-container-title-transition transition-container-title-transition-two"> distracted </p>
+                        <p class="transition-container-title-transition transition-container-title-transition-three"> distracted </p>
+                        <p class="transition-container-title-transition transition-container-title-transition-four"> distracted </p>
+                    </span>
+                    tus clientes con tecnologia y marketing.
+                </h2>
+    
+                <p class="transition__text">
+                    Incrementa tus ganancias y digitaliza tus procesos con un equipo especializado en el crecimiento de tu negocio.
+                </p>
+    
+                <p class="transition__footer-text">
+                    Preparate para activar el turbo de tu estrategia en los próximos 12 meses.
+                </p>
+            </section>
         </section>
-    </section>
+    </div>
 </template>
  
 <script>
@@ -34,6 +35,15 @@ export default {
  
 /* $orange-color: #f8D4BC;
 $white: #ffffff ; */
+
+.transition--background{
+
+    /* background: linear-gradient(180deg, rgba(8,117,157,1) 0%, rgba(14,101,141,1) 30%, rgba(32,60,102,1) 50%, rgba(36,49,92,1) 65%, rgba(32,30,66,1) 90%, rgba(16,22,44,1) 100%);  */
+    background-image: url('https://i.imgur.com/AKX5USm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
  
 .transition{
     min-height: 100vh;
@@ -41,32 +51,46 @@ $white: #ffffff ; */
     /* background-color: #F7D2B3; */
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #000000;
-    font-family: 'Poppins' !important;
+    background-image: url('https://i.imgur.com/pPZr3Jz.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    background-size: 60%;
+
+    padding: 40px 0;
 }
  
 .transition__container{
     max-width: 100%;
     margin: auto;
+    
 }
  
 .transition__container-title{
     text-align: left;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 24px;
     line-height: 1.4;
-    font-family: 'VisbyCF-ExtraBold';
+    font-family: 'VisbyCF-Bold';
+    color: #ffffff;
+    padding: 0px 10px;
+    margin: 0;
 }
  
 .transition__text{
     font-family: 'RNSSanz-Medium' !important;
-    font-size: 30px;
+    font-size: 19px;
+    padding: 10px;
+    color: #ffffff;
 }
  
 .transition__footer-text{
-    font-size: 33px;
-    font-weight: 700;
+    font-size: 20px;
+    /* font-weight: 700; */
     font-family: 'RNSSanz-Bold' !important;
+    padding: 10px;
+    color: #ffffff;
 }
  
 .transition__explore{
@@ -108,23 +132,23 @@ $white: #ffffff ; */
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    color: #F7D2B3;
+    color: #1B1B3A;
 }
  
 .transition-container-title-transition-one{
-    background-color: #1BC67A;
+    background-color: #00EB73;
 }
  
 .transition-container-title-transition-two{
-    background-color: #049ED0;
+    background-color: #00E9FF;
 }
  
 .transition-container-title-transition-three{
-    background-color: #666B49;
+    background-color: #FDBD67;
 }
  
 .transition-container-title-transition-four{
-    background-color: #725BA2;
+    background-color: #FF85CC;
 }
  
 .transition__footer-text-around{
@@ -140,6 +164,30 @@ $white: #ffffff ; */
     .transition__explore{
         max-width: 160px;
     }
+
+    .transition__container-title{
+        text-align: left;
+        font-size: 35px;
+        line-height: 1.4;
+        font-family: 'VisbyCF-Bold';
+        color: #ffffff;
+        padding: 0px 10px;
+    }
+    
+    .transition__text{
+        font-family: 'RNSSanz-Medium' !important;
+        font-size: 25px;
+        padding: 10px;
+        color: #ffffff;
+    }
+    
+    .transition__footer-text{
+        font-size: 25px;
+        /* font-weight: 700; */
+        font-family: 'RNSSanz-Bold' !important;
+        padding: 10px;
+        color: #ffffff;
+    }
 }
  
 @media screen and (min-width: 768px){
@@ -151,7 +199,7 @@ $white: #ffffff ; */
     }
  
     .transition__container-title{
-        font-size: 80px;
+        font-size: 50px;
     }
  
  
@@ -159,8 +207,11 @@ $white: #ffffff ; */
     .transition-container-title-transition{
         animation-name: transitionbig;
         transform: translateY(-25%);
-        font-size: 70px;
         padding: 1rem 0;
+    }
+
+    .transition{
+        background-size: 40%;
     }
  
 }
@@ -171,12 +222,59 @@ $white: #ffffff ; */
         flex-direction: column;
         /* justify-content: space-between; */
     }
+
+    .transition{
+        background-size: 40%;
+    }
 }
 
 @media (min-width: 1200px){
+    .transition__container-title{
+        font-size: 70px;
+    }
+
+    .transition__text{
+        font-size: 32px;
+    }
+    
+    .transition__footer-text{
+        font-size: 32px;
+    }
+
     .transition__container{
         width: 1200px;
     }
+
+    .transition{
+        background-size: 30%;
+    }
+    
+}
+
+@media (min-width: 1400px){
+    .transition__container-title{
+        font-size: 80px;
+        width: 75%;
+    }
+
+    .transition__text{
+        font-size: 32px;
+        width: 60%;
+    }
+    
+    .transition__footer-text{
+        font-size: 32px;
+        width: 60%;
+    }
+
+    .transition__container{
+        width: 1400px;
+    }
+
+    .transition{
+        background-size: 30%;
+    }
+    
 }
  
  

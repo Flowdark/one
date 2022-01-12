@@ -1,15 +1,17 @@
 <template>
     <div>
-        <div class="container--all">
+        
             <Slice1 />
             <Slice2 />
+            <Twoboxes />
+            <Collapse />
             <Slice3 />
-        </div>
-        <div class="container--two">
+        
+        
             <Bonus />
             <Circles />
             <Travel />
-        </div>
+        
         <Slice4 />
     </div>
 </template>
@@ -17,6 +19,8 @@
 <script>
 import Slice1 from '../components/Slice1.vue';
 import Slice2 from '../components/Slice2.vue';
+import Twoboxes from '../components/Twoboxes.vue';
+import Collapse from '../components/Collapse.vue';
 import Slice3 from '../components/Slice3.vue';
 import Bonus from './../components/Bonus.vue';
 import Circles from './../components/Circles.vue';
@@ -28,6 +32,8 @@ export default {
     components: {
         Slice1,
         Slice2,
+        Twoboxes,
+        Collapse,
         Slice3,
         Bonus,
         Travel,
