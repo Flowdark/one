@@ -4,9 +4,13 @@
     <h1 class="pricing__title"> {{ $t('Planes adaptados para el crecimiento de tu negocio') }} </h1>
     <p class="pricing__description">
       {{
-        $t('Elige la suscripción que mejor se adapte a tus necesidades. Adquiere nuestro servicio con')
+        $t('Elige la suscripción que mejor se adapte a tus necesidades.')
       }}
-      
+      <br />
+      {{
+        $t('Adquiere nuestro servicio con')
+      }}
+
       <span class="pricing__description-bold">{{ $t('un contrato anual y paga en cuotas mensuales') }}.</span>
     </p>
     <div class="pricing__prices">
@@ -28,7 +32,7 @@
             </svg>
           </h2>
           <div class="pricing__prices__price__details__price">
-            <span class="pricing__prices__price__details__price__currency"
+            <span class="pricing__prices__price__details__price__currency pricing__prices__price__details__price__currency-one"
               >$</span
             >
             <span class="pricing__prices__price__details__price__text">
@@ -276,7 +280,7 @@
     </div>
     <div class="pricing__plans">
       <section class="table-pricing">
-        <h1 class="table-pricing__title"> {{ $t('¿No sabes cuál plan elegir?') }} </h1>
+        
 
         <div class="table-pricing__header">
           <div
@@ -2310,6 +2314,7 @@ export default {
     data(){
         return{
             // visibleSectionOneChild: false,
+            visibilyInfoModal: false,
         }
     }, 
     methods: {
@@ -2330,6 +2335,9 @@ export default {
         
             const element = document.getElementById(id);
             element.children[1].classList.toggle('d-none');
+            element.firstElementChild.lastElementChild.classList.toggle('pricing__faq__faqs__faq__arrow-rotate');
+
+
         }
     }
  
@@ -2383,24 +2391,12 @@ export default {
 }
 
 .pricing__prices__price--blue {
-  border: 3px solid #000000;
+  border: 2px solid #000000;
 }
 
-.pricing__prices__price--blue::before{
-  content: "";
-  background-image: url('./../assets/Hoja2.png');
-  background-size: 100%;
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: 40%;
-  right: -0px;
-  z-index:10;
-}
 
 .pricing__prices__price--middle {
   position: relative;
-  height: 600px !important;
 }
 
 .pricing__prices__price--middle::before {
@@ -2434,6 +2430,10 @@ export default {
   transform: scale(.5);
 }
 
+.pricing__prices__price--third{
+  padding-bottom: 50px;
+}
+
 .pricing__prices__price--third::before {
   content: "";
   background-image: url('./../assets/pastoyflor.png');
@@ -2463,8 +2463,7 @@ export default {
 }
 
 .pricing__prices__price--blue-aqua {
-  height: 900px !important;
-  border: 3px solid #70E0EF;
+  border: 2px solid #70E0EF;
   margin: 50px;
 }
 
@@ -2504,12 +2503,15 @@ export default {
   font-weight: 700;
   font-size: 16px;
 }
+.pricing__prices__price__details__price__currency-one{
+  margin-bottom: 20px;
+}
 
 .pricing__prices__price__details__price__text{
   font-family: 'VisbyCF-Bold' ;
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
 }
 
 .pricing__prices__price__details__price__text-twenty-nine{
@@ -2609,12 +2611,16 @@ export default {
     padding: 0px;
   }
 
+  .pricing__prices__price--blue-aqua{
+    height: 800px;
+  }
+
   .pricing__title {
     font-size: 35px;
   }
 
   .pricing__prices__price--blue{
-    height: 900px !important;
+    height: 800px !important;
   }
 
   .pricing__prices{
@@ -2657,11 +2663,11 @@ export default {
     flex-basis: calc(100% / 3 - 20px);
   }
   .pricing__prices__price--middle{
-    height: 950px !important;
+    height: 850px !important;
   }
 
   .pricing__prices__price--third{
-    height: 900px !important;
+    height: 800px !important;
   }
 
   .pricing__prices__price {
@@ -2688,9 +2694,7 @@ export default {
 @media screen and (min-width: 992px) {
     /* pricing__prices__price--third */
 
-  .table-pricing__body-row-pricing-price svg{
-    transform: translateX(-10px);
-  }
+  
 
   .pricing__prices__price--middle::after{
     transform: scale(.6);
@@ -2826,6 +2830,12 @@ export default {
 }
 
 @media (min-width: 768px) {
+
+  .pricing__faq{
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .pricing__plans__table__head__parent {
     display: flex;
   }
@@ -2888,7 +2898,7 @@ export default {
 }
 
 .pricing__faq__faqs__faq__title-text{
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'RNSSanz-SemiBold';
 }
 
@@ -2903,19 +2913,24 @@ export default {
   cursor: pointer;
 }
 
+.pricing__faq__faqs__faq__arrow-rotate{
+  transform: rotate(90deg)
+}
+
 
 
 .pricing__faq__faqs__faq__arrow svg {
-  stroke: #CCF8FF;
+  stroke: #01DCFD;
   stroke-width: 4px;
   width: 25px;
   cursor: pointer;
 }
 
+
 @media (min-width: 1200px) {
   .pricing__faq {
     margin: 0 auto;
-    width: 1200px;
+    /* width: 1200px; */
   }
 }
  
@@ -2924,6 +2939,7 @@ figure{
 }
 
 .svg-info{
+  display:none;
   width: 20px;
   cursor: pointer;
   fill: #C5C1C1;
@@ -2957,12 +2973,12 @@ figure{
  
 .table-pricing__header{
   background-color: #ffffff;
-    max-width: 90%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     position: sticky;
-    padding: 16px;
+    padding: 16px 0;
     top: 0;
     z-index: 10;
  
@@ -3041,28 +3057,29 @@ figure{
 }
  
 .table-pricing__body{
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto; 
 }
  
 .table-pricing__body-title{
+    color: #000000;
     font-size: 28px;
     font-weight: 700;
     text-align: left;
     font-family: 'VisbyCF-Bold';
-    max-width: 50%;
+    max-width: 100%;
 }
  
 .table-pricing__body-row{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-weight: 700;
-}
- 
-.table-pricing__body-row{
+    cursor:pointer;
     text-align: center;
     color: #808080;
+    border-radius: 10px;
 }
+
  
 .table-pricing__body-row-first{
     display: flex;
@@ -3080,9 +3097,10 @@ figure{
  
 .table-pricing__body-row-show-children-first{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     grid-column: 1 / -1;
     color: #000000;
+    flex-direction: column;
 }
  
 .table-pricing__body-row-medium{
@@ -3120,6 +3138,7 @@ figure{
     pointer-events: none;
     height: 0 ;
     opacity:0;
+    border-radius:20px;
 }
  
  
@@ -3131,6 +3150,7 @@ figure{
 }
  
 .table-pricing__body-row-first-text{
+    text-align: left;
     font-weight: 700; 
     margin:16px;   
     font-size: 20px;
@@ -3138,38 +3158,31 @@ figure{
 }
 
 .table-pricing__body-row-show-first-text{
+  max-width: 100%;
   font-weight: 900;
-  margin: 16px;
+  margin: 16px 10px 16px 32px;
   font-family: 'VisbyCF-Bold';
   text-align: left;
 }
 
 
 .table-pricing__body-messague{
-  max-width: 180px;
-  min-height: 50px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  text-align: center;
-  /* border: .1px solid #000000; */
-  -webkit-box-shadow: 0px 5px 5px 0px rgb(190, 190, 190);
--moz-box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
-box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
-  font-size: 12px;
-  margin: 16px;
-  opacity: 0;
-  transition: .5 all ease-in-out;
-  padding: 5px 20px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  font-weight: 500;
+  border-radius: 5px;
   color: #808080;
   font-family: 'RNSSanz-Light';
+  font-weight: 500;
+  justify-content: center;
+  margin:0 32px;
+  max-width: 100%;
+  min-height: 50px;
+  padding: 5px 10px;
+  text-align: left;
+  transition: .5 all ease-in-out;
 }
 
 .svg-info:hover + .table-pricing__body-messague {
-    opacity:1;
+  opacity:1;
 }
 
 .table-pricing__body-text-footer{
@@ -3190,9 +3203,58 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
   line-height: 2;
 }
 
+@media screen and (min-width: 576px){
+  .table-pricing__body{
+    max-width: 90%;
+  }
+
+  .table-pricing__header{
+    max-width: 90%;
+  }
+
+
+}
+
 
  
 @media screen and (min-width: 768px){
+
+  .svg-info{
+    display: block;
+  }
+
+  .table-pricing__body-row-show-first-text{
+    max-width: 40%;
+  }
+
+  .table-pricing__body-row-show-children-first{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .table-pricing__body-messague{
+    position: absolute;
+    left: 60%;
+    width: 180px;
+    min-height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    /* border: .1px solid #000000; */
+    -webkit-box-shadow: 0px 5px 5px 0px rgb(190, 190, 190);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
+    box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
+    font-size: 12px;
+    margin: 16px;
+    opacity:0 ;
+    transition: .5 all ease-in-out;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #808080;
+    font-family: 'RNSSanz-Light';
+  }
  
     .table-pricing__header{
         grid-template-columns: repeat(6, 1fr);
@@ -3200,6 +3262,10 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
     .table-pricing__header-container-empty{
         display: flex;
         grid-column: 1 / -4;
+    }
+
+    .table-pricing__body-title{
+      max-width: 50%;
     }
  
     .table-pricing__body-row{
@@ -3214,6 +3280,7 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
         grid-template-columns: repeat(6, 1fr);
     }
     .table-pricing__body-row-show-children-first{
+      position:relative;
       justify-content: flex-start;
       grid-column: 1 / 4;
       margin: 0 0 0 10%;
@@ -3221,9 +3288,18 @@ box-shadow: 0px 5px 5px 0px rgba(190, 190, 190);
     }
 }
 
+@media screen and (min-width: 992px) {
+
+  .table-pricing__body-messague{
+    left: 55%;
+  }
+}
+
 .visible{
     height: auto !important;
     opacity: 1 !important;
     pointer-events: auto;
 }
+
+
 </style>
