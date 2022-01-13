@@ -16,7 +16,7 @@
     }
 
     .container__image{
-        background-image: url('https://i.imgur.com/CednLEr.png');
+        background-image: url('https://i.imgur.com/Xkl3Hgb.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: -300px;

@@ -3,28 +3,11 @@
     <section class="bonus" id="images">
         <div class="bonus__content">
 
-            <div class="bonus__content-banner">
-                <figure class="figure figure1" id="figure1">
-                    <img class="bonus__content-banner-img" src="https://i.imgur.com/w37qqMl.png" alt="Discord Bewe Tv">
-                </figure>
-                <figure class="figure figure2" id="figure2">
-                    <img class="bonus__content-banner-img" src="https://i.imgur.com/VxCEu2E.png" alt="Discord Bewe Tv">
-                </figure>
-                <figure class="figure figure3" id="figure3">
-                    <img class="bonus__content-banner-img" src="https://i.imgur.com/8zUf8gH.png" alt="Discord Bewe Tv">
-                </figure>
-                <figure class="figure figure4" id="figure4">
-                    <img class="bonus__content-banner-img" src="https://i.imgur.com/FlDgpyn.png" alt="Discord Bewe Tv">
-                </figure>
-                <figure class="figure figure5" id="figure5">
-                    <img class="bonus__content-banner-img" src="https://i.imgur.com/fxWv4wp.png" alt="Discord Bewe Tv">
-                </figure>
-                <figure class="figure figure6" id="figure6">
-                    <img class="bonus__content-banner-img" src="https://i.imgur.com/c2iJRMu.png" alt="Discord Bewe Tv">
-                </figure>
-            </div>
-
             <div class="bonus__content-text">
+
+                <div class="bonus__content-image">
+                    <img src="https://i.imgur.com/mCg28GJ.png" alt="Buho">
+                </div>
 
                 <h2 class="bonus_content-text-title" > 
                     ¡Tendrás acceso a un espacio exclusivo para que no pare de aprender!
@@ -34,19 +17,6 @@
 
 
                     <div class="bonus__content-text-contentext-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 bonus__content-text-contentext-text-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <p class="bonus__content-text-contentext-text-paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur ratione delectus adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
-                        </p>
-                    </div>
-                   
-
-                   <div class="bonus__content-text-contentext-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 bonus__content-text-contentext-text-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
                         <p class="bonus__content-text-contentext-text-paragraph">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur ratione delectus adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
                         </p>
@@ -56,6 +26,27 @@
 
             </div>
 
+            <div class="bonus__content-banner">
+                <figure class="figure figure1" id="figure1">
+                    <img class="bonus__content-banner-img" src="https://i.imgur.com/qmTJdh2.png" alt="Discord Bewe Tv">
+                </figure>
+                <figure class="figure figure2" id="figure2">
+                    <img class="bonus__content-banner-img" src="https://i.imgur.com/eECTdJ6.png" alt="Discord Bewe Tv">
+                </figure>
+                <figure class="figure figure3" id="figure3">
+                    <img class="bonus__content-banner-img" src="https://i.imgur.com/6xSe95O.png" alt="Discord Bewe Tv">
+                </figure>
+                <figure class="figure figure4" id="figure4">
+                    <img class="bonus__content-banner-img" src="https://i.imgur.com/9GYxePo.png" alt="Discord Bewe Tv">
+                </figure>
+                <figure class="figure figure5" id="figure5">
+                    <img class="bonus__content-banner-img" src="https://i.imgur.com/NvuUYdL.png" alt="Discord Bewe Tv">
+                </figure>
+                <figure class="figure figure6" id="figure6">
+                    <img class="bonus__content-banner-img" src="https://i.imgur.com/ok0ahHR.png" alt="Discord Bewe Tv">
+                </figure>
+            </div>
+
         </div>
     </section>    
 </template>
@@ -63,58 +54,58 @@
 <script>
 export default {
     mounted(){
-        const imagesContainer = document.getElementById("images");
-        const imagesAnimation = new IntersectionObserver( (entries) => {
-            if(entries[0].isIntersecting){
-                imagesContainer.classList.add("fade-in");
-            }
+        // const imagesContainer = document.getElementById("images");
+        // const imagesAnimation = new IntersectionObserver( (entries) => {
+        //     if(entries[0].isIntersecting){
+        //         imagesContainer.classList.add("fade-in");
+        //     }
 
-            imagesContainer.addEventListener("wheel", (evt) => {
-                evt.preventDefault();
+        //     imagesContainer.addEventListener("wheel", (evt) => {
+        //         evt.preventDefault();
                 
-                if(evt.x > 500){
-                    document.getElementById("figure1").style.display = "block";
-                }else{
-                    document.getElementById("figure1").style.display = "none";
-                }
+        //         if(evt.x > 500){
+        //             document.getElementById("figure1").style.display = "block";
+        //         }else{
+        //             document.getElementById("figure1").style.display = "none";
+        //         }
 
-                if(evt.x > 550){
-                    document.getElementById("figure2").style.display = "block";
-                }else{
-                    document.getElementById("figure2").style.display = "none";
-                }
+        //         if(evt.x > 550){
+        //             document.getElementById("figure2").style.display = "block";
+        //         }else{
+        //             document.getElementById("figure2").style.display = "none";
+        //         }
 
-                if(evt.x > 600){
-                    document.getElementById("figure3").style.display = "block";
-                }else{
-                    document.getElementById("figure3").style.display = "none";
-                }
+        //         if(evt.x > 600){
+        //             document.getElementById("figure3").style.display = "block";
+        //         }else{
+        //             document.getElementById("figure3").style.display = "none";
+        //         }
 
-                if(evt.x > 650){
-                    document.getElementById("figure4").style.display = "block";
-                }else{
-                    document.getElementById("figure4").style.display = "none";
-                }
+        //         if(evt.x > 650){
+        //             document.getElementById("figure4").style.display = "block";
+        //         }else{
+        //             document.getElementById("figure4").style.display = "none";
+        //         }
 
-                if(evt.x > 700){
-                    document.getElementById("figure5").style.display = "block";
-                }else{
-                    document.getElementById("figure5").style.display = "none";
-                }
+        //         if(evt.x > 700){
+        //             document.getElementById("figure5").style.display = "block";
+        //         }else{
+        //             document.getElementById("figure5").style.display = "none";
+        //         }
 
-                if(evt.x > 750){
-                    document.getElementById("figure6").style.display = "block";
-                }else{
-                    document.getElementById("figure6").style.display = "block";
-                }
+        //         if(evt.x > 750){
+        //             document.getElementById("figure6").style.display = "block";
+        //         }else{
+        //             document.getElementById("figure6").style.display = "block";
+        //         }
 
-                console.log(evt);
+        //         console.log(evt);
 
-            });
+        //     });
             
-        } );
+        // } );
 
-        imagesAnimation.observe(imagesContainer);
+        // imagesAnimation.observe(imagesContainer);
     }
 }
 </script>
@@ -207,11 +198,16 @@ h2{
 }
 
 .bonus{
-    max-width: 100vw;
     width:100%;
-    height: 200vh;
+    
     display: flex;
     align-items: center;
+    padding: 150px 0;
+
+    /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
+    background-image: url('https://i.imgur.com/9c2Kw2L.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bonus__content{
@@ -219,7 +215,7 @@ h2{
     margin: 0 auto;
     height: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 
@@ -234,6 +230,10 @@ h2{
     
 }
 
+.bonus__content-image{
+    width: 50%;
+}
+
 
 
 .bonus_content-text-title{
@@ -241,13 +241,11 @@ h2{
     font-weight: 700;
     font-family: 'RNSSanz-Bold', 'Poppins' !important;
     width: 70%;
-    color: #000000;
+    color: #FFFFFF;
     margin-bottom: 30px;
 }
 
-.bonus__content-text-contenttext{
-    margin: 16px 0 0 32px;
-}
+
 
 .bonus__content-text-contentext-text{
     font-size: 20px;
@@ -258,7 +256,7 @@ h2{
     gap: 10px;
     margin-bottom: 30px;
     font-family: 'RNSSanz-SemiBold', 'Poppins' !important;
-    color: black;
+    color: #FFFFFF;
     width: 70%;
 }
 
@@ -282,9 +280,7 @@ h2{
 
 @media screen and (min-width: 768px){
 
-    .bonus{
-        height: 180vh;
-    }    
+     
 
     .bonus__content{
         display: grid;
@@ -298,10 +294,6 @@ h2{
         margin: 0px;
     }
 
-    .bonus__content-text-contenttext{
-        margin-left: 32px;
-    }
-
 
     .bonus__content-banner-img{
         max-height: auto;
@@ -313,11 +305,12 @@ h2{
 @media screen and (min-width: 1200px) {
     
     .bonus{
-        height: 100vh;
+        
     }
 
     .bonus__content{
         width: 1200px;
+        flex-direction: row-reverse;
     }
 
 }

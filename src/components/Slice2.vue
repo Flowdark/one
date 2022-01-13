@@ -38,16 +38,16 @@ img{
 }
 
 .container--background{
-    background-image: url('https://i.imgur.com/3KHT2Up.jpg');
     /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
+    /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top left; */
 }
 
 .container--full{
     width: 100%;
-    background: linear-gradient(180deg, rgba(16,22,44,1) 0%, rgba(36,32,71,1) 30%, rgba(31,62,105,1) 50%, rgba(22,82,124,1) 70%, rgba(4,125,165,1) 100%);
+    /* background: linear-gradient(180deg, rgba(16,22,44,1) 0%, rgba(36,32,71,1) 30%, rgba(31,62,105,1) 50%, rgba(22,82,124,1) 70%, rgba(4,125,165,1) 100%); */
 }
 
 .container{

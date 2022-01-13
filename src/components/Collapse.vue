@@ -184,7 +184,10 @@ $mainLigth: #eee;
 $mainDarkLigth: #f2f2f2;
 
 .container--background{
-    background: linear-gradient(180deg, rgba(21,24,49,1) 0%, rgba(35,32,70,1) 30%, rgba(26,72,114,1) 50%, rgba(5,122,162,1) 70%, rgba(4,126,166,1) 100%);
+    /* background: linear-gradient(180deg, rgba(21,24,49,1) 0%, rgba(35,32,70,1) 30%, rgba(26,72,114,1) 50%, rgba(5,122,162,1) 70%, rgba(4,126,166,1) 100%); */
+    background-image: url('https://i.imgur.com/dYyq629.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -234,9 +237,10 @@ $mainDarkLigth: #f2f2f2;
  
             .items{
  
-                width: 95%;
+                width: 100%;
                 min-height: 1rem;
                 border-radius: .5rem;
+                padding-right: 10px;
  
                 cursor: pointer;
                 transition: background-color .3s ease;
@@ -331,6 +335,11 @@ $mainDarkLigth: #f2f2f2;
                     &__text{
                         text-align: left;
                     }
+                }
+
+                &__items{
+                    width: 95%;
+                    padding-right: 0px;
                 }
             }
  

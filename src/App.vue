@@ -21,9 +21,9 @@ html {
 }
 body{
   margin: 0;
-  /* background-image: url('https://i.imgur.com/kCwydbm.png');
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background-image: url('https://i.imgur.com/XwCWXjk.jpg');
+  background-repeat: repeat;
+  background-size: contain;
 }
 *, *:before, *:after {
   box-sizing: inherit;

@@ -13,7 +13,7 @@
             <div class="bonus__content-text">
 
                 <h2 class="bonus_content-text-title" > 
-                    ¡Tendrás acceso a un espacio exclusivo para que no pare de aprender!
+                    ¡Bonus Prime!
                 </h2>
 
                 <div class="bonus__content-text-contenttext">
@@ -24,7 +24,7 @@
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <p class="bonus__content-text-contentext-text-paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur ratione delectus adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur <span style="color: #00E9FF">ratione delectus adipisci dicta ab</span> accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
                         </p>
                     </div>
                    
@@ -34,7 +34,7 @@
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <p class="bonus__content-text-contentext-text-paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo pariatur ratione delectus adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat beatae temporibus animi maiores?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="color: #00E9FF">Impedit quo pariatur ratione delectus</span> adipisci dicta ab accusantium ipsum illo! Expedita perferendis assumenda nostrum voluptas at placeat <span style="color: #00E9FF">beatae temporibus animi maiores?</span>
                         </p>
                     </div>
 
@@ -66,6 +66,12 @@ h2{
     height: 200vh;
     display: flex;
     align-items: center;
+
+    /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
+    /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left; */
 }
 
 .bonus__content{
@@ -94,7 +100,7 @@ h2{
     font-size: 35px;
     font-weight: 700;
     width: 70%;
-    color: #000000;
+    color: #FFFFFF;
     margin-bottom: 30px;
     font-family: 'VisbyCF-Bold' !important;
 }
@@ -112,14 +118,14 @@ h2{
     gap: 10px;
     margin-bottom: 30px;
     font-family: 'RNSSanz-Medium' !important;
-    color: black;
+    color: #FFFFFF;
     width: 70%;
 }
 
 .bonus__content-text-contentext-text-svg{
-    width: 20px;
+    width: 22px;
     margin-top: 5px;
-    stroke: #725BA2;
+    stroke: #02D26C;
     stroke-width: 2px;
 }
 

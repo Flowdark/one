@@ -98,12 +98,12 @@
 <style scoped>
 
     .container--background{
-        background: linear-gradient(180deg, rgba(4,125,165,1) 0%, rgba(20,89,130,1) 30%, rgba(25,88,116,1) 50%, rgba(39,33,75,1) 70%, rgba(21,24,49,1) 100%);
+        /* background: linear-gradient(180deg, rgba(4,125,165,1) 0%, rgba(20,89,130,1) 30%, rgba(25,88,116,1) 50%, rgba(39,33,75,1) 70%, rgba(21,24,49,1) 100%); */
         min-height: 100vh;
     }
 
     .container--background--image{
-        background-image: url('https://i.imgur.com/pU9zzd1.png');
+        background-image: url('https://i.imgur.com/0ZMRJ5F.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -133,7 +133,7 @@
         border-radius: 8px;
         flex-basis: 100%;
         margin-bottom: 50px;
-        padding: 20px 50px;
+        padding: 10px;
     }
 
     .container__boxes__box--green{
@@ -148,6 +148,7 @@
         font-size: 20px;
         text-align: center;
         color: #ffffff;
+        font-family: 'VisbyCF-Bold' !important;
     }
 
     .container__boxes__box__title--green{
@@ -161,6 +162,8 @@
     .container__boxes__box__text{
         color: #ffffff;
         display: flex;
+        font-family: 'RNSSanz-Medium', sans-serif;
+        font-size: 16px;
     }
 
     .container__boxes__box__text__check{
@@ -188,7 +191,7 @@
 
     .container__boxes__box__buttons__button{
         border-radius: 20px;
-        font-size: 20px;
+        font-size: 16px;
         text-decoration: none;
         padding: 2px 20px;
         color: #10162C;
@@ -225,6 +228,22 @@
     @media(min-width: 768px){
         .container__title{
             text-align: center;
+        }
+
+        .container__boxes__box__title{
+            font-size: 30px;
+        }
+
+        .container__boxes__box__text{
+            font-size: 18px;
+        }
+
+        .container__boxes__box{
+            padding: 20px 50px;
+        }
+
+        .container__boxes__box__buttons__button{
+            font-size: 20px;
         }
     }
 

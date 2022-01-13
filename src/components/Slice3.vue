@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- <section>
                 <div class="element">
                     <div class="element__left">
                         <div class="element__left__circle">
@@ -85,7 +85,7 @@
                         <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
     </div>
 </template>
@@ -107,18 +107,20 @@ export default {
 <style scoped>
 
 .element--background{
-    background: linear-gradient(180deg, rgba(4,126,166,1) 0%, rgba(13,105,145,1) 30%, rgba(26,74,116,1) 50%, rgba(39,40,85,1) 70%, rgba(17,22,44,1) 100%);
+    /* background: linear-gradient(180deg, rgba(4,126,166,1) 0%, rgba(13,105,145,1) 30%, rgba(26,74,116,1) 50%, rgba(39,40,85,1) 70%, rgba(17,22,44,1) 100%); */
     padding: 60px 0;
     min-height: 100vh;
 }
 
 main {
-  overflow-x: hidden;
-  display: flex;
-  padding: 100px 0;
-  background-image: url('https://i.imgur.com/MrjSiLe.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    padding: 100px 0;
+    background-image: url(https://i.imgur.com/1ql4kCq.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: top center; */
+    background-position-y: top;
 }
 
 h1 {
@@ -127,12 +129,13 @@ h1 {
 }
 
 section {
-  min-width: 70vw;
+  /* min-width: 70vw; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin: 0 15vw;
+  /* margin: 0 15vw; */
+  padding: 10px;
 }
 
 .element{
@@ -153,18 +156,19 @@ section {
     z-index: 100;
     font-family: 'VisbyCF-Bold' !important;
 } */
+.element__left__circle{
+    width: 80px;
+}
 .element__left__title{
-    font-size: 34px;
+    font-size: 24px;
     font-family: 'VisbyCF-Bold' !important;
-    width: 70%;
     color: #fff;
     line-height: 1.4;
 }
 .element__left__text{
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.4;
     font-family: 'RNSSanz-Medium' !important;
-    width: 80%;
     color: #fff;
 }
 

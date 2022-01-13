@@ -5,9 +5,9 @@
         <div class="travel__content">
 
             <div class="travel__media">
-                <figure class="travel__media-figure">
-                    <img class="travel__media-img" src="./../assets/Princing_landingone.png" alt="">
-                </figure>
+                <div class="travel__media-figure">
+                    <img class="travel__media-img" src="https://i.imgur.com/IUTo05i.png" alt="">
+                </div>
             </div>
 
             <div class="travel__content-text">
@@ -20,7 +20,7 @@
                     y empieza a escalar tu negocio hoy mismo
                 </p>
 
-                <a class="travel__content-text-link" href="" >
+                <a class="container__boxes__box__buttons__button container__boxes__box__buttons__button--blue" href="" >
                     Escoge tu plan
                 </a>
 
@@ -45,11 +45,16 @@ $primary-color: #FFD5B8;
 $purple-color: #725BA2 ;
 
 .travel{
-    min-height: 100vh;
-    height: 100%;
-    max-width: 100vw;
+    
+    width: 100%;
     display: flex;
     align-items: center;
+
+    /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
+    /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    padding: 180px 0;
 }
 
 .travel__content{
@@ -87,6 +92,40 @@ $purple-color: #725BA2 ;
     font-size: 20px;
 }
 
+.travel__media-figure img{
+    display: block;
+}
+
+.container__boxes__box__buttons__button{
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 2px 20px;
+    color: #10162C;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.container__boxes__box__buttons__button--green{
+    background-color: #00EB73;
+    border: 2px solid #00EB73;
+}
+
+.container__boxes__box__buttons__button--green:hover{
+    background-color: transparent;
+    color: #00EB73;
+}
+
+.container__boxes__box__buttons__button--blue{
+    background-color: #00E9FF;
+    border: 2px solid #00E9FF;
+}
+
+.container__boxes__box__buttons__button--blue:hover{
+    background-color: transparent;
+    color: #00E9FF;
+}
+
 @media screen and (min-width: 768px) {
     
     .travel__content{
@@ -105,13 +144,13 @@ $purple-color: #725BA2 ;
 
     .travel__content-text-contenttext{
         font-size: 20px;
-        color: black;
+        color: #FFF;
         width: 80%;
+        margin-bottom: 35px;
     }
 
     .travel__content-text-link{
         font-size: 20px;
-        margin-top: 35px;
     }
 
 }
@@ -123,9 +162,9 @@ $purple-color: #725BA2 ;
     }
 
     .travel__content-text-title{
-        font-size: 35px;
-        color: black;
-        width: 80%;
+        font-size: 38px;
+        color: #FFF;
+        width: 70%;
     }
 
 }
