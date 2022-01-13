@@ -202,7 +202,7 @@ h2{
     
     display: flex;
     align-items: center;
-    padding: 150px 0;
+    padding:  100px 10px;
 
     /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
     background-image: url('https://i.imgur.com/9c2Kw2L.png');
@@ -213,7 +213,6 @@ h2{
 .bonus__content{
     max-width: 100%;
     margin: 0 auto;
-    height: 500px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -237,10 +236,9 @@ h2{
 
 
 .bonus_content-text-title{
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 700;
     font-family: 'RNSSanz-Bold', 'Poppins' !important;
-    width: 70%;
     color: #FFFFFF;
     margin-bottom: 30px;
 }
@@ -248,16 +246,15 @@ h2{
 
 
 .bonus__content-text-contentext-text{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 100%;
     gap: 10px;
     margin-bottom: 30px;
     font-family: 'RNSSanz-SemiBold', 'Poppins' !important;
     color: #FFFFFF;
-    width: 70%;
 }
 
 .bonus__content-text-contentext-text-svg{
@@ -297,6 +294,14 @@ h2{
 
     .bonus__content-banner-img{
         max-height: auto;
+    }
+
+    .bonus_content-text-title{
+        font-size: 34px;
+    }
+
+    .bonus__content-text-contentext-text{
+        font-size: 22px;
     }
 
 }

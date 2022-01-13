@@ -2339,7 +2339,7 @@ export default {
 
 
         }
-    }
+    },
  
 }
 </script>
