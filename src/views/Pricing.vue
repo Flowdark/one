@@ -2345,11 +2345,14 @@ export default {
 </script>
 
 <style scoped>
+
+
 /* Mobile 320px */
 .pricing {
   width: 100%;
   padding: 0px 10px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .pricing__title {
