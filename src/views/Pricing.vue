@@ -2345,6 +2345,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 /* Mobile 320px */
 .pricing {
   width: 100%;
