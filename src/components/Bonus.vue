@@ -4,9 +4,7 @@
         <div class="bonus__content">
 
             <div class="bonus__content-banner">
-                <figure>
                     <img class="bonus__content-banner-img" src="./../assets/Discord_BeweTV.png" alt="Discord Bewe Tv">
-                </figure>
 
             </div>
 
@@ -63,10 +61,9 @@ h2{
 .bonus{
     max-width: 100vw;
     width:100%;
-    height: 200vh;
     display: flex;
     align-items: center;
-
+    padding: 10px;
     /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
     /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
     background-size: cover;
@@ -77,9 +74,8 @@ h2{
 .bonus__content{
     max-width: 100%;
     margin: 0 auto;
-    height: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 
@@ -97,9 +93,8 @@ h2{
 
 
 .bonus_content-text-title{
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 700;
-    width: 70%;
     color: #FFFFFF;
     margin-bottom: 30px;
     font-family: 'VisbyCF-Bold' !important;
@@ -114,7 +109,7 @@ h2{
     font-weight: 400;
     line-height: 1.5;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto 100%;
     gap: 10px;
     margin-bottom: 30px;
     font-family: 'RNSSanz-Medium' !important;
@@ -131,6 +126,7 @@ h2{
 
 .bonus__content-text-contentext-text-paragraph{
     margin: 0;
+    font-size: 16px;
 }
 
 
@@ -158,13 +154,17 @@ h2{
         margin: 0px;
     }
 
-    .bonus__content-text-contenttext{
-        margin-left: 32px;
-    }
-
 
     .bonus__content-banner-img{
         max-height: auto;
+    }
+
+    .bonus_content-text-title{
+        font-size: 35px;
+    }
+
+    .bonus__content-text-contentext-text-paragraph{
+        font-size: 20px;
     }
 
 }

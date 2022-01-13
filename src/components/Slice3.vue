@@ -93,14 +93,14 @@
 <script>
 export default {
     name: 'Slice3',
-    mounted(){
-        const scrollContainer = document.querySelector("main");
+    // mounted(){
+    //     const scrollContainer = document.querySelector("main");
 
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
-        });
-    }
+    //     scrollContainer.addEventListener("wheel", (evt) => {
+    //         evt.preventDefault();
+    //         scrollContainer.scrollLeft += evt.deltaY;
+    //     });
+    // }
 }
 </script>
 
@@ -184,6 +184,35 @@ section {
     .element__right{
         flex-basis: 50%;
     }
+
+    section {
+        min-width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin: 0 15vw;
+        padding: 10px;
+    }
+
+    .element__left__circle{
+        width: 100px;
+    }
+
+    .element__left__title{
+        font-size: 35px;
+        font-family: 'VisbyCF-Bold' !important;
+        color: #fff;
+        line-height: 1.4;
+    }
+    .element__left__text{
+        font-size: 22px;
+        line-height: 1.4;
+        font-family: 'RNSSanz-Medium' !important;
+        color: #fff;
+    }
 }
+
+
 
 </style>

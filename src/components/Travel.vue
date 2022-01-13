@@ -54,12 +54,12 @@ $purple-color: #725BA2 ;
     /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
     background-size: cover;
     background-repeat: no-repeat; */
-    padding: 180px 0;
+    padding: 10px;
 }
 
 .travel__content{
-    margin: 0 auto;
-    max-width: 80%;
+    width: 100%;
+    padding: 50px 0;
 }
 
 .travel__media{
@@ -74,9 +74,10 @@ $purple-color: #725BA2 ;
 }
 
 .travel__content-text-title{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     font-family: 'VisbyCF-Bold', 'Poppins' !important;
+    color: #FFF;
 }
 
 .travel__content-text-link{
@@ -89,7 +90,8 @@ $purple-color: #725BA2 ;
 }
 
 .travel__content-text-contenttext{
-    font-size: 20px;
+    font-size: 16px;
+    color: #FFF;
 }
 
 .travel__media-figure img{
@@ -98,7 +100,7 @@ $purple-color: #725BA2 ;
 
 .container__boxes__box__buttons__button{
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     padding: 2px 20px;
     color: #10162C;
@@ -131,12 +133,15 @@ $purple-color: #725BA2 ;
     .travel__content{
         display:  grid;
         grid-template-columns: repeat(2, 1fr);
-        height: 500px;
+        
         align-items: center;
+        margin: 0 auto;
     }
 
     
-
+    .container__boxes__box__buttons__button{
+        font-size: 20px;
+    }
 
 }
 

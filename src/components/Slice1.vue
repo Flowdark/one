@@ -120,7 +120,7 @@ $white: #ffffff ; */
 .transition__container-animation{
     display: flex;
     flex-direction: column;
-    max-height: 70px !important;
+    max-height: 33px !important;
     overflow-y: hidden;
     display: inline-block;
  
@@ -213,6 +213,10 @@ $white: #ffffff ; */
     .transition{
         background-size: 40%;
     }
+
+    .transition__container-animation{
+        max-height: 50px !important;
+    }
  
 }
  
@@ -225,6 +229,10 @@ $white: #ffffff ; */
 
     .transition{
         background-size: 40%;
+    }
+
+    .transition__container-animation{
+        max-height: 70px !important;
     }
 }
 
