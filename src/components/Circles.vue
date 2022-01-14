@@ -158,22 +158,22 @@ img{
 .figure{
     position: absolute;
     width: 200px;
-    display: none;
+    display: block;
 }
 
 .figure1{
-    top: -200px;
+    top: 0px;
     left: -133px;
 }
 
 .figure2{
     top: -117px;
-    right: 70px;
+    right: 5px;
 }
 
 .figure3{
-    top: -117px;
-    left: 70px;
+    top: -130px;
+    left: -6px;
 }
 
 .figure4{

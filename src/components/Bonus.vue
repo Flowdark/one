@@ -139,7 +139,7 @@ h2{
 @media screen and (min-width: 768px){
 
     .bonus{
-        height: 180vh;
+        
     }    
 
     .bonus__content{
@@ -173,7 +173,7 @@ h2{
 @media screen and (min-width: 1200px) {
     
     .bonus{
-        height: 100vh;
+        
     }
 
     .bonus__content{

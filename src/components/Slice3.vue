@@ -16,20 +16,6 @@
                     </div>
                 </div>
             </section>
-            <!-- <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
-                        </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
-                    </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
-                    </div>
-                </div>
-            </section>
             <section>
                 <div class="element">
                     <div class="element__left">
@@ -85,7 +71,21 @@
                         <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
                     </div>
                 </div>
-            </section> -->
+            </section>
+            <section>
+                <div class="element">
+                    <div class="element__left">
+                        <div class="element__left__circle">
+                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                        </div>
+                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                    </div>
+                    <div class="element__right">
+                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 </template>
@@ -93,24 +93,19 @@
 <script>
 export default {
     name: 'Slice3',
-    // mounted(){
-    //     const scrollContainer = document.querySelector("main");
-
-    //     scrollContainer.addEventListener("wheel", (evt) => {
-    //         evt.preventDefault();
-    //         scrollContainer.scrollLeft += evt.deltaY;
-    //     });
-    // }
+    mounted(){
+        const scrollContainer = document.querySelector("main");
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+    }
 }
 </script>
 
 <style scoped>
 
-.element--background{
-    /* background: linear-gradient(180deg, rgba(4,126,166,1) 0%, rgba(13,105,145,1) 30%, rgba(26,74,116,1) 50%, rgba(39,40,85,1) 70%, rgba(17,22,44,1) 100%); */
-    padding: 60px 0;
-    min-height: 100vh;
-}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 main {
     overflow-x: hidden;

@@ -158,6 +158,10 @@ $purple-color: #725BA2 ;
         font-size: 20px;
     }
 
+    .travel{
+        margin-bottom: 130px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {

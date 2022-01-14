@@ -39,25 +39,24 @@ $white: #ffffff ; */
 .transition--background{
 
     /* background: linear-gradient(180deg, rgba(8,117,157,1) 0%, rgba(14,101,141,1) 30%, rgba(32,60,102,1) 50%, rgba(36,49,92,1) 65%, rgba(32,30,66,1) 90%, rgba(16,22,44,1) 100%);  */
-    background-image: url('https://i.imgur.com/fy0c5PR.png');
+    /* background-image: url('https://i.imgur.com/fy0c5PR.png'); */
+    background-image: url('https://i.imgur.com/wsfkyDm.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
+    background-position: bottom right;
 
 }
  
 .transition{
-    min-height: 100vh;
     /* background: linear-gradient(180deg, $white, $orange-color); */
     /* background-color: #F7D2B3; */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #000000;
-    /* background-image: url('https://i.imgur.com/pPZr3Jz.png');
+    background-image: url('https://i.imgur.com/IeSqcfT.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom right;
-    background-size: 60%; */
+    background-size: cover;
 
     padding: 40px 0;
 }
@@ -210,9 +209,7 @@ $white: #ffffff ; */
         padding: 1rem 0;
     }
 
-    .transition{
-        background-size: 40%;
-    }
+    
 
     .transition__container-animation{
         max-height: 50px !important;
@@ -228,8 +225,13 @@ $white: #ffffff ; */
     }
 
     .transition{
-        background-size: 40%;
+        min-height: 100vh;
     }
+
+    .transition--background{
+        background-size: 30%;
+    }
+
 
     .transition__container-animation{
         max-height: 70px !important;
@@ -253,9 +255,7 @@ $white: #ffffff ; */
         width: 1200px;
     }
 
-    .transition{
-        background-size: 30%;
-    }
+    
     
 }
 
@@ -279,9 +279,6 @@ $white: #ffffff ; */
         width: 1400px;
     }
 
-    .transition{
-        background-size: 30%;
-    }
     
 }
  

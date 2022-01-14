@@ -7,7 +7,7 @@
                     <h2 class="container__left__title">Creamos un sistema integrado con lo mejor de la tecnología y el marketing para optimizar los resultados de tu centro</h2>
                 </div>
                 <div class="container__right">
-                    <img src="https://i.imgur.com/CLFE3OA.png" alt="Image" loading="lazy" />
+                    <img src="https://i.imgur.com/7Az33wl.png" alt="Image" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -82,6 +82,7 @@ img{
         align-items: center;
         display: flex;
         padding: 80px 0;
+        margin-bottom: 70px;
     }
 
     .container__left{

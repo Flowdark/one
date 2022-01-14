@@ -1,6 +1,7 @@
 <template>
     <div>
-        
+
+            <Menu />
             <Slice1 />
             <Slice2 />
             <Twoboxes />
@@ -17,6 +18,7 @@
 </template>
 
 <script>
+import Menu from '../components/Menu.vue';
 import Slice1 from '../components/Slice1.vue';
 import Slice2 from '../components/Slice2.vue';
 import Twoboxes from '../components/Twoboxes.vue';
@@ -30,6 +32,7 @@ import Slice4 from './../components/Slice4.vue';
 export default {
     name: 'One',
     components: {
+        Menu,
         Slice1,
         Slice2,
         Twoboxes,
@@ -39,7 +42,7 @@ export default {
         Travel,
         Slice4,
         Circles
-    }
+    },
 }
 </script>
 
