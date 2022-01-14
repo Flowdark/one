@@ -13,270 +13,288 @@
 
       <span class="pricing__description-bold">{{ $t('un contrato anual y paga en cuotas mensuales') }}.</span>
     </p>
-    <div class="pricing__prices">
-      <div class="pricing__prices__price pricing__prices__price--blue">
-        <div class="pricing__prices__price__details">
-          <h2 class="pricing__prices__price__details__title">
-            <svg id="Grupo_32" data-name="Grupo 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.395" height="30.634" viewBox="0 0 110.395 30.634">
-              <defs>
-                <clipPath id="clip-path">
-                  <rect id="Rectángulo_8" data-name="Rectángulo 8" width="110.395" height="30.634" fill="none"/>
-                </clipPath>
-              </defs>
-              <g id="Grupo_3" data-name="Grupo 3" clip-path="url(#clip-path)">
-                <path id="Trazado_6" data-name="Trazado 6" d="M0,2.408A2.318,2.318,0,0,1,.708.709,2.318,2.318,0,0,1,2.407,0a2.317,2.317,0,0,1,1.7.708,2.318,2.318,0,0,1,.708,1.7V9.347a11.291,11.291,0,0,1,6.962-2.266,11.35,11.35,0,0,1,8.331,3.446,11.349,11.349,0,0,1,3.446,8.331,11.349,11.349,0,0,1-3.446,8.331,11.348,11.348,0,0,1-8.331,3.446,11.347,11.347,0,0,1-8.331-3.446A11.356,11.356,0,0,1,0,18.976ZM6.821,23.814a6.754,6.754,0,0,0,4.956,2.053,6.733,6.733,0,0,0,4.944-2.042,6.734,6.734,0,0,0,2.042-4.944,6.774,6.774,0,0,0-2.042-4.956,6.714,6.714,0,0,0-4.944-2.053,6.753,6.753,0,0,0-4.956,2.053,6.7,6.7,0,0,0-2.006,4.107v.9a3.916,3.916,0,0,1-.024.425,6.581,6.581,0,0,0,2.03,4.461" transform="translate(0 -0.001)" fill="#0097a6"/>
-                <path id="Trazado_7" data-name="Trazado 7" d="M138.34,39.749a7.093,7.093,0,0,0-7.812,1.451,7.005,7.005,0,0,0,9.889,9.924l.047-.047a2.278,2.278,0,0,1,1.675-.685,2.338,2.338,0,0,1,1.7.7,2.277,2.277,0,0,1,.708,1.688,2.315,2.315,0,0,1-.708,1.7l-.047.047a11.777,11.777,0,0,1-20.085-8.355,11.782,11.782,0,0,1,20.085-8.355l-.024.023a.021.021,0,0,0,.024.024,2.281,2.281,0,0,1,.684,1.676,2.252,2.252,0,0,1-.684,1.652l-6.75,6.7a2.357,2.357,0,0,1-1.7.685,2.34,2.34,0,0,1-2.407-2.407,2.357,2.357,0,0,1,.684-1.7Z" transform="translate(-98.24 -27.312)" fill="#0097a6"/>
-                <path id="Trazado_8" data-name="Trazado 8" d="M449.634,39.749a7.093,7.093,0,0,0-7.812,1.451,7.005,7.005,0,0,0,9.889,9.924l.047-.047a2.278,2.278,0,0,1,1.675-.685,2.338,2.338,0,0,1,1.7.7,2.278,2.278,0,0,1,.708,1.688,2.316,2.316,0,0,1-.708,1.7l-.047.047A11.777,11.777,0,0,1,435,46.169a11.782,11.782,0,0,1,20.085-8.355l-.024.023a.021.021,0,0,0,.024.024,2.281,2.281,0,0,1,.684,1.676,2.252,2.252,0,0,1-.684,1.652l-6.75,6.7a2.358,2.358,0,0,1-1.7.685,2.34,2.34,0,0,1-2.408-2.407,2.357,2.357,0,0,1,.684-1.7Z" transform="translate(-345.446 -27.312)" fill="#002239"/>
-                <path id="Trazado_9" data-name="Trazado 9" d="M251.456,34.162a2.279,2.279,0,0,1,1.676.685,2.2,2.2,0,0,1,.378.5h.023l7.363,14.75,7.364-14.75.023.023a2.539,2.539,0,0,1,.4-.519,2.35,2.35,0,0,1,3.328.012,2.289,2.289,0,0,1,.685,1.664,2.2,2.2,0,0,1-.448,1.369l-9.134,18.338a2.043,2.043,0,0,1-.543.826,2.241,2.241,0,0,1-1.676.708,2.215,2.215,0,0,1-1.652-.708,2.082,2.082,0,0,1-.543-.8l-7.246-14.515-7.222,14.491a2.044,2.044,0,0,1-.543.826,2.242,2.242,0,0,1-1.676.708,2.213,2.213,0,0,1-1.652-.708,2.075,2.075,0,0,1-.543-.8L230.64,37.867a2.24,2.24,0,0,1-.425-1.345,2.37,2.37,0,0,1,4.036-1.676,2.189,2.189,0,0,1,.377.5h.024l7.363,14.75,7.364-14.75.023.023a2.54,2.54,0,0,1,.4-.519,2.25,2.25,0,0,1,1.652-.685" transform="translate(-182.82 -27.129)" fill="#002239"/>
-              </g>
-            </svg>
-          </h2>
-          <div class="pricing__prices__price__details__price">
-            <span class="pricing__prices__price__details__price__currency pricing__prices__price__details__price__currency-one"
-              >$</span
-            >
-            <span class="pricing__prices__price__details__price__text">
-            <p class="pricing__prices__price__details__price__text-twenty-nine">{{ $t('29') }} </p>
-            <p class="pricing__prices__price__details__price__text-essential">  {{ $t('Essential') }}. </p>
-            </span>
-            <div class="pricing__prices__price__details__month">
-              <span class="pricing__prices__price__details__month__price">
-                {{ $t('USD/mes') }} 
-              </span>
+    <div class="pricing__prices-container">
+
+        <!-- Arrows -->
+
+        <!-- Arrow izquierda -->
+        <svg @click="prevSlide" id="prev" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+          <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z">
+          </path>
+        </svg>
+
+        <div class="pricing__prices">
+          <div class="pricing__prices__price pricing__prices__price--blue pricing__price-show">
+              <div class="pricing__prices__price__details">
+                <h2 class="pricing__prices__price__details__title">
+                  <svg id="Grupo_32" data-name="Grupo 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.395" height="30.634" viewBox="0 0 110.395 30.634">
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect id="Rectángulo_8" data-name="Rectángulo 8" width="110.395" height="30.634" fill="none"/>
+                      </clipPath>
+                    </defs>
+                    <g id="Grupo_3" data-name="Grupo 3" clip-path="url(#clip-path)">
+                      <path id="Trazado_6" data-name="Trazado 6" d="M0,2.408A2.318,2.318,0,0,1,.708.709,2.318,2.318,0,0,1,2.407,0a2.317,2.317,0,0,1,1.7.708,2.318,2.318,0,0,1,.708,1.7V9.347a11.291,11.291,0,0,1,6.962-2.266,11.35,11.35,0,0,1,8.331,3.446,11.349,11.349,0,0,1,3.446,8.331,11.349,11.349,0,0,1-3.446,8.331,11.348,11.348,0,0,1-8.331,3.446,11.347,11.347,0,0,1-8.331-3.446A11.356,11.356,0,0,1,0,18.976ZM6.821,23.814a6.754,6.754,0,0,0,4.956,2.053,6.733,6.733,0,0,0,4.944-2.042,6.734,6.734,0,0,0,2.042-4.944,6.774,6.774,0,0,0-2.042-4.956,6.714,6.714,0,0,0-4.944-2.053,6.753,6.753,0,0,0-4.956,2.053,6.7,6.7,0,0,0-2.006,4.107v.9a3.916,3.916,0,0,1-.024.425,6.581,6.581,0,0,0,2.03,4.461" transform="translate(0 -0.001)" fill="#0097a6"/>
+                      <path id="Trazado_7" data-name="Trazado 7" d="M138.34,39.749a7.093,7.093,0,0,0-7.812,1.451,7.005,7.005,0,0,0,9.889,9.924l.047-.047a2.278,2.278,0,0,1,1.675-.685,2.338,2.338,0,0,1,1.7.7,2.277,2.277,0,0,1,.708,1.688,2.315,2.315,0,0,1-.708,1.7l-.047.047a11.777,11.777,0,0,1-20.085-8.355,11.782,11.782,0,0,1,20.085-8.355l-.024.023a.021.021,0,0,0,.024.024,2.281,2.281,0,0,1,.684,1.676,2.252,2.252,0,0,1-.684,1.652l-6.75,6.7a2.357,2.357,0,0,1-1.7.685,2.34,2.34,0,0,1-2.407-2.407,2.357,2.357,0,0,1,.684-1.7Z" transform="translate(-98.24 -27.312)" fill="#0097a6"/>
+                      <path id="Trazado_8" data-name="Trazado 8" d="M449.634,39.749a7.093,7.093,0,0,0-7.812,1.451,7.005,7.005,0,0,0,9.889,9.924l.047-.047a2.278,2.278,0,0,1,1.675-.685,2.338,2.338,0,0,1,1.7.7,2.278,2.278,0,0,1,.708,1.688,2.316,2.316,0,0,1-.708,1.7l-.047.047A11.777,11.777,0,0,1,435,46.169a11.782,11.782,0,0,1,20.085-8.355l-.024.023a.021.021,0,0,0,.024.024,2.281,2.281,0,0,1,.684,1.676,2.252,2.252,0,0,1-.684,1.652l-6.75,6.7a2.358,2.358,0,0,1-1.7.685,2.34,2.34,0,0,1-2.408-2.407,2.357,2.357,0,0,1,.684-1.7Z" transform="translate(-345.446 -27.312)" fill="#002239"/>
+                      <path id="Trazado_9" data-name="Trazado 9" d="M251.456,34.162a2.279,2.279,0,0,1,1.676.685,2.2,2.2,0,0,1,.378.5h.023l7.363,14.75,7.364-14.75.023.023a2.539,2.539,0,0,1,.4-.519,2.35,2.35,0,0,1,3.328.012,2.289,2.289,0,0,1,.685,1.664,2.2,2.2,0,0,1-.448,1.369l-9.134,18.338a2.043,2.043,0,0,1-.543.826,2.241,2.241,0,0,1-1.676.708,2.215,2.215,0,0,1-1.652-.708,2.082,2.082,0,0,1-.543-.8l-7.246-14.515-7.222,14.491a2.044,2.044,0,0,1-.543.826,2.242,2.242,0,0,1-1.676.708,2.213,2.213,0,0,1-1.652-.708,2.075,2.075,0,0,1-.543-.8L230.64,37.867a2.24,2.24,0,0,1-.425-1.345,2.37,2.37,0,0,1,4.036-1.676,2.189,2.189,0,0,1,.377.5h.024l7.363,14.75,7.364-14.75.023.023a2.54,2.54,0,0,1,.4-.519,2.25,2.25,0,0,1,1.652-.685" transform="translate(-182.82 -27.129)" fill="#002239"/>
+                    </g>
+                  </svg>
+                </h2>
+                <div class="pricing__prices__price__details__price">
+                  <span class="pricing__prices__price__details__price__currency pricing__prices__price__details__price__currency-one"
+                    >$</span
+                  >
+                  <span class="pricing__prices__price__details__price__text">
+                  <p class="pricing__prices__price__details__price__text-twenty-nine">{{ $t('29') }} </p>
+                  <p class="pricing__prices__price__details__price__text-essential">  {{ $t('Essential') }}. </p>
+                  </span>
+                  <div class="pricing__prices__price__details__month">
+                    <span class="pricing__prices__price__details__month__price">
+                      {{ $t('USD/mes') }} 
+                    </span>
+                  </div>
+                </div>
+                <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }} </span>
+              </div>
+              <p class="pricing__prices__price__description">
+                {{
+                  $t('Funcionalidades esenciales para que digitalices tu negocio y empieces a conseguir resultados desde ya')
+                }}.
+              </p>
+              <div class="pricing__prices__price__features">
+                <h3 class="pricing__prices__price__features__title">
+                  {{ $t('Lo que incluye tu plan') }}:
+                </h3>
+
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Incluye 2 agendas') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Más de 30.000 envíos de correos mensuales') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                {{ 'Fichas de clientes' }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Recordatorios automáticos') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Pagos online') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Control de inventario') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Miora (app para reservas)') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Sistema de reconocimiento facial') }}
+                </p>
+                <p class="pricing__prices__price__features__feature">
+                  <span
+                    class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
+                  ></span>
+                  {{ $t('Informes personalizados') }}
+                </p>
+              </div>
+          </div>
+
+          <!--segundo div-->
+          <div
+            class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--middle pricing__prices__price--middle2"
+          >
+            <div class="pricing__prices__price__details">
+              <h2 class="pricing__prices__price__details__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="78.972" height="26.634" viewBox="0 0 78.972 26.634">
+                  <g id="Grupo_2471" data-name="Grupo 2471" transform="translate(-895.5 -56.094)">
+                    <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                    <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                    <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                    <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                  </g>
+                </svg>
+              </h2>
+              <div class="pricing__prices__price__details__price">
+                <span class="pricing__prices__price__details__price__currency"
+                  >$</span
+                >
+                  <span class="pricing__prices__price__details__price__text">
+                    150
+                  </span>
+                <div class="pricing__prices__price__details__month">
+                  <span class="pricing__prices__price__details__month__off">
+                    300
+                  </span>
+                  <span class="pricing__prices__price__details__month__price">
+                    {{ $t('USD/mes') }}
+                  </span>
+                </div>
+              </div>
+              <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }} </span>
+            </div>
+            <p class="pricing__prices__price__description">
+              {{ $t('Todas las funcionalidades de nuestro software + Acompañamiento digital en marketing') }}.
+            </p>
+            <div class="pricing__prices__price__features">
+              <h3 class="pricing__prices__price__features__title">
+                {{ $t('Lo que incluye tu plan') }}:
+              </h3>
+
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Todas las funcionalidades de Essential') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Incluye 2 agendas') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Acompañamiento personalizado de especialista en marketing') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Miora (app para reservas)') }}.
+              </p>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }} </span>
-        </div>
-        <p class="pricing__prices__price__description">
-          {{
-            $t('Funcionalidades esenciales para que digitalices tu negocio y empieces a conseguir resultados desde ya')
-          }}.
-        </p>
-        <div class="pricing__prices__price__features">
-          <h3 class="pricing__prices__price__features__title">
-            {{ $t('Lo que incluye tu plan') }}:
-          </h3>
+          <!-- tercer div -->
+          <div
+            class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--third"
+          >
+            <div class="pricing__prices__price__details">
+              <h2 class="pricing__prices__price__details__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="108.168" height="26.634" viewBox="0 0 108.168 26.634">
+                  <g id="Grupo_35" data-name="Grupo 35" transform="translate(-65.647 -15.648)">
+                    <path id="Trazado_1597" data-name="Trazado 1597" d="M968.021,131.108h-3.377a3.369,3.369,0,0,1-2.5-1.033,3.536,3.536,0,0,1,0-4.962,3.367,3.367,0,0,1,2.5-1.034h3.377V120.7a3.41,3.41,0,0,1,1.016-2.481,3.523,3.523,0,0,1,6.012,2.481v3.377h3.377a3.514,3.514,0,0,1,0,7.029H975.05v3.377a3.514,3.514,0,1,1-7.029,0Z" transform="translate(-808.626 -98.594)" fill="#002239" stroke="#03d3f3" stroke-width="1"/>
+                    <g id="Grupo_2472" data-name="Grupo 2472" transform="translate(-829.853 -40.446)">
+                      <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                      <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                      <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                      <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
+                    </g>
+                  </g>
+                </svg>
+              </h2>
+              <div class="pricing__prices__price__details__price">
+                <span class="pricing__prices__price__details__price__currency"
+                  >$</span
+                >
+                  <span class="pricing__prices__price__details__price__text">
+                    250
+                  </span>
 
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Incluye 2 agendas') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Más de 30.000 envíos de correos mensuales') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-           {{ 'Fichas de clientes' }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Recordatorios automáticos') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Pagos online') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Control de inventario') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Miora (app para reservas)') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Sistema de reconocimiento facial') }}
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--blue"
-            ></span>
-            {{ $t('Informes personalizados') }}
-          </p>
-        </div>
-      </div>
+                <div class="pricing__prices__price__details__month">
+                  <span class="pricing__prices__price__details__month__off">
+                    500
+                  </span>
+                  <span class="pricing__prices__price__details__month__price">
+                    {{ $t('USD/mes') }}
+                  </span>
+                </div>
+              </div>
+              <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }}. </span>
+            </div>
+            <p class="pricing__prices__price__description">
+              {{ $t(`Todas las funcionalidades de nuestro software + acompañamiento digital en marketing y acceso ilimitado de agendas`) }}
+              <strong class="pricing__prices__price__description-strong"> {{ $t('Ideal para grandes empresas y cadenas') }} </strong>
+            </p>
+            <div class="pricing__prices__price__features">
+              <h3 class="pricing__prices__price__features__title">
+                {{ $t('Lo que incluye tu plan') }}:
+              </h3>
 
-      <!--segundo div-->
-      <div
-        class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--middle pricing__prices__price--middle2"
-      >
-        <div class="pricing__prices__price__details">
-          <h2 class="pricing__prices__price__details__title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="78.972" height="26.634" viewBox="0 0 78.972 26.634">
-              <g id="Grupo_2471" data-name="Grupo 2471" transform="translate(-895.5 -56.094)">
-                <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-              </g>
-            </svg>
-          </h2>
-          <div class="pricing__prices__price__details__price">
-            <span class="pricing__prices__price__details__price__currency"
-              >$</span
-            >
-              <span class="pricing__prices__price__details__price__text">
-                150
-              </span>
-            <div class="pricing__prices__price__details__month">
-              <span class="pricing__prices__price__details__month__off">
-                300
-              </span>
-              <span class="pricing__prices__price__details__month__price">
-                {{ $t('USD/mes') }}
-              </span>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Todas las funcionalidades de Essential') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Agendas ilimitadas') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Acompañamiento personalizado de especialista en marketing') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+              {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Tu propia App personalizada para Android') }}.
+              </p>
+              <p class="pricing__prices__price__features__feature">
+                <span
+                  class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
+                ></span>
+                {{ $t('Tu propia App personalizada para iOS') }}.
+              </p>
             </div>
           </div>
-          <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }} </span>
         </div>
-        <p class="pricing__prices__price__description">
-          {{ $t('Todas las funcionalidades de nuestro software + Acompañamiento digital en marketing') }}.
-        </p>
-        <div class="pricing__prices__price__features">
-          <h3 class="pricing__prices__price__features__title">
-            {{ $t('Lo que incluye tu plan') }}:
-          </h3>
 
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Todas las funcionalidades de Essential') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Incluye 2 agendas') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Acompañamiento personalizado de especialista en marketing') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Miora (app para reservas)') }}.
-          </p>
-        </div>
-      </div>
-      <!-- tercer div -->
-      <div
-        class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--third"
-      >
-        <div class="pricing__prices__price__details">
-          <h2 class="pricing__prices__price__details__title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="108.168" height="26.634" viewBox="0 0 108.168 26.634">
-              <g id="Grupo_35" data-name="Grupo 35" transform="translate(-65.647 -15.648)">
-                <path id="Trazado_1597" data-name="Trazado 1597" d="M968.021,131.108h-3.377a3.369,3.369,0,0,1-2.5-1.033,3.536,3.536,0,0,1,0-4.962,3.367,3.367,0,0,1,2.5-1.034h3.377V120.7a3.41,3.41,0,0,1,1.016-2.481,3.523,3.523,0,0,1,6.012,2.481v3.377h3.377a3.514,3.514,0,0,1,0,7.029H975.05v3.377a3.514,3.514,0,1,1-7.029,0Z" transform="translate(-808.626 -98.594)" fill="#002239" stroke="#03d3f3" stroke-width="1"/>
-                <g id="Grupo_2472" data-name="Grupo 2472" transform="translate(-829.853 -40.446)">
-                  <path id="Trazado_1636" data-name="Trazado 1636" d="M1319.368,62.536a7.7,7.7,0,0,0-8.485,1.577,7.609,7.609,0,0,0,10.741,10.779l.051-.051a2.476,2.476,0,0,1,1.82-.743,2.54,2.54,0,0,1,1.846.756,2.474,2.474,0,0,1,.769,1.833,2.517,2.517,0,0,1-.769,1.846l-.051.051a12.791,12.791,0,0,1-21.815-9.075,12.8,12.8,0,0,1,21.815-9.074l-.026.026a.023.023,0,0,0,.026.026,2.476,2.476,0,0,1,.743,1.82,2.445,2.445,0,0,1-.743,1.794l-7.331,7.28a2.56,2.56,0,0,1-1.846.744,2.542,2.542,0,0,1-2.615-2.615,2.56,2.56,0,0,1,.743-1.846Z" transform="translate(-352.138 -0.106)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                  <path id="Trazado_1637" data-name="Trazado 1637" d="M913.655,80.551v.17a3.089,3.089,0,0,0,.8,2.067,7.646,7.646,0,1,1-11.462.111,3.148,3.148,0,0,0,.75-2.065,2.5,2.5,0,0,0-4.33-1.705A12.786,12.786,0,0,0,896,87.9a13.026,13.026,0,0,0,12.65,12.775,12.833,12.833,0,0,0,9.277-21.887,2.5,2.5,0,0,0-4.273,1.764" transform="translate(0 -18.538)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                  <path id="Trazado_1638" data-name="Trazado 1638" d="M973.716,56.838h0A2.724,2.724,0,0,0,971,59.554V69.739a2.716,2.716,0,0,0,5.432,0V59.554a2.724,2.724,0,0,0-2.716-2.716" transform="translate(-64.815 -0.211)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                  <path id="Trazado_1639" data-name="Trazado 1639" d="M1112,56.594a13.166,13.166,0,0,1,8.9,3.794,12.336,12.336,0,0,1,3.743,8.921V79.2a3.058,3.058,0,0,1-.769,2.256,2.6,2.6,0,0,1-3.691,0,2.983,2.983,0,0,1-.769-2.2V69.36a4.119,4.119,0,0,1,.026-.461,7.15,7.15,0,0,0-2.2-4.845,7.336,7.336,0,0,0-5.383-2.23h-.1a7.335,7.335,0,0,0-5.383,2.23,7.148,7.148,0,0,0-2.2,4.845,4.238,4.238,0,0,1,.026.461v9.895a2.983,2.983,0,0,1-.769,2.2,2.6,2.6,0,0,1-3.691,0,3.057,3.057,0,0,1-.769-2.256V69.308a12.335,12.335,0,0,1,3.743-8.921,13.164,13.164,0,0,1,8.9-3.794Z" transform="translate(-175.39 0)" fill="#002239" stroke="#01dcfd" stroke-width="1"/>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <div class="pricing__prices__price__details__price">
-            <span class="pricing__prices__price__details__price__currency"
-              >$</span
-            >
-              <span class="pricing__prices__price__details__price__text">
-                250
-              </span>
-
-            <div class="pricing__prices__price__details__month">
-              <span class="pricing__prices__price__details__month__off">
-                500
-              </span>
-              <span class="pricing__prices__price__details__month__price">
-                {{ $t('USD/mes') }}
-              </span>
-            </div>
-          </div>
-          <span class="pricing__prices__price__details__year"> {{ $t('Precio insuperable de lanzamiento') }}. </span>
-        </div>
-        <p class="pricing__prices__price__description">
-          {{ $t(`Todas las funcionalidades de nuestro software + acompañamiento digital en marketing y acceso ilimitado de agendas`) }}
-          <strong class="pricing__prices__price__description-strong"> {{ $t('Ideal para grandes empresas y cadenas') }} </strong>
-        </p>
-        <div class="pricing__prices__price__features">
-          <h3 class="pricing__prices__price__features__title">
-            {{ $t('Lo que incluye tu plan') }}:
-          </h3>
-
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Todas las funcionalidades de Essential') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Agendas ilimitadas') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Acompañamiento personalizado de especialista en marketing') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-           {{ $t('Acceso a contenidos y cursos exclusivos de marketing') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Tu propia App personalizada para Android') }}.
-          </p>
-          <p class="pricing__prices__price__features__feature">
-            <span
-              class="pricing__prices__price__features__feature__bubble pricing__prices__price__features__feature__bubble--orange"
-            ></span>
-            {{ $t('Tu propia App personalizada para iOS') }}.
-          </p>
-        </div>
-      </div>
+        <!-- Arrow derecha -->
+        <svg @click="nextSlide" id="next" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+          <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
+          </path>
+        </svg>
+        
     </div>
     <div class="pricing__plans">
       <section class="table-pricing">
@@ -2315,8 +2333,14 @@ export default {
         return{
             // visibleSectionOneChild: false,
             visibilyInfoModal: false,
+            elementsSliders: NodeList,
+            positionSlide: 0,
         }
     }, 
+    mounted(){
+      this.elementsSliders = document.querySelectorAll('.pricing__prices > div');
+      console.log( { sliders: this.elementsSliders } );
+    },
     methods: {
  
         toogleSection(id){
@@ -2330,13 +2354,29 @@ export default {
             elementShow.classList?.toggle('visible');
             elementChilds.forEach( e => e.classList.toggle('visible') );
         },
-
         openFAQ( id ){
-        
-            const element = document.getElementById(id);
-            element.children[1].classList.toggle('d-none');
-            element.firstElementChild.lastElementChild.classList.toggle('pricing__faq__faqs__faq__arrow-rotate');
+          const element = document.getElementById(id);
+          element.children[1].classList.toggle('d-none');
+          element.firstElementChild.lastElementChild.classList.toggle('pricing__faq__faqs__faq__arrow-rotate');
+        },
+        prevSlide(){
 
+          this.elementsSliders[this.positionSlide].classList.remove('pricing__price-show');
+          this.positionSlide--;
+          if( this.positionSlide < 0 ){
+            this.positionSlide = this.elementsSliders.length - 1;
+          }
+
+          this.elementsSliders[this.positionSlide].classList.add('pricing__price-show');
+        },
+        nextSlide(){
+          this.elementsSliders[this.positionSlide].classList.remove('pricing__price-show');
+          this.positionSlide++;
+          if( this.positionSlide > this.elementsSliders.length - 1 ){
+            this.positionSlide = 0;
+          }
+
+          this.elementsSliders[this.positionSlide].classList.add('pricing__price-show');
 
         }
     },
@@ -2376,14 +2416,55 @@ export default {
   color: #000000;
 }
 
+.pricing__prices-container{
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  /* align-content: center; */
+}
+
 .pricing__prices {
+  
+
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem 0;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.pricing__prices > div {
+  grid-column: 2 / 3 ;
+  grid-row: 1 / 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s all ease-in-out;
+}
+
+.pricing__prices > div:not(.pricing__price-show){
+  transform: scale(.3);
+}
+
+.pricing__price-show{
+  opacity: 1 !important;
+  transform: scale(1);
+  pointer-events: unset;
+}
+
+/* .pricing__prices {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 90%;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
-}
+} */
 
 .pricing__prices__price {
   border-radius: 10px;
@@ -2392,6 +2473,10 @@ export default {
   position: relative;
   width: 100%;
 }
+
+/* .pricings_divs{
+  width: 400%;
+} */
 
 .pricing__prices__price--blue {
   border: 2px solid #000000;
@@ -2467,7 +2552,7 @@ export default {
 
 .pricing__prices__price--blue-aqua {
   border: 2px solid #70E0EF;
-  margin: 50px;
+  margin: 0px;
 }
 
 .pricing__prices__price__details,
@@ -2618,12 +2703,38 @@ export default {
     height: 800px;
   }
 
+  .pricing__prices {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+  }
+
+  .pricing__prices-container{
+    display: block;
+
+  }
+
+  .pricing__prices-container > svg{
+      display: none; 
+  }
+
+  .pricing__prices > div {
+    opacity: 1;
+    transform: scale(1) !important;
+  }
+
+
+  
   .pricing__title {
     font-size: 35px;
   }
 
   .pricing__prices__price--blue{
-    height: 800px !important;
+    height: 850px !important;
   }
 
   .pricing__prices{
@@ -2666,11 +2777,12 @@ export default {
     flex-basis: calc(100% / 3 - 20px);
   }
   .pricing__prices__price--middle{
-    height: 850px !important;
+    height: 900px !important;
+    margin: 0 20px !important;
   }
 
   .pricing__prices__price--third{
-    height: 800px !important;
+    height: 850px !important;
   }
 
   .pricing__prices__price {
@@ -2692,6 +2804,12 @@ export default {
   .pricing__prices__price__details__price__currency {
     font-size: 20px;
   }
+
+
+  .pricing__prices__price--blue-aqua{
+    margin: 0px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
