@@ -885,10 +885,33 @@ export default {
             childrenTecnology: [],
             childrenOne: [],
             options: {
+              gap: '5rem',
+              perPage: 3,
+              perMove: 1,
+              pasive: false,
+              lazyLoad: 'nearby',
               rewind: true,
-              type:"loop",
-              perPage:1,
-              pagination: true
+              breakpoints: {     
+                  '1200': {
+                      perPage: 3,
+                      gap    : '2rem',
+                  },                 
+                  '992': {
+                      perPage: 2,
+                      gap    : '2rem',
+                  },
+                  '768': {
+                      perPage: 1,
+                      gap    : '2rem',
+                      arrows: false,
+                  },
+                  '576': {
+                      perPage: 1,
+                      gap    : '2rem',
+                  },
+              }
+ 
+    
             }
         }
     }, 
@@ -1378,46 +1401,23 @@ export default {
   color: #000000;
 }
 
+.pricing__prices-container{
+  max-width: 90%;
+  margin:0 auto;
+}
 
+.splide__list{
+  display: flex !important;
+  align-items: flex-end !important;
+}
 
 .pricing__prices {
-  
-
   max-width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   margin: 0 auto;
-  display: grid;
-  padding: 5rem 0;
-  /* grid-template-columns: repeat(3, 1fr); */
-}
-
-.pricing__prices > div {
-  grid-column: 2 / 3 ;
-  grid-row: 1 / 2;
-  opacity: 0;
-  pointer-events: none;
-  transition: 1s all ease-in-out;
-}
-
-.pricing__prices > div:not(.pricing__price-show){
-  transform: scale(.3);
-}
-
-.pricing__price-show{
-  opacity: 1 !important;
-  transform: scale(1);
-  pointer-events: unset;
-}
-
-/* .pricing__prices {
-  align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0 auto;
-} */
+  align-items: flex-end;
+}
 
 .pricing__prices__price {
   border-radius: 10px;
@@ -1656,18 +1656,10 @@ export default {
     height: 800px;
   }
 
-  .pricing__prices {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
-  }
 
   .pricing__prices-container{
-    display: block;
+    max-width:90%;
+    margin:0 auto;
 
   }
 
@@ -1704,7 +1696,7 @@ export default {
     background-image: url('./../assets/pajaros1.png');
     background-size: 100%;
     top: -105px;
-    right: -80px;
+    right: -50px;
     width: 250px;
     height: 180px;
     display: block;
@@ -1731,7 +1723,6 @@ export default {
   }
   .pricing__prices__price--middle{
     height: 900px !important;
-    margin: 0 20px !important;
   }
 
   .pricing__prices__price--third{

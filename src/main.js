@@ -11,6 +11,7 @@ import VueLazyLoadVideo from 'vue-lazyload-video'
 import VueI18n from 'vue-i18n';
 import { i18n } from './plugins/i18n';
 import VueSplide from '@splidejs/vue-splide';
+import './styles/splideslices2.css';
 
 Vue.use(VueNumber);
 Vue.use(VueTilt);
