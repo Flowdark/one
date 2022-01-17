@@ -1,0 +1,16 @@
+
+
+.splide.is-active .splide__list{
+    display: flex;
+    align-items: center;
+}
+
+.splide.is-active .splide__list li{
+    margin-top: 70px;
+}
+
+@media screen and ( min-width: 768px ) {
+    .splide.is-active .splide__list{
+        align-items: flex-end;
+    }
+}

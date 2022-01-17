@@ -3,15 +3,20 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import '@splidejs/splide/dist/css/splide.min.css';
+
 import VueTilt from 'vue-tilt.js'
 import VueNumber from 'vue-number-animation'
 import VueLazyLoadVideo from 'vue-lazyload-video'
 import VueI18n from 'vue-i18n';
 import { i18n } from './plugins/i18n';
+import VueSplide from '@splidejs/vue-splide';
+import './styles/splideslices2.css';
 
-Vue.use(VueNumber)
-Vue.use(VueTilt)
-Vue.use(VueLazyLoadVideo)
+Vue.use(VueNumber);
+Vue.use(VueTilt);
+Vue.use(VueLazyLoadVideo);
+Vue.use( VueSplide );
 
 Vue.config.productionTip = false
 
