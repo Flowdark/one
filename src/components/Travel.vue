@@ -54,7 +54,7 @@ $purple-color: #725BA2 ;
     /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
     background-size: cover;
     background-repeat: no-repeat; */
-    padding: 10px;
+    padding: 0 20px;
 }
 
 .travel__content{

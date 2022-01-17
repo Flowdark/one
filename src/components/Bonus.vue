@@ -63,7 +63,7 @@ h2{
     width:100%;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0 20px;
     /* background-image: url('https://i.imgur.com/0MkxB2R.png'); */
     /* background-image: url('https://i.imgur.com/3KHT2Up.jpg');
     background-size: cover;

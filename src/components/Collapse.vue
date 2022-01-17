@@ -192,7 +192,7 @@ $mainDarkLigth: #f2f2f2;
 
 .container{
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
  

@@ -53,6 +53,16 @@
 
 <script>
 export default {
+    data(){
+        return{
+            imageOne: false,
+            imageTwo: false,
+            imageThree: false,
+            imageFour: false,
+            imageFive: false,
+            imageSix: false,
+        }
+    },
     mounted(){
         // const imagesContainer = document.getElementById("images");
         // const imagesAnimation = new IntersectionObserver( (entries) => {
@@ -106,6 +116,57 @@ export default {
         // } );
 
         // imagesAnimation.observe(imagesContainer);
+
+        const imageOne = document.getElementById("figure1");
+        const imageTwo = document.getElementById("figure2");
+        const imageThree = document.getElementById("figure3");
+        const imageFour = document.getElementById("figure4");
+        const imageFive = document.getElementById("figure5");
+        const imageSix = document.getElementById("figure6");
+
+        const imageOneInter = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !this.imageOne){
+                entries[0].target.classList.add("figure--animation")
+                this.imageOne = true;
+            }
+        });
+        const imageTwoInter = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !this.imageTwo){
+                entries[0].target.classList.add("figure--animation")
+                this.imageTwo = true;
+            }
+        });
+        const imageThreeInter = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !this.imageThree){
+                entries[0].target.classList.add("figure--animation")
+                this.imageThree = true;
+            }
+        });
+        const imageFourInter = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !this.imageFour){
+                entries[0].target.classList.add("figure--animation")
+                this.imageFour = true;
+            }
+        });
+        const imageFiveInter = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !this.imageFive){
+                entries[0].target.classList.add("figure--animation")
+                this.imageFive = true;
+            }
+        });
+        const imageSixInter = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !this.imageSix){
+                entries[0].target.classList.add("figure--animation")
+                this.imageSix = true;
+            }
+        });
+
+        imageOneInter.observe(imageOne)
+        imageTwoInter.observe(imageTwo)
+        imageThreeInter.observe(imageThree)
+        imageFourInter.observe(imageFour)
+        imageFiveInter.observe(imageFive)
+        imageSixInter.observe(imageSix)
     }
 }
 </script>
@@ -156,40 +217,83 @@ img{
 }
 
 .figure{
-    position: absolute;
-    width: 200px;
-    display: block;
+        position: relative;
+        opacity: 0;
+    }
+.figure--animation{
+    opacity: 1;
+    transition: all .5s;
 }
 
-.figure1{
-    top: 0px;
-    left: -133px;
+    .figure1{
+        top: unset;
+        left: unset;
+    }
+
+    .figure2{
+        top: unset;
+        right: unset;
+    }
+
+    .figure3{
+        top: unset;
+        left: unset;
+    }
+
+    .figure4{
+        top: unset;
+        left: unset;
+    }
+
+    .figure5{
+        top: unset;
+        right: unset;
+    }
+
+    .figure6{
+        top: unset;
+        left: unset;
+    }
+
+
+@media(min-width: 992px){
+    
+    .figure{
+        position: absolute;
+        width: 200px;
+        display: block;
+    }
+    .figure1{
+        top: 0px;
+        left: -133px;
+    }
+    
+    .figure2{
+        top: -117px;
+        right: 5px;
+    }
+    
+    .figure3{
+        top: -130px;
+        left: -6px;
+    }
+    
+    .figure4{
+        top: 100px;
+        left: 50px;
+    }
+    
+    .figure5{
+        top: 100px;
+        right: 50px;
+    }
+    
+    .figure6{
+        top: 200px;
+        left: -133px;
+    }
 }
 
-.figure2{
-    top: -117px;
-    right: 5px;
-}
-
-.figure3{
-    top: -130px;
-    left: -6px;
-}
-
-.figure4{
-    top: 100px;
-    left: 50px;
-}
-
-.figure5{
-    top: 100px;
-    right: 50px;
-}
-
-.figure6{
-    top: 200px;
-    left: -133px;
-}
 
 $primary-color: #FFF3EB;
 
@@ -214,7 +318,7 @@ h2{
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
 }
 

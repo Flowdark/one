@@ -58,7 +58,7 @@ $white: #ffffff ; */
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding: 40px 0;
+    padding: 40px 20px;
 }
  
 .transition__container{
@@ -69,7 +69,7 @@ $white: #ffffff ; */
  
 .transition__container-title{
     text-align: left;
-    font-size: 24px;
+    font-size: 34px;
     line-height: 1.4;
     font-family: 'VisbyCF-Bold';
     color: #ffffff;

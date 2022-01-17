@@ -110,7 +110,7 @@
 
     .container{
         width: 100%;
-        padding: 60px 10px;
+        padding: 60px 20px;
     }
 
     .container__title{

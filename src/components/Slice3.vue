@@ -1,121 +1,243 @@
 <template>
 <!-- https://i.imgur.com/SlxhM49.png -->
     <div class="element--background">
-        <main>
-            <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+        <div class="element--sticky">
+            <!-- <main class="sticky">
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
                         </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
-                    </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
                         </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
                     </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
                         </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
-                    </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
                         </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
                     </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
                         </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
-                    </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="element">
-                    <div class="element__left">
-                        <div class="element__left__circle">
-                            <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
                         </div>
-                        <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
-                        <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
                     </div>
-                    <div class="element__right">
-                        <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+            </main> -->
+            <div class="sticky" id="sticky">
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="element">
+                        <div class="element__left">
+                            <div class="element__left__circle">
+                                <img src="https://i.imgur.com/XL7TWIX.png" alt="">
+                            </div>
+                            <h2 class="element__left__title">Consultoria de marca y acompañamiento de un experto en marketing.</h2>
+                            <p class="element__left__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, asperiores sint temporibus fugit, libero earum blanditiis quasi perspiciatis qui tenetur sed at sunt veritatis. Quam quidem inventore esse ducimus eligendi ut aperiam optio voluptas corrupti!</p>
+                        </div>
+                        <div class="element__right">
+                            <img src="https://i.imgur.com/mkF8fUw.png" alt="Image" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>      
     </div>
 </template>
 
 <script>
 export default {
     name: 'Slice3',
+    data(){
+        return{
+            times: 6,
+            scroll: 0
+        }
+    },
     mounted(){
-        const scrollContainer = document.querySelector("main");
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
+        const scrollContainer = document.querySelector("#sticky");
+        document.addEventListener("scroll", (evt) => {
+            // evt.preventDefault();
+            
+            const intersect = new IntersectionObserver( (entries) => {
+                if(entries[0].isIntersecting){
+                    if(this.scroll > window.scrollY && this.scroll > 0){
+                        scrollContainer.scrollLeft -= 30;
+                    }else{
+                        scrollContainer.scrollLeft += 30;
+                    }
+
+                    this.scroll = window.scrollY
+                    console.log(this.scroll > window.scrollY);
+                }
+            }, {
+                    threshold: 0.25
+                } 
+            );
+
+            intersect.observe(scrollContainer);
+
         });
     }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+$times: 6;
 
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
-main {
-    overflow-x: hidden;
-    display: flex;
-    padding: 100px 0;
-    background-image: url(https://i.imgur.com/1ql4kCq.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-position: top center; */
-    background-position-y: top;
+.element--sticky{
+    height: calc((100vw * $times) * 2);
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url(https://i.imgur.com/1ql4kCq.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: top;
+  padding: 100px 0;
+  font-size: 20px;
+  overflow-x: hidden;
+  display: flex;
+  height: 100vh;
 }
 
 h1 {
@@ -124,7 +246,7 @@ h1 {
 }
 
 section {
-  /* min-width: 70vw; */
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,8 +305,7 @@ section {
     section {
         min-width: 70vw;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        
         margin: 0 auto;
         margin: 0 15vw;
         padding: 10px;
