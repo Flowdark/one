@@ -15,16 +15,11 @@
     </p>
     <div class="pricing__prices-container">
 
-        <!-- Arrows -->
-
-        <!-- Arrow izquierda -->
-        <svg @click="prevSlide" id="prev" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-          <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z">
-          </path>
-        </svg>
-
-        <div class="pricing__prices">
-          <div class="pricing__prices__price pricing__prices__price--blue pricing__price-show">
+        <Splide 
+          :options="options"
+          class="pricing__prices"
+        >
+          <SplideSlide class="pricing__prices__price pricing__prices__price--blue pricing__price-show">
               <div class="pricing__prices__price__details">
                 <h2 class="pricing__prices__price__details__title">
                   <svg id="Grupo_32" data-name="Grupo 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.395" height="30.634" viewBox="0 0 110.395 30.634">
@@ -122,10 +117,10 @@
                   {{ $t('Informes personalizados') }}
                 </p>
               </div>
-          </div>
+          </SplideSlide>
 
           <!--segundo div-->
-          <div
+          <SplideSlide
             class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--middle pricing__prices__price--middle2"
           >
             <div class="pricing__prices__price__details">
@@ -202,9 +197,9 @@
                 {{ $t('Miora (app para reservas)') }}.
               </p>
             </div>
-          </div>
+          </SplideSlide>
           <!-- tercer div -->
-          <div
+          <SplideSlide
             class="pricing__prices__price pricing__prices__price--blue-aqua pricing__prices__price--third"
           >
             <div class="pricing__prices__price__details">
@@ -286,14 +281,8 @@
                 {{ $t('Tu propia App personalizada para iOS') }}.
               </p>
             </div>
-          </div>
-        </div>
-
-        <!-- Arrow derecha -->
-        <svg @click="nextSlide" id="next" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-          <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
-          </path>
-        </svg>
+          </SplideSlide>
+        </Splide>
         
     </div>
     <div class="pricing__plans">
@@ -420,872 +409,98 @@
 
           <!-- /// aqui voy a pegarlo -->
 
-          <div 
-            @click="toogleSection('table-pricing__body-row-gestiona')" 
-            id="table-pricing__body-row-gestiona" 
-            class="table-pricing__body-row table-pricing__body-row-green"
+          <div
+            v-for="( element, index ) in childrenTecnology "
+            :key="index"
+            class="container-options-pricing"
           >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
-
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
-
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Gestiona mejor') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
+            <div 
+              @click="toogleSection(`table-pricing__body-row-${element.class}`)" 
+              :id="`table-pricing__body-row-${element.class}`"
+              class="table-pricing__body-row"
+              :class=" index %2 === 0 && 'table-pricing__body-row-green'"
+            >
                   
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
+                  <div class="table-pricing__body-row-first">
+                      <div class="table-pricing__body-row-first-arounds">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                              <path d="M0 0h24v24H0V0z" fill="none"/>
+                              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                          </svg>
+
+                          <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                              <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
+                              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
+                          </svg>
+              
+                      </div>
+
+                      <p class="table-pricing__body-row-first-text"> {{ $t(element.name) }} </p>
+
+                  </div>
+
+                  <div class="table-pricing__body-row-pricing-price">
+                    <svg v-if="element.checkBewe" class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div v-if="element.checkOne" class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                    <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div class="table-pricing__body-row-pricing-price">
+                    <svg v-if="element.checkOnePlus" class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+            </div>
+
+            <div 
+              :id="`table-pricing__body-row-${element.class}-children`" 
+              class=" table-pricing__body-row-show"
+            >
+              <div 
+                v-for=" ( children, index ) in element.childrens "
+                :key=" index "
+                class="table-pricing__body-row-show-children"
+                :class=" index % 2  !== 0  && 'table-pricing__body-row-green' "
+              >
+                  <div class="table-pricing__body-row-show-children-first">
+                      <p class="table-pricing__body-row-show-first-text">
+                          {{ $t(children.name) }}
+                      </p>
+
+                      <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                      </svg>
+
+                      <div class="table-pricing__body-messague">
+                        {{ $t(children.messague) }}.
+                      </div>
+
+                  </div>
+
+                  <div class="table-pricing__body-row-pricing-price">
+                    <svg v-if="children.checkBewe" class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                    <svg v-if="children.checkOne" class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div class="table-pricing__body-row-pricing-price">
+                    <svg v-if="children.checkOnePlus" class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
           </div>
 
-          <div id="table-pricing__body-row-gestiona-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Agendamiento online de citas') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Gestiona tus reservas en la Nube') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Cobros y caja') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Conoce cómo va la facturación de tu negocio') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                            <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                               {{ $t('Tareas automáticas') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Automatiza tareas repetitivas y programa acciones que se activan de forma instantánea') }}.
-                            </div>
-
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                            <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                               {{ $t('Control de inventario') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Mantén bajo control tu stock de productos') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Sueldos y comisiones') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Calcula fácilmente los sueldos y automatiza el pago de comisiones') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Mapa de la clase') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Visualiza fácilmente las reservas y espacios de tus clases') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Bewe Pay') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Un sistema de pagos para cobrar a tus clientes a través de las pasarelas integradas') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Bewe Pass') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Sistema de reconocimiento facial que te permite registrar la entrada y salida de clientes') }}
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-                    <div class="table-pricing__body-row-show-children ">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Bewe Checkout') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Acepta pagos en línea desde Whatsapp, Facebook, Email y página web') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-          </div>
-
-          <!-- segundoooo -->
-
-          <div 
-            @click="toogleSection('table-pricing__body-row-analiza')" 
-            id="table-pricing__body-row-analiza" 
-            class="table-pricing__body-row"
-          >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
-
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
-
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Analiza los datos') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
-                  
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-          </div>
-
-          <div id="table-pricing__body-row-analiza-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Dashboard') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Simplifica el análisis de datos y visualiza los resultadosmás importantes') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children ">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Informes personalizados ') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Genera diferentes tipos de informes personalizados en cuestión de minutos') }}
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-          </div>
-
-
-          <!--tercero -->
-
-          <div 
-            @click="toogleSection('table-pricing__body-row-fidelizacion')" 
-            id="table-pricing__body-row-fidelizacion" 
-            class="table-pricing__body-row table-pricing__body-row-green"
-          >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
-
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
-
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Fidelización de clientes') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
-                  
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-          </div>
-
-          <div id="table-pricing__body-row-fidelizacion-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Fichas de clientes') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('La información de tus clientes siempre actualizada') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Suscripciones ') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Ofrece una experiencia de pago confiable, inmediata y sin complicaciones') }}
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('SMS') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Automatiza SMS con recordatorios de citas o novedades importantes') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Notificaciones push') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Configura notificaciones con mensajes relevantes para tus clientes') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Correos y plantillas') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Envía correos más atractivos con plantillas personalizada') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-          </div>
-
-          <!-- cuarto -->
-          
-          <div 
-            @click="toogleSection('table-pricing__body-row-experiencias')" 
-            id="table-pricing__body-row-experiencias" 
-            class="table-pricing__body-row"
-          >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
-
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
-
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Experiencias online') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
-                  
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-          </div>
-
-          <div id="table-pricing__body-row-experiencias-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Reservas desde Facebook') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Facilita la experiencia de agendamiento por este canal') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Widget de reservas') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Deja que tus clientes reserven sus citas desde la página web') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Clases online') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('(Mantén tu comunidad conectada y monetiza tus entrenamientos online') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Cursos online') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Graba, almacena y sube el contenido fácilmente') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-green">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Bewe TV') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Da acceso a tus contenidos educativos a través de la compra online') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-          </div>
 
 
           <!-- second cicle -->
@@ -1299,771 +514,102 @@
           <!-- oneeee first div -->
 
           <div 
-            @click="toogleSection('table-pricing__body-row-acompañamiento')" 
-            id="table-pricing__body-row-acompañamiento" 
-            class="table-pricing__body-row table-pricing__body-row-aqua"
+            v-for=" ( element, index ) in childrenOne  "
+            :key=" index "
+            class="container-options-pricing"
           >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
 
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
+            <div
+              :id="`table-pricing__body-row-${ element.class }`" 
+              @click="toogleSection(`table-pricing__body-row-${element.class}`)" 
+              class="table-pricing__body-row"
+              :class=" index % 2 === 0 && 'table-pricing__body-row-aqua' "
+            >
+                  
+                  <div class="table-pricing__body-row-first">
+                      <div class="table-pricing__body-row-first-arounds">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                              <path d="M0 0h24v24H0V0z" fill="none"/>
+                              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                          </svg>
 
-                    <p class="table-pricing__body-row-first-text">
-                      {{ $t('Acompañamiento personalizado de marketing') }}
-                    </p>
+                          <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                              <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
+                              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
+                          </svg>
+              
+                      </div>
 
-                </div>
+                      <p class="table-pricing__body-row-first-text">
+                        {{ $t(element.name) }}
+                      </p>
+
+                  </div>
 
                 <div class="table-pricing__body-row-pricing-price">
-                  
+                  <svg v-if=" element.checkBewe " class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                 </div>
                 <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg v-if=" element.checkOne " class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg v-if=" element.checkOnePlus " class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-          </div>
-
-          <div id="table-pricing__body-row-acompañamiento-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                              {{ $t('Asignación de tu pripio especialista en marketing') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Experto que estará orientándote en tu estrategia de marketing') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Consultoría') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('definición de objetivos, buyer persona y próximos pasos') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Definición de indicadores claves') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Te ayudaremos en el seguimiento de tus resultados') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                              {{ $t('Configución de tu negocio en Google My Business') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Para que generes más interacciones con tus clientes locales') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Creación y/o optimización de tus redes sociales ') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Instagram, Facebook y una tercera red opcional, dependiendo de tu negocio') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Optimizaremos tu Whatsapp Business') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Crearemos tu identidad y plantillas de respuesta automáticas personalizadas') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Creación del plan de contenidos y calendario de publicaciones en redes sociales') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Para que tengas una estrategia potente todo el año') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Instalación de Google Analytics') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Para que puedas medir todo lo que pasa en tu sitio web') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Instalación de Facebook pixel') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Para que hagas publicidad en Facebook y conozcas más a tu público objetivo') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Creación de dashboard personalizado de rendimiento con indicadores clave') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Para que entiendas tus datos muy fácil y tomes decisiones') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children ">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Email marketing') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                             {{ $t('Creación de envíos automáticos para mantener conectados a tus clientes') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Creación de plantillas personalizadas') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Para que hagas envíos por correo con la identidad de tu marca') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-
-          </div>
-
-          <!-- oneee second div-->
-
-          <div 
-            @click="toogleSection('table-pricing__body-row-website')" 
-            id="table-pricing__body-row-website" 
-            class="table-pricing__body-row"
-          >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
-
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
-
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Creación de página web') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
+            </div>
+
+            <!-- body row show -->
+            <div :id="`table-pricing__body-row-${element.class}-children`" class="table-pricing__body-row-show">
+
+                <div 
+                  v-for="( children, index ) in element.childrens"
+                  :key=" index "
+                  class="table-pricing__body-row-show-children"
+                  :class=" index % 2 !== 0 && 'table-pricing__body-row-aqua' "
+                >
                   
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-          </div>
+                    <div class="table-pricing__body-row-show-children-first">
+                        <p class="table-pricing__body-row-show-first-text">
+                          {{ $t( children.name ) }}
+                        </p>
 
-          <div id="table-pricing__body-row-website-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Maquetación de página web') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                             {{ $t('Creación de tu web sin que tengas que saber de programación') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Diseño y desarrollo de tu propia página web o e-commerce') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Ajustada a tu identidad de marca') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Integración con los widgets de Bewe') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Tus clientes podrán reservar desde tu website') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-          </div>
-
-          <!-- oneee three div -->
-
-          <div 
-            @click="toogleSection('table-pricing__body-row-app')" 
-            id="table-pricing__body-app" 
-            class="table-pricing__body-row table-pricing__body-row-aqua"
-          >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                        <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                         </svg>
 
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
+                        <div class="table-pricing__body-messague">
+                          {{ $t( children.messague ) }}.
+                        </div>
+
                     </div>
 
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Desarrollo de app personalizada') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
-                  
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-          </div>
-
-          <div id="table-pricing__body-row-app-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Creación de tu propia app personalizada para Play Store') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Con tus colores e identidad corporativa') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
+                    <div class="table-pricing__body-row-pricing-price">
+                      <svg v-if=" children.checkBewe " class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                     </div>
-
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Creación de tu propia app personalizada para iOS') }}
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{  $t('Con tus colores e identidad corporativa') }}
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
+                    <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
+                      <svg v-if=" children.checkOne " class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                     </div>
+                    <div class="table-pricing__body-row-pricing-price">
+                      <svg v-if=" children.checkOnePlus " class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                </div>
 
+            </div>
 
           </div>
 
-          <!-- oneeee four div -->
-
-          <div 
-            @click="toogleSection('table-pricing__body-row-sector')" 
-            id="table-pricing__body-row-sector" 
-            class="table-pricing__body-row"
-          >
-                
-                <div class="table-pricing__body-row-first">
-                    <div class="table-pricing__body-row-first-arounds">
-                        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
-                        </svg>
-
-                        <svg class="d-none" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/>
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/>
-                        </svg>
-            
-                    </div>
-
-                    <p class="table-pricing__body-row-first-text"> {{ $t('Comunidad exclusiva para tu sector') }} </p>
-
-                </div>
-
-                <div class="table-pricing__body-row-pricing-price">
-                  
-                </div>
-                <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div class="table-pricing__body-row-pricing-price">
-                  <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-          </div>
-
-          <div id="table-pricing__body-row-sector-children" class=" table-pricing__body-row-show">
-                    <div class="table-pricing__body-row-show-children table-pricing__body-row-aqua">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Cursos exclusivos de marketing digital') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Recursos actualizados para que no pares de aprender') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-                    <div class="table-pricing__body-row-show-children">
-                        <div class="table-pricing__body-row-show-children-first">
-                            <p class="table-pricing__body-row-show-first-text">
-                                {{ $t('Espacio único de conocimiento') }}.
-                            </p>
-
-                            <svg class="svg-info" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-
-                            <div class="table-pricing__body-messague">
-                              {{ $t('Interactúa con colegas de tu sector en una plataforma tecnológica') }}.
-                            </div>
-
-                        </div>
-
-                        <div class="table-pricing__body-row-pricing-price">
-                          
-                        </div>
-                        <div class=" table-pricing__body-row-pricing-price table-pricing__body-row-medium border-x">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div class="table-pricing__body-row-pricing-price">
-                          <svg class="svg-price" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                    </div>
-
-          </div>
+          <!-- aca cierra container  -->
 
           <p class="table-pricing__body-text-footer">
             <span class="table-pricing__body-text-footer-simbol"> * </span> 
@@ -2325,6 +871,7 @@
 <script>
 
 import { t } from 'vue-i18n';
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
 
 
 export default {
@@ -2335,11 +882,426 @@ export default {
             visibilyInfoModal: false,
             elementsSliders: NodeList,
             positionSlide: 0,
+            childrenTecnology: [],
+            childrenOne: [],
+            options: {
+              rewind: true,
+              type:"loop",
+              perPage:1,
+              pagination: true
+            }
         }
     }, 
+    components: {
+      Splide,
+      SplideSlide,
+    },
     mounted(){
       this.elementsSliders = document.querySelectorAll('.pricing__prices > div');
       console.log( { sliders: this.elementsSliders } );
+      this.childrenTecnology = [
+        {
+          name: 'Gestiona Mejor',
+          class: 'gestiona-mejor',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Agendamiento online de citas',
+              messague: 'Gestiona tus reservas en la Nube',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Cobros y caja',
+              messague: 'Conoce cómo va la facturación de tu negocio',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Tareas automáticas',
+              messague: 'Automatiza tareas repetitivas y programa acciones que se activan de forma instantánea',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Control de inventario',
+              messague: 'Mantén bajo control tu stock de productos',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Sueldos y comisiones',
+              messague: 'Calcula fácilmente los sueldos y automatiza el pago de comisiones',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Mapa de la clase',
+              messague: 'Visualiza fácilmente las reservas y espacios de tus clases',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Mapa de la clase',
+              messague: 'Visualiza fácilmente las reservas y espacios de tus clases',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Bewe Pay',
+              messague: 'Un sistema de pagos para cobrar a tus clientes a través de las pasarelas integradas',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Bewe Pass',
+              messague: 'Sistema de reconocimiento facial que te permite registrar la entrada y salida de clientes',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Bewe Checkout',
+              messague: 'Acepta pagos en línea desde Whatsapp, Facebook, Email y página web',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            
+
+
+          ]
+        },
+        {
+          name: 'Analiza los datos',
+          class: 'analiza-datos',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Dashboard',
+              messague: 'Simplifica el análisis de datos y visualiza los resultadosmás importantes',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Informes personalizados',
+              messague: 'Genera diferentes tipos de informes personalizados en cuestión de minutos',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            
+          ],
+        }, 
+        {
+          name: 'Fidelización de clientes',
+          class: 'fidelizacion',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Fichas de clientes',
+              messague: 'La información de tus clientes siempre actualizada',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Suscripciones',
+              messague: 'Ofrece una experiencia de pago confiable, inmediata y sin complicaciones',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'SMS',
+              messague: 'Automatiza SMS con recordatorios de citas o novedades importantes',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Notificaciones push',
+              messague: 'Configura notificaciones con mensajes relevantes para tus clientes',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Correos y plantillas',
+              messague: 'Envía correos más atractivos con plantillas personalizada',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+          ],
+        },
+        {
+          name: 'Experiencias online',
+          class:'experiencias-online',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Reservas en facebook',
+              messague: 'Facilita la experiencia de agendamiento por este canal',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Widget de reservas',
+              messague: 'Deja que tus clientes reserven sus citas desde la página web',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Clasés online',
+              messague: 'Mantén tu comunidad conectada y monetiza tus entrenamientos online',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Cursos online',
+              messague: 'Graba, almacena y sube el contenido fácilmente',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Bewe TV',
+              messague: 'Da acceso a tus contenidos educativos a través de la compra online',
+              checkBewe: true,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+          ],
+        }
+      ];
+
+      this.childrenOne = [
+        {
+          name: 'Acompañamiento personalizado de marketing',
+          class: 'acompañamiento-marketing',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Asignación de tu pripio especialista en marketing',
+              messague: 'Experto que estará orientándote en tu estrategia de marketing',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Consultoría',
+              messague: 'Definición de objetivos, buyer persona y próximos pasos',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Definición de indicadores claves',
+              messague: 'Te ayudaremos en el seguimiento de tus resultados',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Configución de tu negocio en Google My Business',
+              messague: 'Para que generes más interacciones con tus clientes locales',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Creación y/o optimización de tus redes sociales',
+              messague: 'Instagram, Facebook y una tercera red opcional, dependiendo de tu negocio',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Optimizaremos tu Whatsapp Business',
+              messague: 'Crearemos tu identidad y plantillas de respuesta automáticas personalizadas',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Creación del plan de contenidos y calendario de publicaciones en redes sociales',
+              messague: 'Para que tengas una estrategia potente todo el año',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Instalación de Google Analytics',
+              messague: 'Para que puedas medir todo lo que pasa en tu sitio web',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Instalación de Facebook pixel',
+              messague: 'Para que hagas publicidad en Facebook y conozcas más a tu público objetivo',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Creación de dashboard personalizado de rendimiento con indicadores clave',
+              messague: 'Para que entiendas tus datos muy fácil y tomes decisiones',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Email marketing',
+              messague: 'Creación de envíos automáticos para mantener conectados a tus clientes',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Creación de plantillas personalizadas',
+              messague: 'Para que hagas envíos por correo con la identidad de tu marca',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+
+          ]
+        },
+        {
+          name: 'Creación de página web',
+          class: 'creacion-pagina',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Maquetación de página web',
+              messague: 'Creación de tu web sin que tengas que saber de programación',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Diseño y desarrollo de tu propia página web o e-commerce',
+              messague: 'Ajustada a tu identidad de marca',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Integración con los widgets de Bewe',
+              messague: 'Tus clientes podrán reservar desde tu website',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+
+          ]
+        },
+        {
+          name: 'Creación de página web',
+          class: 'creacion-pagina',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Maquetación de página web',
+              messague: 'Creación de tu web sin que tengas que saber de programación',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Diseño y desarrollo de tu propia página web o e-commerce',
+              messague: 'Ajustada a tu identidad de marca',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Integración con los widgets de Bewe',
+              messague: 'Tus clientes podrán reservar desde tu website',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+
+          ]
+        },
+        {
+          name: 'Desarrollo de app personalizada',
+          class: 'personality-app',
+          checkBewe: false,
+          checkOne: false,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Creación de tu propia app personalizada para Play Store',
+              messague: 'Con tus colores e identidad corporativa',
+              checkBewe: false,
+              checkOne: false,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Creación de tu propia app personalizada para iOS',
+              messague: 'Con tus colores e identidad corporativa',
+              checkBewe: false,
+              checkOne: false,
+              checkOnePlus: true,
+            },
+          ]
+        },
+        {
+          name: 'Comunidad exclusiva para tu sector',
+          class: 'comunity-sector',
+          checkBewe: false,
+          checkOne: true,
+          checkOnePlus: true,
+          childrens: [
+            {
+              name: 'Cursos exclusivos de marketing digital',
+              messague: 'Recursos actualizados para que no pares de aprender',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+            {
+              name: 'Espacio único de conocimiento',
+              messague: 'Interactúa con colegas de tu sector en una plataforma tecnológica',
+              checkBewe: false,
+              checkOne: true,
+              checkOnePlus: true,
+            },
+          ]
+        },
+      ];
+
+
     },
     methods: {
  
@@ -2416,16 +1378,7 @@ export default {
   color: #000000;
 }
 
-.pricing__prices-container{
-  max-width: 95%;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin: 0 auto;
-  /* align-content: center; */
-}
+
 
 .pricing__prices {
   
@@ -3320,7 +2273,7 @@ figure{
 }
 
 .table-pricing__body-text-footer-texto{
-  font-size: 25px;
+  font-size: 18px;
   line-height: 2;
 }
 
